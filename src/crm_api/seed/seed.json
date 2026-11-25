@@ -1,0 +1,5983 @@
+{
+  "referenceDate": "2026-11-21T12:00:00.000Z",
+  "users": [
+    {
+      "id": "usr_1",
+      "name": "Marina Albuquerque",
+      "email": "marina@minicrm.demo",
+      "role": "admin"
+    },
+    {
+      "id": "usr_2",
+      "name": "Rafael Tavares",
+      "email": "rafael@minicrm.demo",
+      "role": "vendedor"
+    },
+    {
+      "id": "usr_3",
+      "name": "Camila Duarte",
+      "email": "camila@minicrm.demo",
+      "role": "vendedor"
+    },
+    {
+      "id": "usr_4",
+      "name": "Bruno Nogueira",
+      "email": "bruno@minicrm.demo",
+      "role": "vendedor"
+    },
+    {
+      "id": "usr_5",
+      "name": "Letícia Moraes",
+      "email": "leticia@minicrm.demo",
+      "role": "vendedor"
+    }
+  ],
+  "companies": [
+    {
+      "id": "cmp_1",
+      "name": "Barros LTDA",
+      "industry": "Construção",
+      "size": "pequena",
+      "city": "Franco de Nossa Senhora",
+      "state": "ES",
+      "website": "https://www.barros-ltda.com.br"
+    },
+    {
+      "id": "cmp_2",
+      "name": "Moreira-Souza",
+      "industry": "Tecnologia",
+      "size": "pequena",
+      "city": "Eduardo do Sul",
+      "state": "BA",
+      "website": "https://www.moreira-souza.com.br"
+    },
+    {
+      "id": "cmp_3",
+      "name": "Silva S.A.",
+      "industry": "Indústria",
+      "size": "media",
+      "city": "Ladislau de Nossa Senhora",
+      "state": "CE",
+      "website": "https://www.silva-s-a.com.br"
+    },
+    {
+      "id": "cmp_4",
+      "name": "Albuquerque, Carvalho e Saraiva",
+      "industry": "Tecnologia",
+      "size": "pequena",
+      "city": "Barros do Norte",
+      "state": "TO",
+      "website": "https://www.albuquerque-carvalho-e-saraiva.com.br"
+    },
+    {
+      "id": "cmp_5",
+      "name": "Pereira, Batista e Carvalho",
+      "industry": "Construção",
+      "size": "pequena",
+      "city": "Gabriel do Norte",
+      "state": "MG",
+      "website": "https://www.pereira-batista-e-carvalho.com.br"
+    },
+    {
+      "id": "cmp_6",
+      "name": "Braga e Associados",
+      "industry": "Serviços financeiros",
+      "size": "pequena",
+      "city": "Costa do Descoberto",
+      "state": "DF",
+      "website": "https://www.braga-e-associados.com.br"
+    },
+    {
+      "id": "cmp_7",
+      "name": "Nogueira-Barros",
+      "industry": "Logística",
+      "size": "grande",
+      "city": "Carvalho do Sul",
+      "state": "GO",
+      "website": "https://www.nogueira-barros.com.br"
+    },
+    {
+      "id": "cmp_8",
+      "name": "Oliveira-Nogueira",
+      "industry": "Indústria",
+      "size": "grande",
+      "city": "Souza do Descoberto",
+      "state": "MT",
+      "website": "https://www.oliveira-nogueira.com.br"
+    },
+    {
+      "id": "cmp_9",
+      "name": "Pereira LTDA",
+      "industry": "Tecnologia",
+      "size": "grande",
+      "city": "Macedo de Nossa Senhora",
+      "state": "TO",
+      "website": "https://www.pereira-ltda.com.br"
+    },
+    {
+      "id": "cmp_10",
+      "name": "Santos LTDA",
+      "industry": "Indústria",
+      "size": "grande",
+      "city": "Giovanna do Norte",
+      "state": "ES",
+      "website": "https://www.santos-ltda.com.br"
+    },
+    {
+      "id": "cmp_11",
+      "name": "Braga LTDA",
+      "industry": "Agronegócio",
+      "size": "media",
+      "city": "Xavier do Descoberto",
+      "state": "RN",
+      "website": "https://www.braga-ltda.com.br"
+    },
+    {
+      "id": "cmp_12",
+      "name": "Souza-Batista",
+      "industry": "Educação",
+      "size": "grande",
+      "city": "Braga do Sul",
+      "state": "PB",
+      "website": "https://www.souza-batista.com.br"
+    },
+    {
+      "id": "cmp_13",
+      "name": "Braga, Silva e Braga",
+      "industry": "Varejo",
+      "size": "pequena",
+      "city": "Ígor do Descoberto",
+      "state": "AC",
+      "website": "https://www.braga-silva-e-braga.com.br"
+    },
+    {
+      "id": "cmp_14",
+      "name": "Saraiva EIRELI",
+      "industry": "Tecnologia",
+      "size": "pequena",
+      "city": "Carvalho do Descoberto",
+      "state": "AC",
+      "website": "https://www.saraiva-eireli.com.br"
+    },
+    {
+      "id": "cmp_15",
+      "name": "Braga Comércio",
+      "industry": "Construção",
+      "size": "grande",
+      "city": "Sirineu do Norte",
+      "state": "PE",
+      "website": "https://www.braga-comercio.com.br"
+    },
+    {
+      "id": "cmp_16",
+      "name": "Melo, Barros e Silva",
+      "industry": "Serviços financeiros",
+      "size": "grande",
+      "city": "Isabelly do Norte",
+      "state": "PR",
+      "website": "https://www.melo-barros-e-silva.com.br"
+    },
+    {
+      "id": "cmp_17",
+      "name": "Braga, Moreira e Moraes",
+      "industry": "Serviços financeiros",
+      "size": "media",
+      "city": "Ladislau do Norte",
+      "state": "MA",
+      "website": "https://www.braga-moreira-e-moraes.com.br"
+    },
+    {
+      "id": "cmp_18",
+      "name": "Xavier, Pereira e Franco",
+      "industry": "Educação",
+      "size": "grande",
+      "city": "Lorenzo do Sul",
+      "state": "BA",
+      "website": "https://www.xavier-pereira-e-franco.com.br"
+    },
+    {
+      "id": "cmp_19",
+      "name": "Franco-Melo",
+      "industry": "Serviços financeiros",
+      "size": "media",
+      "city": "Cauã do Norte",
+      "state": "CE",
+      "website": "https://www.franco-melo.com.br"
+    },
+    {
+      "id": "cmp_20",
+      "name": "Martins-Melo",
+      "industry": "Construção",
+      "size": "pequena",
+      "city": "Maria Alice do Descoberto",
+      "state": "BA",
+      "website": "https://www.martins-melo.com.br"
+    },
+    {
+      "id": "cmp_21",
+      "name": "Martins, Oliveira e Oliveira",
+      "industry": "Serviços financeiros",
+      "size": "grande",
+      "city": "Reis do Norte",
+      "state": "RJ",
+      "website": "https://www.martins-oliveira-e-oliveira.com.br"
+    },
+    {
+      "id": "cmp_22",
+      "name": "Braga S.A.",
+      "industry": "Tecnologia",
+      "size": "pequena",
+      "city": "Oliveira do Sul",
+      "state": "MT",
+      "website": "https://www.braga-s-a.com.br"
+    },
+    {
+      "id": "cmp_23",
+      "name": "Melo S.A.",
+      "industry": "Logística",
+      "size": "grande",
+      "city": "Sirineu do Norte",
+      "state": "SC",
+      "website": "https://www.melo-s-a.com.br"
+    },
+    {
+      "id": "cmp_24",
+      "name": "Xavier, Albuquerque e Souza",
+      "industry": "Logística",
+      "size": "media",
+      "city": "Roberta de Nossa Senhora",
+      "state": "AL",
+      "website": "https://www.xavier-albuquerque-e-souza.com.br"
+    },
+    {
+      "id": "cmp_25",
+      "name": "Moreira LTDA",
+      "industry": "Indústria",
+      "size": "grande",
+      "city": "Fabiano de Nossa Senhora",
+      "state": "AC",
+      "website": "https://www.moreira-ltda.com.br"
+    },
+    {
+      "id": "cmp_26",
+      "name": "Braga, Silva e Carvalho",
+      "industry": "Logística",
+      "size": "pequena",
+      "city": "Melo do Descoberto",
+      "state": "MS",
+      "website": "https://www.braga-silva-e-carvalho.com.br"
+    },
+    {
+      "id": "cmp_27",
+      "name": "Moraes-Santos",
+      "industry": "Construção",
+      "size": "grande",
+      "city": "Moreira do Norte",
+      "state": "AM",
+      "website": "https://www.moraes-santos.com.br"
+    },
+    {
+      "id": "cmp_28",
+      "name": "Souza, Santos e Albuquerque",
+      "industry": "Varejo",
+      "size": "pequena",
+      "city": "Roberto do Norte",
+      "state": "AC",
+      "website": "https://www.souza-santos-e-albuquerque.com.br"
+    },
+    {
+      "id": "cmp_29",
+      "name": "Albuquerque-Barros",
+      "industry": "Saúde",
+      "size": "media",
+      "city": "Costa do Descoberto",
+      "state": "MS",
+      "website": "https://www.albuquerque-barros.com.br"
+    },
+    {
+      "id": "cmp_30",
+      "name": "Moreira Comércio",
+      "industry": "Tecnologia",
+      "size": "media",
+      "city": "Oliveira de Nossa Senhora",
+      "state": "RO",
+      "website": "https://www.moreira-comercio.com.br"
+    },
+    {
+      "id": "cmp_31",
+      "name": "Costa, Xavier e Albuquerque",
+      "industry": "Logística",
+      "size": "grande",
+      "city": "Moraes do Norte",
+      "state": "SE",
+      "website": "https://www.costa-xavier-e-albuquerque.com.br"
+    },
+    {
+      "id": "cmp_32",
+      "name": "Oliveira-Costa",
+      "industry": "Educação",
+      "size": "media",
+      "city": "Isabelly de Nossa Senhora",
+      "state": "RO",
+      "website": "https://www.oliveira-costa.com.br"
+    },
+    {
+      "id": "cmp_33",
+      "name": "Moreira e Associados",
+      "industry": "Construção",
+      "size": "pequena",
+      "city": "Isaac do Descoberto",
+      "state": "AL",
+      "website": "https://www.moreira-e-associados.com.br"
+    },
+    {
+      "id": "cmp_34",
+      "name": "Santos S.A.",
+      "industry": "Construção",
+      "size": "media",
+      "city": "Fábio do Norte",
+      "state": "SE",
+      "website": "https://www.santos-s-a.com.br"
+    },
+    {
+      "id": "cmp_35",
+      "name": "Santos S.A.",
+      "industry": "Serviços financeiros",
+      "size": "grande",
+      "city": "Carvalho do Norte",
+      "state": "PI",
+      "website": "https://www.santos-s-a.com.br"
+    },
+    {
+      "id": "cmp_36",
+      "name": "Costa-Barros",
+      "industry": "Educação",
+      "size": "grande",
+      "city": "Souza do Descoberto",
+      "state": "AC",
+      "website": "https://www.costa-barros.com.br"
+    },
+    {
+      "id": "cmp_37",
+      "name": "Reis-Costa",
+      "industry": "Tecnologia",
+      "size": "media",
+      "city": "Maitê do Norte",
+      "state": "RO",
+      "website": "https://www.reis-costa.com.br"
+    },
+    {
+      "id": "cmp_38",
+      "name": "Souza-Xavier",
+      "industry": "Indústria",
+      "size": "pequena",
+      "city": "Frederico de Nossa Senhora",
+      "state": "RN",
+      "website": "https://www.souza-xavier.com.br"
+    },
+    {
+      "id": "cmp_39",
+      "name": "Xavier-Pereira",
+      "industry": "Tecnologia",
+      "size": "grande",
+      "city": "Oliveira do Norte",
+      "state": "SE",
+      "website": "https://www.xavier-pereira.com.br"
+    },
+    {
+      "id": "cmp_40",
+      "name": "Batista, Macedo e Martins",
+      "industry": "Saúde",
+      "size": "media",
+      "city": "Márcia de Nossa Senhora",
+      "state": "RS",
+      "website": "https://www.batista-macedo-e-martins.com.br"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "ct_1",
+      "name": "Paula Melo",
+      "email": "paula.melo@martins-oliveira-e-oliveira.com.br",
+      "phone": "(30) 85183-8392",
+      "jobTitle": "Líder Operações Assistente",
+      "companyId": "cmp_21",
+      "ownerId": "usr_2",
+      "createdAt": "2025-12-17T09:31:59.822Z"
+    },
+    {
+      "id": "ct_2",
+      "name": "Eloá Nogueira",
+      "email": "eloa.nogueira@pereira-batista-e-carvalho.com.br",
+      "phone": "(71) 8169-7436",
+      "jobTitle": "Central Configuration Agente",
+      "companyId": "cmp_5",
+      "ownerId": "usr_4",
+      "createdAt": "2026-09-06T06:52:48.572Z"
+    },
+    {
+      "id": "ct_3",
+      "name": "Alice Nogueira",
+      "email": "alice.nogueira@nogueira-barros.com.br",
+      "phone": "(81) 93284-7373",
+      "jobTitle": "Investidor Aplicações Coordenador",
+      "companyId": "cmp_7",
+      "ownerId": "usr_5",
+      "createdAt": "2026-09-16T16:20:07.049Z"
+    },
+    {
+      "id": "ct_4",
+      "name": "Pablo Macedo",
+      "email": "pablo.macedo@reis-costa.com.br",
+      "phone": "(68) 92711-9016",
+      "jobTitle": "Direto Prestação de contas Orquestrador",
+      "companyId": "cmp_37",
+      "ownerId": "usr_4",
+      "createdAt": "2026-01-06T19:57:20.439Z"
+    },
+    {
+      "id": "ct_5",
+      "name": "João Lucas Moraes",
+      "email": "joao-lucas.moraes@braga-silva-e-carvalho.com.br",
+      "phone": "(13) 42424-0631",
+      "jobTitle": "International Marca Policial",
+      "companyId": "cmp_26",
+      "ownerId": "usr_2",
+      "createdAt": "2025-09-03T16:09:26.032Z"
+    },
+    {
+      "id": "ct_6",
+      "name": "Morgana Moraes",
+      "email": "morgana.moraes@braga-ltda.com.br",
+      "phone": "(83) 55829-1354",
+      "jobTitle": "Distrito Marca Designer",
+      "companyId": "cmp_11",
+      "ownerId": "usr_3",
+      "createdAt": "2026-08-02T00:47:34.304Z"
+    },
+    {
+      "id": "ct_7",
+      "name": "Isaac Saraiva",
+      "email": "isaac.saraiva@moreira-ltda.com.br",
+      "phone": "(72) 3576-6556",
+      "jobTitle": "Direto Mercados Assistente",
+      "companyId": "cmp_25",
+      "ownerId": "usr_5",
+      "createdAt": "2026-10-19T09:48:21.838Z"
+    },
+    {
+      "id": "ct_8",
+      "name": "Ana Júlia Braga",
+      "email": "ana-julia.braga@braga-comercio.com.br",
+      "phone": "(03) 90983-9555",
+      "jobTitle": "Avançar Interações Técnico",
+      "companyId": "cmp_15",
+      "ownerId": "usr_2",
+      "createdAt": "2026-03-16T22:43:45.068Z"
+    },
+    {
+      "id": "ct_9",
+      "name": "Fábio Franco",
+      "email": "fabio.franco@pereira-batista-e-carvalho.com.br",
+      "phone": "(77) 35476-5828",
+      "jobTitle": "Senior Implementação Executivo",
+      "companyId": "cmp_5",
+      "ownerId": "usr_2",
+      "createdAt": "2025-08-07T14:57:44.744Z"
+    },
+    {
+      "id": "ct_10",
+      "name": "Noah Moreira",
+      "email": "noah.moreira@franco-melo.com.br",
+      "phone": "(65) 6637-5545",
+      "jobTitle": "Chefe Qualidade Técnico",
+      "companyId": "cmp_19",
+      "ownerId": "usr_4",
+      "createdAt": "2026-06-24T16:23:37.499Z"
+    },
+    {
+      "id": "ct_11",
+      "name": "Meire Souza",
+      "email": "meire.souza@braga-ltda.com.br",
+      "phone": "(31) 2399-5514",
+      "jobTitle": "Legado Marca Policial",
+      "companyId": "cmp_11",
+      "ownerId": "usr_4",
+      "createdAt": "2026-04-14T19:23:31.240Z"
+    },
+    {
+      "id": "ct_12",
+      "name": "Yasmin Albuquerque",
+      "email": "yasmin.albuquerque@santos-s-a.com.br",
+      "phone": "(68) 46438-0449",
+      "jobTitle": "Humano Aplicações Especialista",
+      "companyId": "cmp_35",
+      "ownerId": "usr_2",
+      "createdAt": "2025-09-23T15:37:20.880Z"
+    },
+    {
+      "id": "ct_13",
+      "name": "Ana Clara Reis",
+      "email": "ana-clara.reis@silva-s-a.com.br",
+      "phone": "(36) 4914-4682",
+      "jobTitle": "Senior Infraestrutura Desenvolvedor",
+      "companyId": "cmp_3",
+      "ownerId": "usr_4",
+      "createdAt": "2026-06-01T18:15:54.365Z"
+    },
+    {
+      "id": "ct_14",
+      "name": "Esther Franco",
+      "email": "esther.franco@silva-s-a.com.br",
+      "phone": "(02) 88147-7965",
+      "jobTitle": "Central Otimização Agente",
+      "companyId": "cmp_3",
+      "ownerId": "usr_3",
+      "createdAt": "2025-10-19T20:29:31.107Z"
+    },
+    {
+      "id": "ct_15",
+      "name": "Núbia Martins",
+      "email": "nubia.martins@moreira-souza.com.br",
+      "phone": "(76) 4707-9458",
+      "jobTitle": "Futuro Qualidade Assistente",
+      "companyId": "cmp_2",
+      "ownerId": "usr_3",
+      "createdAt": "2026-05-19T13:40:31.178Z"
+    },
+    {
+      "id": "ct_16",
+      "name": "Ofélia Moraes",
+      "email": "ofelia.moraes@costa-xavier-e-albuquerque.com.br",
+      "phone": "(48) 3833-7351",
+      "jobTitle": "Corporativo Dados Estrategista",
+      "companyId": "cmp_31",
+      "ownerId": "usr_3",
+      "createdAt": "2025-08-08T09:15:43.053Z"
+    },
+    {
+      "id": "ct_17",
+      "name": "Vicente Nogueira",
+      "email": "vicente.nogueira@martins-oliveira-e-oliveira.com.br",
+      "phone": "(92) 04833-3476",
+      "jobTitle": "Dinâmico Táticas Analista",
+      "companyId": "cmp_21",
+      "ownerId": "usr_4",
+      "createdAt": "2026-10-01T20:05:32.869Z"
+    },
+    {
+      "id": "ct_18",
+      "name": "Vitória Macedo",
+      "email": "vitoria.macedo@moreira-ltda.com.br",
+      "phone": "(13) 0915-2964",
+      "jobTitle": "Líder Pesquisar Orquestrador",
+      "companyId": "cmp_25",
+      "ownerId": "usr_3",
+      "createdAt": "2026-06-30T17:27:38.044Z"
+    },
+    {
+      "id": "ct_19",
+      "name": "Aline Braga",
+      "email": "aline.braga@braga-silva-e-carvalho.com.br",
+      "phone": "(74) 14699-7763",
+      "jobTitle": "Futuro Comunicações Coordenador",
+      "companyId": "cmp_26",
+      "ownerId": "usr_3",
+      "createdAt": "2026-04-25T14:10:34.415Z"
+    },
+    {
+      "id": "ct_20",
+      "name": "Beatriz Pereira",
+      "email": "beatriz.pereira@albuquerque-carvalho-e-saraiva.com.br",
+      "phone": "(82) 67333-3149",
+      "jobTitle": "Cliente Qualidade Coordenador",
+      "companyId": "cmp_4",
+      "ownerId": "usr_5",
+      "createdAt": "2026-07-24T00:53:41.536Z"
+    },
+    {
+      "id": "ct_21",
+      "name": "Lavínia Xavier",
+      "email": "lavinia.xavier@melo-s-a.com.br",
+      "phone": "(89) 8055-0656",
+      "jobTitle": "Central Branding Produtor",
+      "companyId": "cmp_23",
+      "ownerId": "usr_3",
+      "createdAt": "2026-06-17T15:49:20.589Z"
+    },
+    {
+      "id": "ct_22",
+      "name": "Pablo Franco",
+      "email": "pablo.franco@silva-s-a.com.br",
+      "phone": "(97) 79983-4075",
+      "jobTitle": "Central Métricas Designer",
+      "companyId": "cmp_3",
+      "ownerId": "usr_5",
+      "createdAt": "2025-07-24T08:01:40.707Z"
+    },
+    {
+      "id": "ct_23",
+      "name": "Rebeca Braga",
+      "email": "rebeca.braga@santos-s-a.com.br",
+      "phone": "(74) 87395-5663",
+      "jobTitle": "Nacional Implementação Diretor",
+      "companyId": "cmp_35",
+      "ownerId": "usr_5",
+      "createdAt": "2025-06-18T04:47:54.186Z"
+    },
+    {
+      "id": "ct_24",
+      "name": "Morgana Saraiva",
+      "email": "morgana.saraiva@xavier-albuquerque-e-souza.com.br",
+      "phone": "(66) 0159-7515",
+      "jobTitle": "Direto Infraestrutura Policial",
+      "companyId": "cmp_24",
+      "ownerId": "usr_5",
+      "createdAt": "2025-09-28T18:35:10.702Z"
+    },
+    {
+      "id": "ct_25",
+      "name": "Marcos Silva",
+      "email": "marcos.silva@melo-s-a.com.br",
+      "phone": "(86) 2189-0107",
+      "jobTitle": "Cliente Implementação Técnico",
+      "companyId": "cmp_23",
+      "ownerId": "usr_4",
+      "createdAt": "2025-07-07T15:15:32.600Z"
+    },
+    {
+      "id": "ct_26",
+      "name": "Heitor Franco",
+      "email": "heitor.franco@santos-s-a.com.br",
+      "phone": "(68) 43242-0644",
+      "jobTitle": "Global Identidade Estrategista",
+      "companyId": "cmp_35",
+      "ownerId": "usr_5",
+      "createdAt": "2026-11-04T23:20:19.545Z"
+    },
+    {
+      "id": "ct_27",
+      "name": "Helena Oliveira",
+      "email": "helena.oliveira@braga-moreira-e-moraes.com.br",
+      "phone": "(35) 0041-6452",
+      "jobTitle": "Principal Pesquisar Produtor",
+      "companyId": "cmp_17",
+      "ownerId": "usr_2",
+      "createdAt": "2025-07-06T15:38:32.533Z"
+    },
+    {
+      "id": "ct_28",
+      "name": "Benjamin Martins",
+      "email": "benjamin.martins@costa-xavier-e-albuquerque.com.br",
+      "phone": "(73) 31647-6197",
+      "jobTitle": "Líder Pesquisar Administrador",
+      "companyId": "cmp_31",
+      "ownerId": "usr_4",
+      "createdAt": "2026-11-12T16:48:58.216Z"
+    },
+    {
+      "id": "ct_29",
+      "name": "Pietro Oliveira",
+      "email": "pietro.oliveira@albuquerque-barros.com.br",
+      "phone": "(26) 4435-9888",
+      "jobTitle": "Senior Infraestrutura Arquiteto",
+      "companyId": "cmp_29",
+      "ownerId": "usr_4",
+      "createdAt": "2025-06-01T17:38:22.737Z"
+    },
+    {
+      "id": "ct_30",
+      "name": "Giovanna Oliveira",
+      "email": "giovanna.oliveira@batista-macedo-e-martins.com.br",
+      "phone": "(96) 2508-6758",
+      "jobTitle": "Principal Paradigma Agente",
+      "companyId": "cmp_40",
+      "ownerId": "usr_3",
+      "createdAt": "2026-04-25T14:45:28.170Z"
+    },
+    {
+      "id": "ct_31",
+      "name": "Luiza Braga",
+      "email": "luiza.braga@costa-barros.com.br",
+      "phone": "(24) 0466-8444",
+      "jobTitle": "Futuro Marca Administrador",
+      "companyId": "cmp_36",
+      "ownerId": "usr_4",
+      "createdAt": "2026-10-10T15:51:57.572Z"
+    },
+    {
+      "id": "ct_32",
+      "name": "Lavínia Martins",
+      "email": "lavinia.martins@melo-s-a.com.br",
+      "phone": "(64) 9290-7222",
+      "jobTitle": "Avançar Comunicações Engenheiro",
+      "companyId": "cmp_23",
+      "ownerId": "usr_2",
+      "createdAt": "2026-02-20T21:22:41.808Z"
+    },
+    {
+      "id": "ct_33",
+      "name": "Fabrício Saraiva",
+      "email": "fabricio.saraiva@martins-melo.com.br",
+      "phone": "(43) 56229-1757",
+      "jobTitle": "Dinâmico Segurança Atentende",
+      "companyId": "cmp_20",
+      "ownerId": "usr_3",
+      "createdAt": "2026-10-30T20:34:37.975Z"
+    },
+    {
+      "id": "ct_34",
+      "name": "Caio Moraes",
+      "email": "caio.moraes@braga-silva-e-braga.com.br",
+      "phone": "(22) 4958-2609",
+      "jobTitle": "Regional Usabilidade Desenvolvedor",
+      "companyId": "cmp_13",
+      "ownerId": "usr_5",
+      "createdAt": "2026-02-24T14:01:00.315Z"
+    },
+    {
+      "id": "ct_35",
+      "name": "Alice Xavier",
+      "email": "alice.xavier@moreira-comercio.com.br",
+      "phone": "(51) 7442-8411",
+      "jobTitle": "Dinâmico Pesquisar Engenheiro",
+      "companyId": "cmp_30",
+      "ownerId": "usr_3",
+      "createdAt": "2025-11-22T06:31:36.315Z"
+    },
+    {
+      "id": "ct_36",
+      "name": "Bryan Moreira",
+      "email": "bryan.moreira@barros-ltda.com.br",
+      "phone": "(30) 8426-6845",
+      "jobTitle": "Corporativo Soluções Orquestrador",
+      "companyId": "cmp_1",
+      "ownerId": "usr_5",
+      "createdAt": "2026-11-10T05:24:42.916Z"
+    },
+    {
+      "id": "ct_37",
+      "name": "Marina Franco",
+      "email": "marina.franco@moreira-e-associados.com.br",
+      "phone": "(16) 5110-3916",
+      "jobTitle": "Senior Mobilidade Consultor",
+      "companyId": "cmp_33",
+      "ownerId": "usr_4",
+      "createdAt": "2025-05-31T10:04:11.759Z"
+    },
+    {
+      "id": "ct_38",
+      "name": "Janaína Braga",
+      "email": "janaina.braga@martins-oliveira-e-oliveira.com.br",
+      "phone": "(99) 9241-0512",
+      "jobTitle": "Dinâmico Otimização Policial",
+      "companyId": "cmp_21",
+      "ownerId": "usr_5",
+      "createdAt": "2026-01-17T01:17:11.387Z"
+    },
+    {
+      "id": "ct_39",
+      "name": "Calebe Saraiva",
+      "email": "calebe.saraiva@oliveira-costa.com.br",
+      "phone": "(59) 87825-0406",
+      "jobTitle": "Chefe Infraestrutura Técnico",
+      "companyId": "cmp_32",
+      "ownerId": "usr_2",
+      "createdAt": "2026-07-08T03:17:13.643Z"
+    },
+    {
+      "id": "ct_40",
+      "name": "Eduarda Nogueira",
+      "email": "eduarda.nogueira@reis-costa.com.br",
+      "phone": "(49) 6910-0186",
+      "jobTitle": "Produto Segurança Estrategista",
+      "companyId": "cmp_37",
+      "ownerId": "usr_5",
+      "createdAt": "2026-08-16T04:57:41.395Z"
+    },
+    {
+      "id": "ct_41",
+      "name": "Lucas Souza",
+      "email": "lucas.souza@souza-batista.com.br",
+      "phone": "(43) 3682-7734",
+      "jobTitle": "Distrito Táticas Representante",
+      "companyId": "cmp_12",
+      "ownerId": "usr_2",
+      "createdAt": "2026-07-21T12:02:48.473Z"
+    },
+    {
+      "id": "ct_42",
+      "name": "Ana Luiza Pereira",
+      "email": "ana-luiza.pereira@reis-costa.com.br",
+      "phone": "(16) 0794-8479",
+      "jobTitle": "Humano Infraestrutura Atentende",
+      "companyId": "cmp_37",
+      "ownerId": "usr_3",
+      "createdAt": "2025-07-01T08:53:45.073Z"
+    },
+    {
+      "id": "ct_43",
+      "name": "Antonella Oliveira",
+      "email": "antonella.oliveira@xavier-albuquerque-e-souza.com.br",
+      "phone": "(40) 54703-9954",
+      "jobTitle": "Investidor Comunicações Produtor",
+      "companyId": "cmp_24",
+      "ownerId": "usr_4",
+      "createdAt": "2025-09-07T05:32:38.469Z"
+    },
+    {
+      "id": "ct_44",
+      "name": "Feliciano Pereira",
+      "email": "feliciano.pereira@reis-costa.com.br",
+      "phone": "(09) 69694-2231",
+      "jobTitle": "Distrito Configuration Gerente",
+      "companyId": "cmp_37",
+      "ownerId": "usr_3",
+      "createdAt": "2025-11-04T15:06:33.880Z"
+    },
+    {
+      "id": "ct_45",
+      "name": "Ana Luiza Saraiva",
+      "email": "ana-luiza.saraiva@souza-santos-e-albuquerque.com.br",
+      "phone": "(55) 3573-1498",
+      "jobTitle": "Senior Diretivas Técnico",
+      "companyId": "cmp_28",
+      "ownerId": "usr_5",
+      "createdAt": "2025-09-26T16:25:51.098Z"
+    },
+    {
+      "id": "ct_46",
+      "name": "Samuel Saraiva",
+      "email": "samuel.saraiva@moreira-e-associados.com.br",
+      "phone": "(91) 01541-8510",
+      "jobTitle": "Distrito Grupo Engenheiro",
+      "companyId": "cmp_33",
+      "ownerId": "usr_5",
+      "createdAt": "2026-03-06T13:32:54.109Z"
+    },
+    {
+      "id": "ct_47",
+      "name": "Karla Franco",
+      "email": "karla.franco@xavier-pereira.com.br",
+      "phone": "(65) 32123-9186",
+      "jobTitle": "Nacional Métricas Desenvolvedor",
+      "companyId": "cmp_39",
+      "ownerId": "usr_2",
+      "createdAt": "2025-09-19T08:54:50.396Z"
+    },
+    {
+      "id": "ct_48",
+      "name": "Eduarda Saraiva",
+      "email": "eduarda.saraiva@moreira-souza.com.br",
+      "phone": "(70) 6012-5483",
+      "jobTitle": "Global Paradigma Engenheiro",
+      "companyId": "cmp_2",
+      "ownerId": "usr_3",
+      "createdAt": "2025-10-03T08:45:37.527Z"
+    },
+    {
+      "id": "ct_49",
+      "name": "Tertuliano Costa",
+      "email": "tertuliano.costa@costa-xavier-e-albuquerque.com.br",
+      "phone": "(18) 39634-6545",
+      "jobTitle": "Líder Mobilidade Coordenador",
+      "companyId": "cmp_31",
+      "ownerId": "usr_4",
+      "createdAt": "2025-09-01T20:01:13.553Z"
+    },
+    {
+      "id": "ct_50",
+      "name": "Benício Souza",
+      "email": "benicio.souza@moreira-comercio.com.br",
+      "phone": "(36) 5506-9100",
+      "jobTitle": "Avançar Web Orquestrador",
+      "companyId": "cmp_30",
+      "ownerId": "usr_3",
+      "createdAt": "2026-09-20T09:06:32.138Z"
+    },
+    {
+      "id": "ct_51",
+      "name": "Sarah Moreira",
+      "email": "sarah.moreira@souza-batista.com.br",
+      "phone": "(73) 11909-6709",
+      "jobTitle": "Nacional Criativo Arquiteto",
+      "companyId": "cmp_12",
+      "ownerId": "usr_2",
+      "createdAt": "2026-07-18T01:18:32.581Z"
+    },
+    {
+      "id": "ct_52",
+      "name": "Noah Albuquerque",
+      "email": "noah.albuquerque@moreira-ltda.com.br",
+      "phone": "(88) 0219-6372",
+      "jobTitle": "International Soluções Planejador",
+      "companyId": "cmp_25",
+      "ownerId": "usr_2",
+      "createdAt": "2025-11-08T01:19:09.817Z"
+    },
+    {
+      "id": "ct_53",
+      "name": "Cauã Moreira",
+      "email": "caua.moreira@martins-melo.com.br",
+      "phone": "(34) 55133-5318",
+      "jobTitle": "Global Configuration Assistente",
+      "companyId": "cmp_20",
+      "ownerId": "usr_5",
+      "createdAt": "2026-06-22T21:43:53.482Z"
+    },
+    {
+      "id": "ct_54",
+      "name": "Maitê Braga",
+      "email": "maite.braga@saraiva-eireli.com.br",
+      "phone": "(06) 4417-5328",
+      "jobTitle": "Central Aplicações Planejador",
+      "companyId": "cmp_14",
+      "ownerId": "usr_4",
+      "createdAt": "2026-02-15T01:35:33.329Z"
+    },
+    {
+      "id": "ct_55",
+      "name": "Lorenzo Costa",
+      "email": "lorenzo.costa@pereira-batista-e-carvalho.com.br",
+      "phone": "(83) 67037-9109",
+      "jobTitle": "Avançar Contas Supervisor",
+      "companyId": "cmp_5",
+      "ownerId": "usr_5",
+      "createdAt": "2026-10-27T11:41:13.442Z"
+    },
+    {
+      "id": "ct_56",
+      "name": "Pietro Xavier",
+      "email": "pietro.xavier@souza-batista.com.br",
+      "phone": "(77) 90366-1872",
+      "jobTitle": "Futuro Usabilidade Atentende",
+      "companyId": "cmp_12",
+      "ownerId": "usr_4",
+      "createdAt": "2026-02-21T21:46:08.650Z"
+    },
+    {
+      "id": "ct_57",
+      "name": "Yasmin Moraes",
+      "email": "yasmin.moraes@souza-batista.com.br",
+      "phone": "(46) 3605-1439",
+      "jobTitle": "International Prestação de contas Representante",
+      "companyId": "cmp_12",
+      "ownerId": "usr_5",
+      "createdAt": "2025-10-04T01:44:22.942Z"
+    },
+    {
+      "id": "ct_58",
+      "name": "Ladislau Martins",
+      "email": "ladislau.martins@braga-s-a.com.br",
+      "phone": "(43) 42686-1006",
+      "jobTitle": "Central Contas Especialista",
+      "companyId": "cmp_22",
+      "ownerId": "usr_5",
+      "createdAt": "2026-02-25T07:43:17.873Z"
+    },
+    {
+      "id": "ct_59",
+      "name": "Miguel Melo",
+      "email": "miguel.melo@souza-santos-e-albuquerque.com.br",
+      "phone": "(83) 8691-5096",
+      "jobTitle": "Regional Implementation Engenheiro",
+      "companyId": "cmp_28",
+      "ownerId": "usr_4",
+      "createdAt": "2025-12-01T15:06:25.096Z"
+    },
+    {
+      "id": "ct_60",
+      "name": "Júlio Oliveira",
+      "email": "julio.oliveira@xavier-albuquerque-e-souza.com.br",
+      "phone": "(12) 11133-9656",
+      "jobTitle": "Investidor Qualidade Facilitador",
+      "companyId": "cmp_24",
+      "ownerId": "usr_3",
+      "createdAt": "2025-06-08T00:31:01.511Z"
+    },
+    {
+      "id": "ct_61",
+      "name": "Maria Saraiva",
+      "email": "maria.saraiva@braga-comercio.com.br",
+      "phone": "(07) 25941-5778",
+      "jobTitle": "Produto Métricas Coordenador",
+      "companyId": "cmp_15",
+      "ownerId": "usr_3",
+      "createdAt": "2026-08-15T15:10:23.405Z"
+    },
+    {
+      "id": "ct_62",
+      "name": "Matheus Reis",
+      "email": "matheus.reis@souza-xavier.com.br",
+      "phone": "(80) 3835-4912",
+      "jobTitle": "Líder Intranet Supervisor",
+      "companyId": "cmp_38",
+      "ownerId": "usr_3",
+      "createdAt": "2025-08-25T12:50:10.802Z"
+    },
+    {
+      "id": "ct_63",
+      "name": "Warley Nogueira",
+      "email": "warley.nogueira@braga-moreira-e-moraes.com.br",
+      "phone": "(75) 13654-3438",
+      "jobTitle": "Distrito Divisão Representante",
+      "companyId": "cmp_17",
+      "ownerId": "usr_4",
+      "createdAt": "2025-06-13T00:10:19.435Z"
+    },
+    {
+      "id": "ct_64",
+      "name": "Bruna Carvalho",
+      "email": "bruna.carvalho@martins-oliveira-e-oliveira.com.br",
+      "phone": "(72) 8821-4389",
+      "jobTitle": "Avançar Mercados Administrador",
+      "companyId": "cmp_21",
+      "ownerId": "usr_5",
+      "createdAt": "2026-01-13T06:19:37.821Z"
+    },
+    {
+      "id": "ct_65",
+      "name": "João Pedro Pereira",
+      "email": "joao-pedro.pereira@braga-silva-e-carvalho.com.br",
+      "phone": "(28) 15565-7847",
+      "jobTitle": "Investidor Táticas Produtor",
+      "companyId": "cmp_26",
+      "ownerId": "usr_3",
+      "createdAt": "2026-03-18T16:26:18.371Z"
+    },
+    {
+      "id": "ct_66",
+      "name": "Núbia Xavier",
+      "email": "nubia.xavier@braga-moreira-e-moraes.com.br",
+      "phone": "(92) 98982-5920",
+      "jobTitle": "Futuro Qualidade Administrador",
+      "companyId": "cmp_17",
+      "ownerId": "usr_3",
+      "createdAt": "2025-07-31T15:55:14.352Z"
+    },
+    {
+      "id": "ct_67",
+      "name": "Maria Júlia Batista",
+      "email": "maria-julia.batista@oliveira-costa.com.br",
+      "phone": "(39) 37797-3074",
+      "jobTitle": "Investidor Táticas Produtor",
+      "companyId": "cmp_32",
+      "ownerId": "usr_2",
+      "createdAt": "2025-07-18T12:38:24.011Z"
+    },
+    {
+      "id": "ct_68",
+      "name": "Isadora Nogueira",
+      "email": "isadora.nogueira@oliveira-costa.com.br",
+      "phone": "(73) 0356-8840",
+      "jobTitle": "Global Prestação de contas Executivo",
+      "companyId": "cmp_32",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-26T19:27:50.617Z"
+    },
+    {
+      "id": "ct_69",
+      "name": "Vicente Braga",
+      "email": "vicente.braga@martins-oliveira-e-oliveira.com.br",
+      "phone": "(05) 88496-8244",
+      "jobTitle": "International Branding Representante",
+      "companyId": "cmp_21",
+      "ownerId": "usr_2",
+      "createdAt": "2025-06-16T21:13:30.122Z"
+    },
+    {
+      "id": "ct_70",
+      "name": "Luiza Barros",
+      "email": "luiza.barros@oliveira-costa.com.br",
+      "phone": "(15) 11690-0059",
+      "jobTitle": "Líder Infraestrutura Designer",
+      "companyId": "cmp_32",
+      "ownerId": "usr_3",
+      "createdAt": "2026-01-21T09:59:52.541Z"
+    },
+    {
+      "id": "ct_71",
+      "name": "Antônio Braga",
+      "email": "antonio.braga@moraes-santos.com.br",
+      "phone": "(02) 4992-8979",
+      "jobTitle": "Central Implementation Planejador",
+      "companyId": "cmp_27",
+      "ownerId": "usr_2",
+      "createdAt": "2025-06-18T18:41:43.368Z"
+    },
+    {
+      "id": "ct_72",
+      "name": "Liz Costa",
+      "email": "liz.costa@xavier-pereira-e-franco.com.br",
+      "phone": "(96) 5762-5751",
+      "jobTitle": "Dinâmico Pesquisar Atentende",
+      "companyId": "cmp_18",
+      "ownerId": "usr_5",
+      "createdAt": "2025-08-14T06:28:44.965Z"
+    },
+    {
+      "id": "ct_73",
+      "name": "Melissa Carvalho",
+      "email": "melissa.carvalho@franco-melo.com.br",
+      "phone": "(58) 91264-0309",
+      "jobTitle": "Interno Aplicações Executivo",
+      "companyId": "cmp_19",
+      "ownerId": "usr_2",
+      "createdAt": "2025-09-01T15:40:25.592Z"
+    },
+    {
+      "id": "ct_74",
+      "name": "Cecília Santos",
+      "email": "cecilia.santos@moreira-comercio.com.br",
+      "phone": "(17) 43321-8322",
+      "jobTitle": "Líder Resposta Desenvolvedor",
+      "companyId": "cmp_30",
+      "ownerId": "usr_2",
+      "createdAt": "2026-05-13T11:43:51.359Z"
+    },
+    {
+      "id": "ct_75",
+      "name": "Beatriz Pereira",
+      "email": "beatriz.pereira@braga-comercio.com.br",
+      "phone": "(91) 0632-7019",
+      "jobTitle": "Dinâmico Métricas Administrador",
+      "companyId": "cmp_15",
+      "ownerId": "usr_2",
+      "createdAt": "2025-06-22T18:24:31.285Z"
+    },
+    {
+      "id": "ct_76",
+      "name": "João Miguel Reis",
+      "email": "joao-miguel.reis@saraiva-eireli.com.br",
+      "phone": "(73) 73862-1805",
+      "jobTitle": "Distrito Paradigma Desenvolvedor",
+      "companyId": "cmp_14",
+      "ownerId": "usr_4",
+      "createdAt": "2025-09-27T06:44:11.545Z"
+    },
+    {
+      "id": "ct_77",
+      "name": "Benício Martins",
+      "email": "benicio.martins@martins-oliveira-e-oliveira.com.br",
+      "phone": "(20) 0246-4350",
+      "jobTitle": "Senior Mobilidade Planejador",
+      "companyId": "cmp_21",
+      "ownerId": "usr_4",
+      "createdAt": "2026-02-07T23:01:49.119Z"
+    },
+    {
+      "id": "ct_78",
+      "name": "Enzo Gabriel Barros",
+      "email": "enzo-gabriel.barros@silva-s-a.com.br",
+      "phone": "(43) 3121-8021",
+      "jobTitle": "Regional Programa Assistente",
+      "companyId": "cmp_3",
+      "ownerId": "usr_4",
+      "createdAt": "2026-09-30T19:12:43.678Z"
+    },
+    {
+      "id": "ct_79",
+      "name": "Ana Clara Barros",
+      "email": "ana-clara.barros@xavier-albuquerque-e-souza.com.br",
+      "phone": "(95) 98731-4525",
+      "jobTitle": "Líder Táticas Produtor",
+      "companyId": "cmp_24",
+      "ownerId": "usr_4",
+      "createdAt": "2026-02-18T18:04:47.771Z"
+    },
+    {
+      "id": "ct_80",
+      "name": "Maria Alice Xavier",
+      "email": "maria-alice.xavier@santos-s-a.com.br",
+      "phone": "(63) 0402-0800",
+      "jobTitle": "Global Fatores Assistente",
+      "companyId": "cmp_34",
+      "ownerId": "usr_4",
+      "createdAt": "2026-10-14T14:09:40.192Z"
+    },
+    {
+      "id": "ct_81",
+      "name": "Isabella Souza",
+      "email": "isabella.souza@xavier-pereira.com.br",
+      "phone": "(93) 11851-6630",
+      "jobTitle": "Líder Dados Gerente",
+      "companyId": "cmp_39",
+      "ownerId": "usr_2",
+      "createdAt": "2025-11-01T11:25:56.496Z"
+    },
+    {
+      "id": "ct_82",
+      "name": "Marcos Santos",
+      "email": "marcos.santos@costa-barros.com.br",
+      "phone": "(96) 8007-5042",
+      "jobTitle": "Central Intranet Desenvolvedor",
+      "companyId": "cmp_36",
+      "ownerId": "usr_5",
+      "createdAt": "2025-12-26T14:00:15.665Z"
+    },
+    {
+      "id": "ct_83",
+      "name": "Salvador Melo",
+      "email": "salvador.melo@martins-melo.com.br",
+      "phone": "(03) 08107-4028",
+      "jobTitle": "Direto Otimização Supervisor",
+      "companyId": "cmp_20",
+      "ownerId": "usr_3",
+      "createdAt": "2025-08-14T16:13:40.468Z"
+    },
+    {
+      "id": "ct_84",
+      "name": "Ana Luiza Batista",
+      "email": "ana-luiza.batista@nogueira-barros.com.br",
+      "phone": "(52) 3053-7399",
+      "jobTitle": "Legado Infraestrutura Policial",
+      "companyId": "cmp_7",
+      "ownerId": "usr_2",
+      "createdAt": "2025-12-04T22:30:18.528Z"
+    },
+    {
+      "id": "ct_85",
+      "name": "Lorenzo Carvalho",
+      "email": "lorenzo.carvalho@pereira-ltda.com.br",
+      "phone": "(99) 63222-2253",
+      "jobTitle": "Regional Programa Administrador",
+      "companyId": "cmp_9",
+      "ownerId": "usr_5",
+      "createdAt": "2025-07-01T04:32:42.933Z"
+    },
+    {
+      "id": "ct_86",
+      "name": "Sophia Silva",
+      "email": "sophia.silva@braga-moreira-e-moraes.com.br",
+      "phone": "(71) 6819-6504",
+      "jobTitle": "International Paradigma Desenvolvedor",
+      "companyId": "cmp_17",
+      "ownerId": "usr_3",
+      "createdAt": "2026-04-04T12:45:34.504Z"
+    },
+    {
+      "id": "ct_87",
+      "name": "Marcela Oliveira",
+      "email": "marcela.oliveira@moreira-ltda.com.br",
+      "phone": "(00) 75879-8850",
+      "jobTitle": "Humano Pesquisar Supervisor",
+      "companyId": "cmp_25",
+      "ownerId": "usr_5",
+      "createdAt": "2026-10-11T16:18:18.426Z"
+    },
+    {
+      "id": "ct_88",
+      "name": "Isabella Braga",
+      "email": "isabella.braga@santos-ltda.com.br",
+      "phone": "(70) 98677-7708",
+      "jobTitle": "Principal Comunicações Administrador",
+      "companyId": "cmp_10",
+      "ownerId": "usr_4",
+      "createdAt": "2026-07-31T22:24:19.037Z"
+    },
+    {
+      "id": "ct_89",
+      "name": "Samuel Costa",
+      "email": "samuel.costa@pereira-ltda.com.br",
+      "phone": "(53) 80442-9922",
+      "jobTitle": "Central Otimização Agente",
+      "companyId": "cmp_9",
+      "ownerId": "usr_5",
+      "createdAt": "2025-08-14T10:37:14.009Z"
+    },
+    {
+      "id": "ct_90",
+      "name": "Marli Costa",
+      "email": "marli.costa@costa-barros.com.br",
+      "phone": "(69) 53832-5874",
+      "jobTitle": "Humano Pesquisar Representante",
+      "companyId": "cmp_36",
+      "ownerId": "usr_2",
+      "createdAt": "2026-04-19T19:23:33.096Z"
+    },
+    {
+      "id": "ct_91",
+      "name": "Pedro Martins",
+      "email": "pedro.martins@nogueira-barros.com.br",
+      "phone": "(42) 5612-8831",
+      "jobTitle": "Produto Funcionalidade Orquestrador",
+      "companyId": "cmp_7",
+      "ownerId": "usr_3",
+      "createdAt": "2025-06-18T12:58:54.743Z"
+    },
+    {
+      "id": "ct_92",
+      "name": "Clara Carvalho",
+      "email": "clara.carvalho@braga-silva-e-carvalho.com.br",
+      "phone": "(28) 1491-9651",
+      "jobTitle": "Avançar Usabilidade Orquestrador",
+      "companyId": "cmp_26",
+      "ownerId": "usr_4",
+      "createdAt": "2025-06-04T00:39:59.741Z"
+    },
+    {
+      "id": "ct_93",
+      "name": "Pietro Nogueira",
+      "email": "pietro.nogueira@costa-xavier-e-albuquerque.com.br",
+      "phone": "(31) 57911-4660",
+      "jobTitle": "International Funcionalidade Facilitador",
+      "companyId": "cmp_31",
+      "ownerId": "usr_5",
+      "createdAt": "2026-07-19T12:39:10.888Z"
+    },
+    {
+      "id": "ct_94",
+      "name": "Felícia Nogueira",
+      "email": "felicia.nogueira@pereira-batista-e-carvalho.com.br",
+      "phone": "(69) 96172-2375",
+      "jobTitle": "International Infraestrutura Técnico",
+      "companyId": "cmp_5",
+      "ownerId": "usr_2",
+      "createdAt": "2025-07-03T19:10:51.026Z"
+    },
+    {
+      "id": "ct_95",
+      "name": "Lorenzo Moraes",
+      "email": "lorenzo.moraes@costa-barros.com.br",
+      "phone": "(45) 9720-8563",
+      "jobTitle": "Cliente Métricas Engenheiro",
+      "companyId": "cmp_36",
+      "ownerId": "usr_3",
+      "createdAt": "2026-08-23T04:26:44.238Z"
+    },
+    {
+      "id": "ct_96",
+      "name": "Vitória Santos",
+      "email": "vitoria.santos@moreira-ltda.com.br",
+      "phone": "(82) 02632-6414",
+      "jobTitle": "Distrito Diretivas Diretor",
+      "companyId": "cmp_25",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-20T19:30:04.749Z"
+    },
+    {
+      "id": "ct_97",
+      "name": "Marcos Oliveira",
+      "email": "marcos.oliveira@saraiva-eireli.com.br",
+      "phone": "(95) 56294-6506",
+      "jobTitle": "Humano Qualidade Designer",
+      "companyId": "cmp_14",
+      "ownerId": "usr_2",
+      "createdAt": "2026-07-16T05:00:57.950Z"
+    },
+    {
+      "id": "ct_98",
+      "name": "Alícia Xavier",
+      "email": "alicia.xavier@oliveira-costa.com.br",
+      "phone": "(36) 5657-9417",
+      "jobTitle": "Distrito Infraestrutura Representante",
+      "companyId": "cmp_32",
+      "ownerId": "usr_5",
+      "createdAt": "2026-01-31T02:24:35.136Z"
+    },
+    {
+      "id": "ct_99",
+      "name": "Marina Costa",
+      "email": "marina.costa@souza-batista.com.br",
+      "phone": "(48) 97345-7708",
+      "jobTitle": "Distrito Segurança Especialista",
+      "companyId": "cmp_12",
+      "ownerId": "usr_5",
+      "createdAt": "2026-10-31T19:23:42.862Z"
+    },
+    {
+      "id": "ct_100",
+      "name": "Hugo Pereira",
+      "email": "hugo.pereira@costa-xavier-e-albuquerque.com.br",
+      "phone": "(77) 82327-0126",
+      "jobTitle": "International Intranet Designer",
+      "companyId": "cmp_31",
+      "ownerId": "usr_3",
+      "createdAt": "2025-11-24T12:05:37.831Z"
+    },
+    {
+      "id": "ct_101",
+      "name": "Enzo Gabriel Albuquerque",
+      "email": "enzo-gabriel.albuquerque@xavier-albuquerque-e-souza.com.br",
+      "phone": "(13) 72503-5455",
+      "jobTitle": "Distrito Dados Policial",
+      "companyId": "cmp_24",
+      "ownerId": "usr_4",
+      "createdAt": "2026-10-12T12:40:31.320Z"
+    },
+    {
+      "id": "ct_102",
+      "name": "Miguel Reis",
+      "email": "miguel.reis@braga-comercio.com.br",
+      "phone": "(22) 4984-1299",
+      "jobTitle": "Investidor Identidade Atentende",
+      "companyId": "cmp_15",
+      "ownerId": "usr_3",
+      "createdAt": "2025-09-21T19:52:28.580Z"
+    },
+    {
+      "id": "ct_103",
+      "name": "Frederico Albuquerque",
+      "email": "frederico.albuquerque@santos-s-a.com.br",
+      "phone": "(85) 09863-7267",
+      "jobTitle": "Cliente Soluções Supervisor",
+      "companyId": "cmp_34",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-05T13:37:00.604Z"
+    },
+    {
+      "id": "ct_104",
+      "name": "Norberto Martins",
+      "email": "norberto.martins@souza-santos-e-albuquerque.com.br",
+      "phone": "(60) 4503-9757",
+      "jobTitle": "Humano Operações Consultor",
+      "companyId": "cmp_28",
+      "ownerId": "usr_2",
+      "createdAt": "2026-08-26T06:10:13.878Z"
+    },
+    {
+      "id": "ct_105",
+      "name": "César Oliveira",
+      "email": "cesar.oliveira@martins-melo.com.br",
+      "phone": "(15) 63569-0531",
+      "jobTitle": "Distrito Mercados Técnico",
+      "companyId": "cmp_20",
+      "ownerId": "usr_3",
+      "createdAt": "2026-04-27T21:47:35.322Z"
+    },
+    {
+      "id": "ct_106",
+      "name": "Morgana Moreira",
+      "email": "morgana.moreira@oliveira-nogueira.com.br",
+      "phone": "(91) 0054-3968",
+      "jobTitle": "Principal Programa Diretor",
+      "companyId": "cmp_8",
+      "ownerId": "usr_4",
+      "createdAt": "2026-10-06T19:28:28.901Z"
+    },
+    {
+      "id": "ct_107",
+      "name": "Emanuel Albuquerque",
+      "email": "emanuel.albuquerque@franco-melo.com.br",
+      "phone": "(78) 3332-9918",
+      "jobTitle": "Nacional Aplicações Analista",
+      "companyId": "cmp_19",
+      "ownerId": "usr_2",
+      "createdAt": "2025-08-24T15:58:10.938Z"
+    },
+    {
+      "id": "ct_108",
+      "name": "Heloísa Reis",
+      "email": "heloisa.reis@reis-costa.com.br",
+      "phone": "(48) 12228-5422",
+      "jobTitle": "Legado Diretivas Coordenador",
+      "companyId": "cmp_37",
+      "ownerId": "usr_2",
+      "createdAt": "2026-01-13T13:14:28.166Z"
+    },
+    {
+      "id": "ct_109",
+      "name": "Calebe Macedo",
+      "email": "calebe.macedo@franco-melo.com.br",
+      "phone": "(92) 77721-7083",
+      "jobTitle": "Regional Operações Representante",
+      "companyId": "cmp_19",
+      "ownerId": "usr_4",
+      "createdAt": "2026-07-08T10:37:32.061Z"
+    },
+    {
+      "id": "ct_110",
+      "name": "Matheus Moraes",
+      "email": "matheus.moraes@costa-xavier-e-albuquerque.com.br",
+      "phone": "(46) 50456-8091",
+      "jobTitle": "Produto Resposta Executivo",
+      "companyId": "cmp_31",
+      "ownerId": "usr_3",
+      "createdAt": "2025-10-31T01:54:51.659Z"
+    },
+    {
+      "id": "ct_111",
+      "name": "Carla Braga",
+      "email": "carla.braga@melo-barros-e-silva.com.br",
+      "phone": "(40) 8226-5790",
+      "jobTitle": "Produto Infraestrutura Estrategista",
+      "companyId": "cmp_16",
+      "ownerId": "usr_5",
+      "createdAt": "2025-11-08T23:39:30.827Z"
+    },
+    {
+      "id": "ct_112",
+      "name": "Janaína Souza",
+      "email": "janaina.souza@melo-barros-e-silva.com.br",
+      "phone": "(31) 2495-4461",
+      "jobTitle": "Humano Implementation Gerente",
+      "companyId": "cmp_16",
+      "ownerId": "usr_4",
+      "createdAt": "2025-06-01T09:52:19.997Z"
+    },
+    {
+      "id": "ct_113",
+      "name": "Suélen Oliveira",
+      "email": "suelen.oliveira@xavier-pereira.com.br",
+      "phone": "(49) 0736-2986",
+      "jobTitle": "International Aplicações Técnico",
+      "companyId": "cmp_39",
+      "ownerId": "usr_2",
+      "createdAt": "2026-09-09T18:07:15.989Z"
+    },
+    {
+      "id": "ct_114",
+      "name": "Matheus Pereira",
+      "email": "matheus.pereira@moreira-ltda.com.br",
+      "phone": "(42) 09476-1833",
+      "jobTitle": "International Assurance Policial",
+      "companyId": "cmp_25",
+      "ownerId": "usr_4",
+      "createdAt": "2026-01-28T22:02:57.590Z"
+    },
+    {
+      "id": "ct_115",
+      "name": "Suélen Albuquerque",
+      "email": "suelen.albuquerque@albuquerque-barros.com.br",
+      "phone": "(35) 2877-8638",
+      "jobTitle": "Direto Intranet Executivo",
+      "companyId": "cmp_29",
+      "ownerId": "usr_3",
+      "createdAt": "2026-08-10T23:27:32.154Z"
+    },
+    {
+      "id": "ct_116",
+      "name": "Maria Eduarda Braga",
+      "email": "maria-eduarda.braga@saraiva-eireli.com.br",
+      "phone": "(77) 08342-4207",
+      "jobTitle": "International Programa Especialista",
+      "companyId": "cmp_14",
+      "ownerId": "usr_5",
+      "createdAt": "2026-09-02T17:55:19.022Z"
+    },
+    {
+      "id": "ct_117",
+      "name": "Marli Costa",
+      "email": "marli.costa@moreira-ltda.com.br",
+      "phone": "(95) 3681-8283",
+      "jobTitle": "Humano Assurance Administrador",
+      "companyId": "cmp_25",
+      "ownerId": "usr_3",
+      "createdAt": "2026-05-21T08:47:32.897Z"
+    },
+    {
+      "id": "ct_118",
+      "name": "Márcia Braga",
+      "email": "marcia.braga@silva-s-a.com.br",
+      "phone": "(55) 40101-3438",
+      "jobTitle": "Avançar Marca Desenvolvedor",
+      "companyId": "cmp_3",
+      "ownerId": "usr_5",
+      "createdAt": "2025-11-08T13:58:05.580Z"
+    },
+    {
+      "id": "ct_119",
+      "name": "Luiza Martins",
+      "email": "luiza.martins@souza-batista.com.br",
+      "phone": "(29) 4386-5276",
+      "jobTitle": "Líder Web Agente",
+      "companyId": "cmp_12",
+      "ownerId": "usr_5",
+      "createdAt": "2026-08-13T20:17:54.414Z"
+    },
+    {
+      "id": "ct_120",
+      "name": "Karla Santos",
+      "email": "karla.santos@souza-santos-e-albuquerque.com.br",
+      "phone": "(74) 0734-1779",
+      "jobTitle": "Investidor Paradigma Designer",
+      "companyId": "cmp_28",
+      "ownerId": "usr_4",
+      "createdAt": "2025-07-10T22:40:08.978Z"
+    },
+    {
+      "id": "ct_121",
+      "name": "Meire Xavier",
+      "email": "meire.xavier@braga-moreira-e-moraes.com.br",
+      "phone": "(66) 70282-5881",
+      "jobTitle": "Humano Intranet Especialista",
+      "companyId": "cmp_17",
+      "ownerId": "usr_3",
+      "createdAt": "2026-09-02T07:30:07.397Z"
+    },
+    {
+      "id": "ct_122",
+      "name": "Maria Helena Costa",
+      "email": "maria-helena.costa@martins-oliveira-e-oliveira.com.br",
+      "phone": "(04) 9228-6699",
+      "jobTitle": "Direto Diretivas Associado",
+      "companyId": "cmp_21",
+      "ownerId": "usr_4",
+      "createdAt": "2026-11-11T09:35:42.652Z"
+    },
+    {
+      "id": "ct_123",
+      "name": "Henrique Moreira",
+      "email": "henrique.moreira@braga-ltda.com.br",
+      "phone": "(28) 94275-3676",
+      "jobTitle": "Central Web Produtor",
+      "companyId": "cmp_11",
+      "ownerId": "usr_2",
+      "createdAt": "2025-09-23T14:45:54.654Z"
+    },
+    {
+      "id": "ct_124",
+      "name": "Tertuliano Souza",
+      "email": "tertuliano.souza@moreira-e-associados.com.br",
+      "phone": "(15) 7453-7299",
+      "jobTitle": "Senior Marketing Atentende",
+      "companyId": "cmp_33",
+      "ownerId": "usr_5",
+      "createdAt": "2026-07-31T19:57:04.995Z"
+    },
+    {
+      "id": "ct_125",
+      "name": "Anthony Franco",
+      "email": "anthony.franco@pereira-ltda.com.br",
+      "phone": "(84) 24927-6602",
+      "jobTitle": "Global Identidade Associado",
+      "companyId": "cmp_9",
+      "ownerId": "usr_5",
+      "createdAt": "2026-04-26T12:17:29.107Z"
+    },
+    {
+      "id": "ct_126",
+      "name": "Suélen Macedo",
+      "email": "suelen.macedo@costa-barros.com.br",
+      "phone": "(75) 7575-7619",
+      "jobTitle": "International Usabilidade Facilitador",
+      "companyId": "cmp_36",
+      "ownerId": "usr_4",
+      "createdAt": "2026-03-11T17:11:14.138Z"
+    },
+    {
+      "id": "ct_127",
+      "name": "Hélio Albuquerque",
+      "email": "helio.albuquerque@barros-ltda.com.br",
+      "phone": "(49) 0002-0354",
+      "jobTitle": "Humano Contas Supervisor",
+      "companyId": "cmp_1",
+      "ownerId": "usr_5",
+      "createdAt": "2026-10-07T20:28:15.229Z"
+    },
+    {
+      "id": "ct_128",
+      "name": "Margarida Silva",
+      "email": "margarida.silva@moreira-e-associados.com.br",
+      "phone": "(38) 14947-0527",
+      "jobTitle": "Cliente Programa Produtor",
+      "companyId": "cmp_33",
+      "ownerId": "usr_3",
+      "createdAt": "2026-08-07T21:31:35.938Z"
+    },
+    {
+      "id": "ct_129",
+      "name": "João Pedro Braga",
+      "email": "joao-pedro.braga@santos-ltda.com.br",
+      "phone": "(44) 6649-8271",
+      "jobTitle": "Corporativo Infraestrutura Arquiteto",
+      "companyId": "cmp_10",
+      "ownerId": "usr_5",
+      "createdAt": "2026-02-23T11:23:53.890Z"
+    },
+    {
+      "id": "ct_130",
+      "name": "Elisa Barros",
+      "email": "elisa.barros@silva-s-a.com.br",
+      "phone": "(61) 01171-8388",
+      "jobTitle": "Futuro Intranet Policial",
+      "companyId": "cmp_3",
+      "ownerId": "usr_5",
+      "createdAt": "2026-09-28T06:56:19.987Z"
+    },
+    {
+      "id": "ct_131",
+      "name": "Lorenzo Pereira",
+      "email": "lorenzo.pereira@santos-s-a.com.br",
+      "phone": "(23) 0675-7357",
+      "jobTitle": "Humano Criativo Estrategista",
+      "companyId": "cmp_35",
+      "ownerId": "usr_2",
+      "createdAt": "2025-11-08T06:18:23.784Z"
+    },
+    {
+      "id": "ct_132",
+      "name": "Nataniel Costa",
+      "email": "nataniel.costa@braga-silva-e-braga.com.br",
+      "phone": "(59) 64877-5085",
+      "jobTitle": "Cliente Branding Diretor",
+      "companyId": "cmp_13",
+      "ownerId": "usr_2",
+      "createdAt": "2025-07-08T02:26:35.686Z"
+    },
+    {
+      "id": "ct_133",
+      "name": "Ricardo Costa",
+      "email": "ricardo.costa@barros-ltda.com.br",
+      "phone": "(73) 9762-4182",
+      "jobTitle": "Produto Intranet Agente",
+      "companyId": "cmp_1",
+      "ownerId": "usr_2",
+      "createdAt": "2025-08-15T16:37:02.193Z"
+    },
+    {
+      "id": "ct_134",
+      "name": "Pedro Henrique Barros",
+      "email": "pedro-henrique.barros@braga-silva-e-braga.com.br",
+      "phone": "(85) 45510-1198",
+      "jobTitle": "Dinâmico Pesquisar Estrategista",
+      "companyId": "cmp_13",
+      "ownerId": "usr_5",
+      "createdAt": "2026-05-01T18:24:39.669Z"
+    },
+    {
+      "id": "ct_135",
+      "name": "Eloá Costa",
+      "email": "eloa.costa@oliveira-nogueira.com.br",
+      "phone": "(93) 50367-8235",
+      "jobTitle": "Avançar Métricas Consultor",
+      "companyId": "cmp_8",
+      "ownerId": "usr_3",
+      "createdAt": "2025-09-25T18:26:27.838Z"
+    },
+    {
+      "id": "ct_136",
+      "name": "Lorena Nogueira",
+      "email": "lorena.nogueira@saraiva-eireli.com.br",
+      "phone": "(04) 0758-4616",
+      "jobTitle": "Senior Branding Facilitador",
+      "companyId": "cmp_14",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-29T18:41:03.288Z"
+    },
+    {
+      "id": "ct_137",
+      "name": "Sarah Carvalho",
+      "email": "sarah.carvalho@moreira-ltda.com.br",
+      "phone": "(95) 6089-2414",
+      "jobTitle": "Regional Paradigma Estrategista",
+      "companyId": "cmp_25",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-14T01:56:16.015Z"
+    },
+    {
+      "id": "ct_138",
+      "name": "Sara Xavier",
+      "email": "sara.xavier@costa-barros.com.br",
+      "phone": "(41) 4249-4729",
+      "jobTitle": "Futuro Branding Agente",
+      "companyId": "cmp_36",
+      "ownerId": "usr_3",
+      "createdAt": "2026-03-03T21:18:36.030Z"
+    },
+    {
+      "id": "ct_139",
+      "name": "Isis Oliveira",
+      "email": "isis.oliveira@santos-s-a.com.br",
+      "phone": "(23) 49383-3147",
+      "jobTitle": "Chefe Implementação Desenvolvedor",
+      "companyId": "cmp_34",
+      "ownerId": "usr_3",
+      "createdAt": "2026-08-18T23:39:50.894Z"
+    },
+    {
+      "id": "ct_140",
+      "name": "Rebeca Melo",
+      "email": "rebeca.melo@oliveira-costa.com.br",
+      "phone": "(47) 53587-2965",
+      "jobTitle": "International Branding Facilitador",
+      "companyId": "cmp_32",
+      "ownerId": "usr_3",
+      "createdAt": "2025-10-06T18:16:29.383Z"
+    },
+    {
+      "id": "ct_141",
+      "name": "Eloá Souza",
+      "email": "eloa.souza@xavier-pereira.com.br",
+      "phone": "(51) 46697-4490",
+      "jobTitle": "Cliente Identidade Assistente",
+      "companyId": "cmp_39",
+      "ownerId": "usr_5",
+      "createdAt": "2026-09-30T14:06:02.286Z"
+    },
+    {
+      "id": "ct_142",
+      "name": "Emanuelly Batista",
+      "email": "emanuelly.batista@albuquerque-carvalho-e-saraiva.com.br",
+      "phone": "(56) 09916-9788",
+      "jobTitle": "Principal Marketing Produtor",
+      "companyId": "cmp_4",
+      "ownerId": "usr_3",
+      "createdAt": "2026-09-27T14:15:44.854Z"
+    },
+    {
+      "id": "ct_143",
+      "name": "Helena Santos",
+      "email": "helena.santos@pereira-batista-e-carvalho.com.br",
+      "phone": "(09) 5686-3653",
+      "jobTitle": "Principal Configuration Agente",
+      "companyId": "cmp_5",
+      "ownerId": "usr_2",
+      "createdAt": "2025-06-28T01:12:51.086Z"
+    },
+    {
+      "id": "ct_144",
+      "name": "Marcos Souza",
+      "email": "marcos.souza@nogueira-barros.com.br",
+      "phone": "(03) 36131-9014",
+      "jobTitle": "Chefe Funcionalidade Gerente",
+      "companyId": "cmp_7",
+      "ownerId": "usr_4",
+      "createdAt": "2026-04-10T01:33:22.204Z"
+    },
+    {
+      "id": "ct_145",
+      "name": "Núbia Santos",
+      "email": "nubia.santos@saraiva-eireli.com.br",
+      "phone": "(89) 5303-2176",
+      "jobTitle": "Chefe Grupo Engenheiro",
+      "companyId": "cmp_14",
+      "ownerId": "usr_2",
+      "createdAt": "2025-08-06T14:45:11.276Z"
+    },
+    {
+      "id": "ct_146",
+      "name": "Luiza Pereira",
+      "email": "luiza.pereira@moreira-comercio.com.br",
+      "phone": "(23) 4416-0093",
+      "jobTitle": "Futuro Dados Facilitador",
+      "companyId": "cmp_30",
+      "ownerId": "usr_3",
+      "createdAt": "2026-08-28T04:08:26.187Z"
+    },
+    {
+      "id": "ct_147",
+      "name": "Luiza Silva",
+      "email": "luiza.silva@moreira-souza.com.br",
+      "phone": "(33) 4415-9224",
+      "jobTitle": "Principal Operações Engenheiro",
+      "companyId": "cmp_2",
+      "ownerId": "usr_3",
+      "createdAt": "2026-01-11T00:06:05.929Z"
+    },
+    {
+      "id": "ct_148",
+      "name": "Lorena Oliveira",
+      "email": "lorena.oliveira@melo-barros-e-silva.com.br",
+      "phone": "(59) 33009-2466",
+      "jobTitle": "Líder Marketing Agente",
+      "companyId": "cmp_16",
+      "ownerId": "usr_2",
+      "createdAt": "2026-09-05T11:38:19.132Z"
+    },
+    {
+      "id": "ct_149",
+      "name": "Silas Costa",
+      "email": "silas.costa@xavier-pereira.com.br",
+      "phone": "(42) 36395-0815",
+      "jobTitle": "Principal Funcionalidade Diretor",
+      "companyId": "cmp_39",
+      "ownerId": "usr_3",
+      "createdAt": "2026-08-04T18:47:05.724Z"
+    },
+    {
+      "id": "ct_150",
+      "name": "Rafaela Santos",
+      "email": "rafaela.santos@oliveira-costa.com.br",
+      "phone": "(16) 8618-6406",
+      "jobTitle": "Chefe Diretivas Técnico",
+      "companyId": "cmp_32",
+      "ownerId": "usr_5",
+      "createdAt": "2025-06-26T21:41:29.784Z"
+    },
+    {
+      "id": "ct_151",
+      "name": "Raul Macedo",
+      "email": "raul.macedo@moreira-ltda.com.br",
+      "phone": "(98) 23088-9566",
+      "jobTitle": "Avançar Assurance Produtor",
+      "companyId": "cmp_25",
+      "ownerId": "usr_5",
+      "createdAt": "2025-06-04T17:26:23.292Z"
+    },
+    {
+      "id": "ct_152",
+      "name": "Vitor Moraes",
+      "email": "vitor.moraes@martins-melo.com.br",
+      "phone": "(65) 2288-5232",
+      "jobTitle": "Legado Pesquisar Representante",
+      "companyId": "cmp_20",
+      "ownerId": "usr_5",
+      "createdAt": "2026-07-12T14:44:34.611Z"
+    },
+    {
+      "id": "ct_153",
+      "name": "Pedro Nogueira",
+      "email": "pedro.nogueira@saraiva-eireli.com.br",
+      "phone": "(38) 98375-5639",
+      "jobTitle": "Direto Otimização Analista",
+      "companyId": "cmp_14",
+      "ownerId": "usr_4",
+      "createdAt": "2026-10-02T11:46:57.703Z"
+    },
+    {
+      "id": "ct_154",
+      "name": "Eduardo Silva",
+      "email": "eduardo.silva@braga-s-a.com.br",
+      "phone": "(00) 2480-4432",
+      "jobTitle": "Chefe Interações Produtor",
+      "companyId": "cmp_22",
+      "ownerId": "usr_5",
+      "createdAt": "2026-03-17T02:56:06.876Z"
+    },
+    {
+      "id": "ct_155",
+      "name": "Natália Xavier",
+      "email": "natalia.xavier@costa-barros.com.br",
+      "phone": "(01) 5844-6652",
+      "jobTitle": "Líder Comunicações Consultor",
+      "companyId": "cmp_36",
+      "ownerId": "usr_2",
+      "createdAt": "2026-08-03T01:43:31.396Z"
+    },
+    {
+      "id": "ct_156",
+      "name": "Cecília Xavier",
+      "email": "cecilia.xavier@melo-barros-e-silva.com.br",
+      "phone": "(17) 68033-4774",
+      "jobTitle": "Líder Métricas Atentende",
+      "companyId": "cmp_16",
+      "ownerId": "usr_2",
+      "createdAt": "2025-06-09T17:44:53.320Z"
+    },
+    {
+      "id": "ct_157",
+      "name": "Maria Luiza Santos",
+      "email": "maria-luiza.santos@pereira-ltda.com.br",
+      "phone": "(93) 81861-7470",
+      "jobTitle": "Global Identidade Representante",
+      "companyId": "cmp_9",
+      "ownerId": "usr_5",
+      "createdAt": "2025-09-05T04:58:39.904Z"
+    },
+    {
+      "id": "ct_158",
+      "name": "Laura Melo",
+      "email": "laura.melo@silva-s-a.com.br",
+      "phone": "(45) 7440-7785",
+      "jobTitle": "Nacional Aplicações Produtor",
+      "companyId": "cmp_3",
+      "ownerId": "usr_3",
+      "createdAt": "2025-12-08T09:47:01.269Z"
+    },
+    {
+      "id": "ct_159",
+      "name": "Nicolas Martins",
+      "email": "nicolas.martins@silva-s-a.com.br",
+      "phone": "(05) 5114-0190",
+      "jobTitle": "Investidor Grupo Produtor",
+      "companyId": "cmp_3",
+      "ownerId": "usr_5",
+      "createdAt": "2026-09-28T22:55:22.347Z"
+    },
+    {
+      "id": "ct_160",
+      "name": "Helena Oliveira",
+      "email": "helena.oliveira@moreira-e-associados.com.br",
+      "phone": "(50) 70995-8985",
+      "jobTitle": "Avançar Marketing Coordenador",
+      "companyId": "cmp_33",
+      "ownerId": "usr_5",
+      "createdAt": "2026-02-28T15:59:49.865Z"
+    },
+    {
+      "id": "ct_161",
+      "name": "Feliciano Moraes",
+      "email": "feliciano.moraes@braga-silva-e-braga.com.br",
+      "phone": "(51) 34106-1161",
+      "jobTitle": "Investidor Marca Administrador",
+      "companyId": "cmp_13",
+      "ownerId": "usr_3",
+      "createdAt": "2026-08-09T16:15:29.300Z"
+    },
+    {
+      "id": "ct_162",
+      "name": "Théo Xavier",
+      "email": "theo.xavier@albuquerque-carvalho-e-saraiva.com.br",
+      "phone": "(84) 4464-7685",
+      "jobTitle": "Direto Assurance Consultor",
+      "companyId": "cmp_4",
+      "ownerId": "usr_4",
+      "createdAt": "2026-03-30T19:12:50.948Z"
+    },
+    {
+      "id": "ct_163",
+      "name": "Lucca Carvalho",
+      "email": "lucca.carvalho@franco-melo.com.br",
+      "phone": "(30) 05448-3108",
+      "jobTitle": "Futuro Qualidade Executivo",
+      "companyId": "cmp_19",
+      "ownerId": "usr_5",
+      "createdAt": "2025-12-19T16:01:05.828Z"
+    },
+    {
+      "id": "ct_164",
+      "name": "Valentina Batista",
+      "email": "valentina.batista@braga-comercio.com.br",
+      "phone": "(26) 8479-6362",
+      "jobTitle": "Avançar Táticas Diretor",
+      "companyId": "cmp_15",
+      "ownerId": "usr_3",
+      "createdAt": "2026-09-04T07:37:45.526Z"
+    },
+    {
+      "id": "ct_165",
+      "name": "Carlos Franco",
+      "email": "carlos.franco@braga-silva-e-braga.com.br",
+      "phone": "(54) 17101-4558",
+      "jobTitle": "Futuro Otimização Designer",
+      "companyId": "cmp_13",
+      "ownerId": "usr_2",
+      "createdAt": "2025-08-14T19:24:57.889Z"
+    },
+    {
+      "id": "ct_166",
+      "name": "Eduarda Souza",
+      "email": "eduarda.souza@braga-silva-e-braga.com.br",
+      "phone": "(44) 9521-5987",
+      "jobTitle": "Regional Configuration Especialista",
+      "companyId": "cmp_13",
+      "ownerId": "usr_2",
+      "createdAt": "2025-07-13T08:45:32.223Z"
+    },
+    {
+      "id": "ct_167",
+      "name": "Vitória Santos",
+      "email": "vitoria.santos@souza-xavier.com.br",
+      "phone": "(08) 11351-6313",
+      "jobTitle": "Central Otimização Planejador",
+      "companyId": "cmp_38",
+      "ownerId": "usr_2",
+      "createdAt": "2026-01-23T06:25:39.514Z"
+    },
+    {
+      "id": "ct_168",
+      "name": "Alice Batista",
+      "email": "alice.batista@pereira-ltda.com.br",
+      "phone": "(92) 62370-5384",
+      "jobTitle": "Regional Mercados Executivo",
+      "companyId": "cmp_9",
+      "ownerId": "usr_4",
+      "createdAt": "2026-05-21T12:48:08.320Z"
+    },
+    {
+      "id": "ct_169",
+      "name": "Murilo Santos",
+      "email": "murilo.santos@martins-melo.com.br",
+      "phone": "(92) 3037-4720",
+      "jobTitle": "Principal Marca Agente",
+      "companyId": "cmp_20",
+      "ownerId": "usr_2",
+      "createdAt": "2026-05-16T18:29:43.150Z"
+    },
+    {
+      "id": "ct_170",
+      "name": "Noah Souza",
+      "email": "noah.souza@santos-s-a.com.br",
+      "phone": "(13) 3860-1176",
+      "jobTitle": "Senior Programa Analista",
+      "companyId": "cmp_34",
+      "ownerId": "usr_5",
+      "createdAt": "2025-11-19T05:42:32.192Z"
+    },
+    {
+      "id": "ct_171",
+      "name": "Manuela Batista",
+      "email": "manuela.batista@moraes-santos.com.br",
+      "phone": "(27) 6769-0427",
+      "jobTitle": "Direto Métricas Executivo",
+      "companyId": "cmp_27",
+      "ownerId": "usr_5",
+      "createdAt": "2026-09-15T18:50:47.161Z"
+    },
+    {
+      "id": "ct_172",
+      "name": "Júlia Xavier",
+      "email": "julia.xavier@costa-xavier-e-albuquerque.com.br",
+      "phone": "(29) 42209-1710",
+      "jobTitle": "Investidor Grupo Associado",
+      "companyId": "cmp_31",
+      "ownerId": "usr_3",
+      "createdAt": "2026-08-28T11:20:49.949Z"
+    },
+    {
+      "id": "ct_173",
+      "name": "Marcela Batista",
+      "email": "marcela.batista@barros-ltda.com.br",
+      "phone": "(77) 71382-0029",
+      "jobTitle": "Chefe Resposta Diretor",
+      "companyId": "cmp_1",
+      "ownerId": "usr_4",
+      "createdAt": "2026-10-04T17:51:56.341Z"
+    },
+    {
+      "id": "ct_174",
+      "name": "Morgana Pereira",
+      "email": "morgana.pereira@braga-comercio.com.br",
+      "phone": "(41) 2693-6318",
+      "jobTitle": "Nacional Métricas Analista",
+      "companyId": "cmp_15",
+      "ownerId": "usr_5",
+      "createdAt": "2026-10-07T03:40:19.553Z"
+    },
+    {
+      "id": "ct_175",
+      "name": "Paula Carvalho",
+      "email": "paula.carvalho@melo-s-a.com.br",
+      "phone": "(01) 8420-7710",
+      "jobTitle": "Corporativo Assurance Produtor",
+      "companyId": "cmp_23",
+      "ownerId": "usr_4",
+      "createdAt": "2025-06-17T08:33:01.878Z"
+    },
+    {
+      "id": "ct_176",
+      "name": "Cauã Oliveira",
+      "email": "caua.oliveira@albuquerque-barros.com.br",
+      "phone": "(74) 81639-7444",
+      "jobTitle": "Interno Mobilidade Analista",
+      "companyId": "cmp_29",
+      "ownerId": "usr_5",
+      "createdAt": "2026-05-21T21:37:55.559Z"
+    },
+    {
+      "id": "ct_177",
+      "name": "Sara Martins",
+      "email": "sara.martins@martins-oliveira-e-oliveira.com.br",
+      "phone": "(84) 15369-0860",
+      "jobTitle": "Corporativo Dados Supervisor",
+      "companyId": "cmp_21",
+      "ownerId": "usr_5",
+      "createdAt": "2026-11-01T08:59:57.608Z"
+    },
+    {
+      "id": "ct_178",
+      "name": "Joana Moraes",
+      "email": "joana.moraes@santos-s-a.com.br",
+      "phone": "(91) 2829-2598",
+      "jobTitle": "Direto Programa Produtor",
+      "companyId": "cmp_35",
+      "ownerId": "usr_2",
+      "createdAt": "2025-05-31T22:54:25.615Z"
+    },
+    {
+      "id": "ct_179",
+      "name": "Talita Macedo",
+      "email": "talita.macedo@souza-batista.com.br",
+      "phone": "(62) 79005-7541",
+      "jobTitle": "Nacional Implementação Administrador",
+      "companyId": "cmp_12",
+      "ownerId": "usr_5",
+      "createdAt": "2025-11-25T03:21:19.714Z"
+    },
+    {
+      "id": "ct_180",
+      "name": "Enzo Franco",
+      "email": "enzo.franco@santos-s-a.com.br",
+      "phone": "(83) 80014-8455",
+      "jobTitle": "International Interações Atentende",
+      "companyId": "cmp_34",
+      "ownerId": "usr_5",
+      "createdAt": "2026-08-02T00:27:45.591Z"
+    }
+  ],
+  "deals": [
+    {
+      "id": "deal_1",
+      "title": "Upgrade – Silva S.A.",
+      "value": 40100,
+      "stage": "contato",
+      "contactId": "ct_159",
+      "companyId": "cmp_3",
+      "ownerId": "usr_5",
+      "createdAt": "2026-03-27T16:13:55.285Z",
+      "expectedCloseDate": "2026-05-05T16:13:55.285Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_2",
+      "title": "Consultoria – Moreira-Souza",
+      "value": 146700,
+      "stage": "novo",
+      "contactId": "ct_15",
+      "companyId": "cmp_2",
+      "ownerId": "usr_3",
+      "createdAt": "2026-11-03T19:49:34.612Z",
+      "expectedCloseDate": "2026-12-17T19:49:34.612Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_3",
+      "title": "Contrato anual – Pereira, Batista e Carvalho",
+      "value": 114800,
+      "stage": "negociacao",
+      "contactId": "ct_143",
+      "companyId": "cmp_5",
+      "ownerId": "usr_2",
+      "createdAt": "2026-03-03T20:22:23.250Z",
+      "expectedCloseDate": "2026-04-08T20:22:23.250Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_4",
+      "title": "Renovação – Nogueira-Barros",
+      "value": 16300,
+      "stage": "proposta",
+      "contactId": "ct_3",
+      "companyId": "cmp_7",
+      "ownerId": "usr_5",
+      "createdAt": "2026-08-13T18:15:11.620Z",
+      "expectedCloseDate": "2026-10-06T18:15:11.620Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_5",
+      "title": "Licenças – Souza, Santos e Albuquerque",
+      "value": 109800,
+      "stage": "negociacao",
+      "contactId": "ct_120",
+      "companyId": "cmp_28",
+      "ownerId": "usr_4",
+      "createdAt": "2026-11-15T05:02:41.244Z",
+      "expectedCloseDate": "2026-12-15T05:02:41.244Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_6",
+      "title": "Implantação – Souza-Batista",
+      "value": 15900,
+      "stage": "novo",
+      "contactId": "ct_119",
+      "companyId": "cmp_12",
+      "ownerId": "usr_5",
+      "createdAt": "2026-08-10T21:05:46.926Z",
+      "expectedCloseDate": "2026-10-01T21:05:46.926Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_7",
+      "title": "Implantação – Moreira Comércio",
+      "value": 90000,
+      "stage": "negociacao",
+      "contactId": "ct_146",
+      "companyId": "cmp_30",
+      "ownerId": "usr_3",
+      "createdAt": "2026-08-11T00:55:39.954Z",
+      "expectedCloseDate": "2026-09-19T00:55:39.954Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_8",
+      "title": "Contrato anual – Martins-Melo",
+      "value": 44700,
+      "stage": "novo",
+      "contactId": "ct_152",
+      "companyId": "cmp_20",
+      "ownerId": "usr_5",
+      "createdAt": "2026-09-28T13:34:53.622Z",
+      "expectedCloseDate": "2026-11-26T13:34:53.622Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_9",
+      "title": "Implantação – Moraes-Santos",
+      "value": 30500,
+      "stage": "ganho",
+      "contactId": "ct_171",
+      "companyId": "cmp_27",
+      "ownerId": "usr_5",
+      "createdAt": "2026-07-14T00:28:09.990Z",
+      "expectedCloseDate": "2026-08-17T00:28:09.990Z",
+      "closedAt": "2026-09-03T19:55:34.286Z"
+    },
+    {
+      "id": "deal_10",
+      "title": "Consultoria – Braga LTDA",
+      "value": 54200,
+      "stage": "novo",
+      "contactId": "ct_11",
+      "companyId": "cmp_11",
+      "ownerId": "usr_4",
+      "createdAt": "2026-04-27T14:09:27.879Z",
+      "expectedCloseDate": "2026-06-29T14:09:27.879Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_11",
+      "title": "Consultoria – Moreira Comércio",
+      "value": 107400,
+      "stage": "perdido",
+      "contactId": "ct_50",
+      "companyId": "cmp_30",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-07T23:31:04.904Z",
+      "expectedCloseDate": "2026-09-11T23:31:04.904Z",
+      "closedAt": "2026-09-21T18:44:38.718Z"
+    },
+    {
+      "id": "deal_12",
+      "title": "Renovação – Santos S.A.",
+      "value": 21000,
+      "stage": "proposta",
+      "contactId": "ct_103",
+      "companyId": "cmp_34",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-15T12:27:13.669Z",
+      "expectedCloseDate": "2026-10-08T12:27:13.669Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_13",
+      "title": "Implantação – Moreira-Souza",
+      "value": 106400,
+      "stage": "proposta",
+      "contactId": "ct_147",
+      "companyId": "cmp_2",
+      "ownerId": "usr_3",
+      "createdAt": "2026-06-25T05:32:53.316Z",
+      "expectedCloseDate": "2026-09-20T05:32:53.316Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_14",
+      "title": "Licenças – Costa-Barros",
+      "value": 98400,
+      "stage": "negociacao",
+      "contactId": "ct_90",
+      "companyId": "cmp_36",
+      "ownerId": "usr_2",
+      "createdAt": "2026-06-06T16:31:45.991Z",
+      "expectedCloseDate": "2026-08-04T16:31:45.991Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_15",
+      "title": "Licenças – Souza-Batista",
+      "value": 144500,
+      "stage": "ganho",
+      "contactId": "ct_41",
+      "companyId": "cmp_12",
+      "ownerId": "usr_2",
+      "createdAt": "2026-11-03T08:08:19.829Z",
+      "expectedCloseDate": "2027-01-23T08:08:19.829Z",
+      "closedAt": "2026-11-14T13:25:59.010Z"
+    },
+    {
+      "id": "deal_16",
+      "title": "Consultoria – Reis-Costa",
+      "value": 6500,
+      "stage": "contato",
+      "contactId": "ct_42",
+      "companyId": "cmp_37",
+      "ownerId": "usr_3",
+      "createdAt": "2026-09-14T07:55:16.578Z",
+      "expectedCloseDate": "2026-11-14T07:55:16.578Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_17",
+      "title": "Contrato anual – Moreira Comércio",
+      "value": 45800,
+      "stage": "novo",
+      "contactId": "ct_35",
+      "companyId": "cmp_30",
+      "ownerId": "usr_3",
+      "createdAt": "2026-10-11T18:29:23.955Z",
+      "expectedCloseDate": "2026-10-29T18:29:23.955Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_18",
+      "title": "Licenças – Franco-Melo",
+      "value": 51900,
+      "stage": "negociacao",
+      "contactId": "ct_73",
+      "companyId": "cmp_19",
+      "ownerId": "usr_2",
+      "createdAt": "2026-09-11T00:39:21.952Z",
+      "expectedCloseDate": "2026-12-03T00:39:21.952Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_19",
+      "title": "Renovação – Oliveira-Costa",
+      "value": 123900,
+      "stage": "perdido",
+      "contactId": "ct_68",
+      "companyId": "cmp_32",
+      "ownerId": "usr_3",
+      "createdAt": "2026-04-13T07:31:59.380Z",
+      "expectedCloseDate": "2026-06-29T07:31:59.380Z",
+      "closedAt": "2026-06-13T09:09:40.328Z"
+    },
+    {
+      "id": "deal_20",
+      "title": "Licenças – Xavier, Albuquerque e Souza",
+      "value": 35900,
+      "stage": "proposta",
+      "contactId": "ct_60",
+      "companyId": "cmp_24",
+      "ownerId": "usr_3",
+      "createdAt": "2026-06-12T18:01:07.620Z",
+      "expectedCloseDate": "2026-06-29T18:01:07.620Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_21",
+      "title": "Contrato anual – Xavier, Albuquerque e Souza",
+      "value": 59300,
+      "stage": "proposta",
+      "contactId": "ct_43",
+      "companyId": "cmp_24",
+      "ownerId": "usr_4",
+      "createdAt": "2026-10-31T04:46:49.299Z",
+      "expectedCloseDate": "2026-12-13T04:46:49.299Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_22",
+      "title": "Contrato anual – Souza-Batista",
+      "value": 140600,
+      "stage": "ganho",
+      "contactId": "ct_99",
+      "companyId": "cmp_12",
+      "ownerId": "usr_5",
+      "createdAt": "2026-05-19T13:03:32.203Z",
+      "expectedCloseDate": "2026-08-07T13:03:32.203Z",
+      "closedAt": "2026-06-17T17:44:49.682Z"
+    },
+    {
+      "id": "deal_23",
+      "title": "Consultoria – Pereira, Batista e Carvalho",
+      "value": 91400,
+      "stage": "negociacao",
+      "contactId": "ct_9",
+      "companyId": "cmp_5",
+      "ownerId": "usr_2",
+      "createdAt": "2026-09-23T15:07:10.600Z",
+      "expectedCloseDate": "2026-10-22T15:07:10.600Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_24",
+      "title": "Consultoria – Silva S.A.",
+      "value": 20800,
+      "stage": "negociacao",
+      "contactId": "ct_130",
+      "companyId": "cmp_3",
+      "ownerId": "usr_5",
+      "createdAt": "2026-07-28T09:28:33.747Z",
+      "expectedCloseDate": "2026-09-14T09:28:33.747Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_25",
+      "title": "Implantação – Souza-Batista",
+      "value": 128700,
+      "stage": "novo",
+      "contactId": "ct_51",
+      "companyId": "cmp_12",
+      "ownerId": "usr_2",
+      "createdAt": "2026-03-29T18:32:08.942Z",
+      "expectedCloseDate": "2026-05-17T18:32:08.942Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_26",
+      "title": "Licenças – Braga Comércio",
+      "value": 80600,
+      "stage": "negociacao",
+      "contactId": "ct_164",
+      "companyId": "cmp_15",
+      "ownerId": "usr_3",
+      "createdAt": "2026-05-24T18:37:24.780Z",
+      "expectedCloseDate": "2026-08-17T18:37:24.780Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_27",
+      "title": "Renovação – Braga, Silva e Braga",
+      "value": 146700,
+      "stage": "proposta",
+      "contactId": "ct_165",
+      "companyId": "cmp_13",
+      "ownerId": "usr_2",
+      "createdAt": "2026-05-05T13:27:11.287Z",
+      "expectedCloseDate": "2026-06-14T13:27:11.287Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_28",
+      "title": "Licenças – Reis-Costa",
+      "value": 126200,
+      "stage": "novo",
+      "contactId": "ct_42",
+      "companyId": "cmp_37",
+      "ownerId": "usr_3",
+      "createdAt": "2026-10-24T01:20:54.122Z",
+      "expectedCloseDate": "2026-12-14T01:20:54.122Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_29",
+      "title": "Licenças – Moraes-Santos",
+      "value": 77300,
+      "stage": "perdido",
+      "contactId": "ct_71",
+      "companyId": "cmp_27",
+      "ownerId": "usr_2",
+      "createdAt": "2026-10-10T05:51:43.224Z",
+      "expectedCloseDate": "2026-12-29T05:51:43.224Z",
+      "closedAt": "2026-10-13T00:12:26.386Z"
+    },
+    {
+      "id": "deal_30",
+      "title": "Licenças – Costa-Barros",
+      "value": 95600,
+      "stage": "ganho",
+      "contactId": "ct_31",
+      "companyId": "cmp_36",
+      "ownerId": "usr_4",
+      "createdAt": "2026-10-28T01:53:09.800Z",
+      "expectedCloseDate": "2026-11-29T01:53:09.800Z",
+      "closedAt": "2026-11-03T15:59:21.635Z"
+    },
+    {
+      "id": "deal_31",
+      "title": "Renovação – Santos S.A.",
+      "value": 98900,
+      "stage": "negociacao",
+      "contactId": "ct_139",
+      "companyId": "cmp_34",
+      "ownerId": "usr_3",
+      "createdAt": "2026-04-09T13:10:29.750Z",
+      "expectedCloseDate": "2026-06-18T13:10:29.750Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_32",
+      "title": "Implantação – Costa, Xavier e Albuquerque",
+      "value": 116300,
+      "stage": "ganho",
+      "contactId": "ct_16",
+      "companyId": "cmp_31",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-28T10:03:30.304Z",
+      "expectedCloseDate": "2026-09-26T10:03:30.304Z",
+      "closedAt": "2026-08-15T13:44:11.217Z"
+    },
+    {
+      "id": "deal_33",
+      "title": "Implantação – Albuquerque, Carvalho e Saraiva",
+      "value": 61700,
+      "stage": "novo",
+      "contactId": "ct_162",
+      "companyId": "cmp_4",
+      "ownerId": "usr_4",
+      "createdAt": "2026-04-01T22:17:43.021Z",
+      "expectedCloseDate": "2026-06-01T22:17:43.021Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_34",
+      "title": "Upgrade – Albuquerque-Barros",
+      "value": 89500,
+      "stage": "contato",
+      "contactId": "ct_115",
+      "companyId": "cmp_29",
+      "ownerId": "usr_3",
+      "createdAt": "2026-05-30T18:40:32.630Z",
+      "expectedCloseDate": "2026-08-19T18:40:32.630Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_35",
+      "title": "Contrato anual – Barros LTDA",
+      "value": 107300,
+      "stage": "ganho",
+      "contactId": "ct_127",
+      "companyId": "cmp_1",
+      "ownerId": "usr_5",
+      "createdAt": "2026-05-11T12:04:00.481Z",
+      "expectedCloseDate": "2026-07-08T12:04:00.481Z",
+      "closedAt": "2026-07-22T16:56:57.605Z"
+    },
+    {
+      "id": "deal_36",
+      "title": "Implantação – Saraiva EIRELI",
+      "value": 93200,
+      "stage": "novo",
+      "contactId": "ct_145",
+      "companyId": "cmp_14",
+      "ownerId": "usr_2",
+      "createdAt": "2026-08-05T22:45:37.144Z",
+      "expectedCloseDate": "2026-10-22T22:45:37.144Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_37",
+      "title": "Licenças – Costa-Barros",
+      "value": 20300,
+      "stage": "negociacao",
+      "contactId": "ct_126",
+      "companyId": "cmp_36",
+      "ownerId": "usr_4",
+      "createdAt": "2026-10-01T23:26:55.888Z",
+      "expectedCloseDate": "2026-12-09T23:26:55.888Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_38",
+      "title": "Implantação – Pereira, Batista e Carvalho",
+      "value": 33000,
+      "stage": "contato",
+      "contactId": "ct_55",
+      "companyId": "cmp_5",
+      "ownerId": "usr_5",
+      "createdAt": "2026-06-13T06:14:58.202Z",
+      "expectedCloseDate": "2026-07-20T06:14:58.202Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_39",
+      "title": "Upgrade – Moreira LTDA",
+      "value": 132000,
+      "stage": "proposta",
+      "contactId": "ct_96",
+      "companyId": "cmp_25",
+      "ownerId": "usr_3",
+      "createdAt": "2026-03-25T20:22:09.560Z",
+      "expectedCloseDate": "2026-05-01T20:22:09.560Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_40",
+      "title": "Contrato anual – Santos S.A.",
+      "value": 27500,
+      "stage": "negociacao",
+      "contactId": "ct_139",
+      "companyId": "cmp_34",
+      "ownerId": "usr_3",
+      "createdAt": "2026-05-29T19:22:53.905Z",
+      "expectedCloseDate": "2026-07-18T19:22:53.905Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_41",
+      "title": "Upgrade – Costa-Barros",
+      "value": 146500,
+      "stage": "negociacao",
+      "contactId": "ct_95",
+      "companyId": "cmp_36",
+      "ownerId": "usr_3",
+      "createdAt": "2026-03-18T21:45:50.608Z",
+      "expectedCloseDate": "2026-05-08T21:45:50.608Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_42",
+      "title": "Renovação – Melo S.A.",
+      "value": 71200,
+      "stage": "proposta",
+      "contactId": "ct_25",
+      "companyId": "cmp_23",
+      "ownerId": "usr_4",
+      "createdAt": "2026-04-09T09:52:44.260Z",
+      "expectedCloseDate": "2026-06-10T09:52:44.260Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_43",
+      "title": "Implantação – Reis-Costa",
+      "value": 40000,
+      "stage": "ganho",
+      "contactId": "ct_108",
+      "companyId": "cmp_37",
+      "ownerId": "usr_2",
+      "createdAt": "2026-05-09T16:40:49.247Z",
+      "expectedCloseDate": "2026-07-04T16:40:49.247Z",
+      "closedAt": "2026-07-31T14:41:05.568Z"
+    },
+    {
+      "id": "deal_44",
+      "title": "Contrato anual – Franco-Melo",
+      "value": 36800,
+      "stage": "perdido",
+      "contactId": "ct_107",
+      "companyId": "cmp_19",
+      "ownerId": "usr_2",
+      "createdAt": "2026-03-16T13:23:52.274Z",
+      "expectedCloseDate": "2026-05-09T13:23:52.274Z",
+      "closedAt": "2026-04-30T12:09:22.318Z"
+    },
+    {
+      "id": "deal_45",
+      "title": "Implantação – Pereira, Batista e Carvalho",
+      "value": 84400,
+      "stage": "novo",
+      "contactId": "ct_2",
+      "companyId": "cmp_5",
+      "ownerId": "usr_4",
+      "createdAt": "2026-08-11T01:52:49.699Z",
+      "expectedCloseDate": "2026-11-07T01:52:49.699Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_46",
+      "title": "Consultoria – Braga Comércio",
+      "value": 24300,
+      "stage": "ganho",
+      "contactId": "ct_8",
+      "companyId": "cmp_15",
+      "ownerId": "usr_2",
+      "createdAt": "2026-04-24T18:58:36.068Z",
+      "expectedCloseDate": "2026-07-14T18:58:36.068Z",
+      "closedAt": "2026-08-06T01:33:43.910Z"
+    },
+    {
+      "id": "deal_47",
+      "title": "Upgrade – Souza-Xavier",
+      "value": 123600,
+      "stage": "ganho",
+      "contactId": "ct_167",
+      "companyId": "cmp_38",
+      "ownerId": "usr_2",
+      "createdAt": "2026-09-07T17:04:47.457Z",
+      "expectedCloseDate": "2026-11-28T17:04:47.457Z",
+      "closedAt": "2026-11-05T04:46:38.932Z"
+    },
+    {
+      "id": "deal_48",
+      "title": "Upgrade – Melo S.A.",
+      "value": 4200,
+      "stage": "contato",
+      "contactId": "ct_25",
+      "companyId": "cmp_23",
+      "ownerId": "usr_4",
+      "createdAt": "2026-04-25T08:34:09.132Z",
+      "expectedCloseDate": "2026-05-28T08:34:09.132Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_49",
+      "title": "Upgrade – Moreira Comércio",
+      "value": 16100,
+      "stage": "contato",
+      "contactId": "ct_146",
+      "companyId": "cmp_30",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-17T14:34:38.835Z",
+      "expectedCloseDate": "2026-08-29T14:34:38.835Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_50",
+      "title": "Licenças – Santos S.A.",
+      "value": 87500,
+      "stage": "contato",
+      "contactId": "ct_103",
+      "companyId": "cmp_34",
+      "ownerId": "usr_3",
+      "createdAt": "2026-05-01T13:42:57.597Z",
+      "expectedCloseDate": "2026-06-22T13:42:57.597Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_51",
+      "title": "Contrato anual – Costa-Barros",
+      "value": 94900,
+      "stage": "novo",
+      "contactId": "ct_90",
+      "companyId": "cmp_36",
+      "ownerId": "usr_2",
+      "createdAt": "2026-05-28T09:14:23.982Z",
+      "expectedCloseDate": "2026-07-20T09:14:23.982Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_52",
+      "title": "Upgrade – Braga Comércio",
+      "value": 102200,
+      "stage": "contato",
+      "contactId": "ct_75",
+      "companyId": "cmp_15",
+      "ownerId": "usr_2",
+      "createdAt": "2026-08-12T00:15:53.831Z",
+      "expectedCloseDate": "2026-09-20T00:15:53.831Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_53",
+      "title": "Consultoria – Moreira LTDA",
+      "value": 31800,
+      "stage": "ganho",
+      "contactId": "ct_7",
+      "companyId": "cmp_25",
+      "ownerId": "usr_5",
+      "createdAt": "2026-03-25T05:20:03.283Z",
+      "expectedCloseDate": "2026-04-22T05:20:03.283Z",
+      "closedAt": "2026-05-20T21:58:52.837Z"
+    },
+    {
+      "id": "deal_54",
+      "title": "Contrato anual – Martins-Melo",
+      "value": 25100,
+      "stage": "negociacao",
+      "contactId": "ct_152",
+      "companyId": "cmp_20",
+      "ownerId": "usr_5",
+      "createdAt": "2026-05-11T22:46:59.901Z",
+      "expectedCloseDate": "2026-06-27T22:46:59.901Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_55",
+      "title": "Contrato anual – Reis-Costa",
+      "value": 89000,
+      "stage": "novo",
+      "contactId": "ct_44",
+      "companyId": "cmp_37",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-22T10:19:03.540Z",
+      "expectedCloseDate": "2026-09-30T10:19:03.540Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_56",
+      "title": "Contrato anual – Reis-Costa",
+      "value": 131700,
+      "stage": "negociacao",
+      "contactId": "ct_4",
+      "companyId": "cmp_37",
+      "ownerId": "usr_4",
+      "createdAt": "2026-05-15T21:21:11.972Z",
+      "expectedCloseDate": "2026-06-08T21:21:11.972Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_57",
+      "title": "Contrato anual – Moreira-Souza",
+      "value": 81000,
+      "stage": "proposta",
+      "contactId": "ct_15",
+      "companyId": "cmp_2",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-06T11:28:26.954Z",
+      "expectedCloseDate": "2026-08-06T11:28:26.954Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_58",
+      "title": "Consultoria – Franco-Melo",
+      "value": 138400,
+      "stage": "proposta",
+      "contactId": "ct_107",
+      "companyId": "cmp_19",
+      "ownerId": "usr_2",
+      "createdAt": "2026-05-16T16:13:51.952Z",
+      "expectedCloseDate": "2026-07-19T16:13:51.952Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_59",
+      "title": "Renovação – Braga, Moreira e Moraes",
+      "value": 145500,
+      "stage": "contato",
+      "contactId": "ct_63",
+      "companyId": "cmp_17",
+      "ownerId": "usr_4",
+      "createdAt": "2026-06-25T09:42:56.021Z",
+      "expectedCloseDate": "2026-08-12T09:42:56.021Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_60",
+      "title": "Licenças – Moreira LTDA",
+      "value": 39400,
+      "stage": "novo",
+      "contactId": "ct_151",
+      "companyId": "cmp_25",
+      "ownerId": "usr_5",
+      "createdAt": "2026-04-26T21:33:52.352Z",
+      "expectedCloseDate": "2026-06-03T21:33:52.352Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_61",
+      "title": "Upgrade – Santos S.A.",
+      "value": 44700,
+      "stage": "negociacao",
+      "contactId": "ct_131",
+      "companyId": "cmp_35",
+      "ownerId": "usr_2",
+      "createdAt": "2026-08-28T16:06:48.061Z",
+      "expectedCloseDate": "2026-09-30T16:06:48.061Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_62",
+      "title": "Implantação – Nogueira-Barros",
+      "value": 58600,
+      "stage": "ganho",
+      "contactId": "ct_3",
+      "companyId": "cmp_7",
+      "ownerId": "usr_5",
+      "createdAt": "2026-08-08T21:19:26.383Z",
+      "expectedCloseDate": "2026-08-30T21:19:26.383Z",
+      "closedAt": "2026-09-21T08:54:58.003Z"
+    },
+    {
+      "id": "deal_63",
+      "title": "Contrato anual – Saraiva EIRELI",
+      "value": 102500,
+      "stage": "ganho",
+      "contactId": "ct_54",
+      "companyId": "cmp_14",
+      "ownerId": "usr_4",
+      "createdAt": "2026-10-17T21:10:10.781Z",
+      "expectedCloseDate": "2026-12-08T21:10:10.781Z",
+      "closedAt": "2026-11-13T23:13:48.869Z"
+    },
+    {
+      "id": "deal_64",
+      "title": "Upgrade – Costa, Xavier e Albuquerque",
+      "value": 139400,
+      "stage": "negociacao",
+      "contactId": "ct_110",
+      "companyId": "cmp_31",
+      "ownerId": "usr_3",
+      "createdAt": "2026-04-05T23:45:45.986Z",
+      "expectedCloseDate": "2026-05-18T23:45:45.986Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_65",
+      "title": "Consultoria – Nogueira-Barros",
+      "value": 9300,
+      "stage": "ganho",
+      "contactId": "ct_84",
+      "companyId": "cmp_7",
+      "ownerId": "usr_2",
+      "createdAt": "2026-09-23T16:06:52.692Z",
+      "expectedCloseDate": "2026-11-08T16:06:52.692Z",
+      "closedAt": "2026-10-26T20:59:05.531Z"
+    },
+    {
+      "id": "deal_66",
+      "title": "Contrato anual – Braga, Moreira e Moraes",
+      "value": 12800,
+      "stage": "ganho",
+      "contactId": "ct_86",
+      "companyId": "cmp_17",
+      "ownerId": "usr_3",
+      "createdAt": "2026-03-25T15:06:51.976Z",
+      "expectedCloseDate": "2026-04-11T15:06:51.976Z",
+      "closedAt": "2026-04-28T18:23:19.316Z"
+    },
+    {
+      "id": "deal_67",
+      "title": "Contrato anual – Xavier-Pereira",
+      "value": 55200,
+      "stage": "ganho",
+      "contactId": "ct_149",
+      "companyId": "cmp_39",
+      "ownerId": "usr_3",
+      "createdAt": "2026-11-10T16:01:06.623Z",
+      "expectedCloseDate": "2026-12-19T16:01:06.623Z",
+      "closedAt": "2026-11-13T21:50:42.991Z"
+    },
+    {
+      "id": "deal_68",
+      "title": "Implantação – Oliveira-Costa",
+      "value": 66200,
+      "stage": "negociacao",
+      "contactId": "ct_98",
+      "companyId": "cmp_32",
+      "ownerId": "usr_5",
+      "createdAt": "2026-06-16T07:05:37.840Z",
+      "expectedCloseDate": "2026-08-03T07:05:37.840Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_69",
+      "title": "Contrato anual – Braga, Silva e Braga",
+      "value": 5200,
+      "stage": "negociacao",
+      "contactId": "ct_132",
+      "companyId": "cmp_13",
+      "ownerId": "usr_2",
+      "createdAt": "2026-07-31T17:37:37.998Z",
+      "expectedCloseDate": "2026-08-16T17:37:37.998Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_70",
+      "title": "Licenças – Saraiva EIRELI",
+      "value": 77000,
+      "stage": "ganho",
+      "contactId": "ct_97",
+      "companyId": "cmp_14",
+      "ownerId": "usr_2",
+      "createdAt": "2026-11-08T03:50:31.500Z",
+      "expectedCloseDate": "2026-11-23T03:50:31.500Z",
+      "closedAt": "2026-11-13T18:35:46.453Z"
+    },
+    {
+      "id": "deal_71",
+      "title": "Contrato anual – Moreira e Associados",
+      "value": 36100,
+      "stage": "ganho",
+      "contactId": "ct_124",
+      "companyId": "cmp_33",
+      "ownerId": "usr_5",
+      "createdAt": "2026-03-05T18:23:21.001Z",
+      "expectedCloseDate": "2026-03-31T18:23:21.001Z",
+      "closedAt": "2026-04-18T12:17:51.531Z"
+    },
+    {
+      "id": "deal_72",
+      "title": "Consultoria – Pereira LTDA",
+      "value": 79200,
+      "stage": "ganho",
+      "contactId": "ct_125",
+      "companyId": "cmp_9",
+      "ownerId": "usr_5",
+      "createdAt": "2026-08-30T04:21:15.446Z",
+      "expectedCloseDate": "2026-10-10T04:21:15.446Z",
+      "closedAt": "2026-10-22T18:50:38.727Z"
+    },
+    {
+      "id": "deal_73",
+      "title": "Licenças – Barros LTDA",
+      "value": 19700,
+      "stage": "ganho",
+      "contactId": "ct_133",
+      "companyId": "cmp_1",
+      "ownerId": "usr_2",
+      "createdAt": "2026-08-12T08:53:38.925Z",
+      "expectedCloseDate": "2026-09-23T08:53:38.925Z",
+      "closedAt": "2026-09-21T11:59:35.954Z"
+    },
+    {
+      "id": "deal_74",
+      "title": "Consultoria – Costa, Xavier e Albuquerque",
+      "value": 52400,
+      "stage": "contato",
+      "contactId": "ct_110",
+      "companyId": "cmp_31",
+      "ownerId": "usr_3",
+      "createdAt": "2026-07-04T02:09:28.659Z",
+      "expectedCloseDate": "2026-09-28T02:09:28.659Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_75",
+      "title": "Consultoria – Nogueira-Barros",
+      "value": 106500,
+      "stage": "contato",
+      "contactId": "ct_91",
+      "companyId": "cmp_7",
+      "ownerId": "usr_3",
+      "createdAt": "2026-05-21T06:10:07.461Z",
+      "expectedCloseDate": "2026-07-27T06:10:07.461Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_76",
+      "title": "Implantação – Martins-Melo",
+      "value": 128200,
+      "stage": "ganho",
+      "contactId": "ct_83",
+      "companyId": "cmp_20",
+      "ownerId": "usr_3",
+      "createdAt": "2026-04-18T02:03:35.894Z",
+      "expectedCloseDate": "2026-05-20T02:03:35.894Z",
+      "closedAt": "2026-06-12T15:26:37.813Z"
+    },
+    {
+      "id": "deal_77",
+      "title": "Licenças – Silva S.A.",
+      "value": 143300,
+      "stage": "novo",
+      "contactId": "ct_13",
+      "companyId": "cmp_3",
+      "ownerId": "usr_4",
+      "createdAt": "2026-06-17T21:09:54.864Z",
+      "expectedCloseDate": "2026-08-26T21:09:54.864Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_78",
+      "title": "Upgrade – Martins-Melo",
+      "value": 84000,
+      "stage": "ganho",
+      "contactId": "ct_105",
+      "companyId": "cmp_20",
+      "ownerId": "usr_3",
+      "createdAt": "2026-06-15T19:09:33.661Z",
+      "expectedCloseDate": "2026-07-30T19:09:33.661Z",
+      "closedAt": "2026-07-17T19:15:09.668Z"
+    },
+    {
+      "id": "deal_79",
+      "title": "Renovação – Costa, Xavier e Albuquerque",
+      "value": 16000,
+      "stage": "proposta",
+      "contactId": "ct_100",
+      "companyId": "cmp_31",
+      "ownerId": "usr_3",
+      "createdAt": "2026-06-22T04:32:27.131Z",
+      "expectedCloseDate": "2026-07-16T04:32:27.131Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_80",
+      "title": "Implantação – Martins-Melo",
+      "value": 143200,
+      "stage": "ganho",
+      "contactId": "ct_33",
+      "companyId": "cmp_20",
+      "ownerId": "usr_3",
+      "createdAt": "2026-11-10T10:03:29.691Z",
+      "expectedCloseDate": "2027-01-28T10:03:29.691Z",
+      "closedAt": "2026-11-14T17:33:25.852Z"
+    },
+    {
+      "id": "deal_81",
+      "title": "Contrato anual – Santos S.A.",
+      "value": 54800,
+      "stage": "novo",
+      "contactId": "ct_23",
+      "companyId": "cmp_35",
+      "ownerId": "usr_5",
+      "createdAt": "2026-10-11T12:51:38.903Z",
+      "expectedCloseDate": "2026-11-01T12:51:38.903Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_82",
+      "title": "Consultoria – Xavier-Pereira",
+      "value": 33100,
+      "stage": "contato",
+      "contactId": "ct_81",
+      "companyId": "cmp_39",
+      "ownerId": "usr_2",
+      "createdAt": "2026-09-10T07:11:29.799Z",
+      "expectedCloseDate": "2026-11-01T07:11:29.799Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_83",
+      "title": "Upgrade – Moreira LTDA",
+      "value": 44900,
+      "stage": "novo",
+      "contactId": "ct_137",
+      "companyId": "cmp_25",
+      "ownerId": "usr_3",
+      "createdAt": "2026-10-17T00:40:20.619Z",
+      "expectedCloseDate": "2026-11-16T00:40:20.619Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_84",
+      "title": "Renovação – Martins-Melo",
+      "value": 61600,
+      "stage": "proposta",
+      "contactId": "ct_152",
+      "companyId": "cmp_20",
+      "ownerId": "usr_5",
+      "createdAt": "2026-08-13T09:54:29.284Z",
+      "expectedCloseDate": "2026-10-11T09:54:29.284Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_85",
+      "title": "Renovação – Braga Comércio",
+      "value": 107000,
+      "stage": "contato",
+      "contactId": "ct_8",
+      "companyId": "cmp_15",
+      "ownerId": "usr_2",
+      "createdAt": "2026-08-01T22:10:00.811Z",
+      "expectedCloseDate": "2026-10-05T22:10:00.811Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_86",
+      "title": "Licenças – Santos S.A.",
+      "value": 56300,
+      "stage": "proposta",
+      "contactId": "ct_23",
+      "companyId": "cmp_35",
+      "ownerId": "usr_5",
+      "createdAt": "2026-09-05T03:02:47.492Z",
+      "expectedCloseDate": "2026-10-17T03:02:47.492Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_87",
+      "title": "Upgrade – Silva S.A.",
+      "value": 103400,
+      "stage": "proposta",
+      "contactId": "ct_159",
+      "companyId": "cmp_3",
+      "ownerId": "usr_5",
+      "createdAt": "2026-07-08T15:31:22.342Z",
+      "expectedCloseDate": "2026-09-25T15:31:22.342Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_88",
+      "title": "Licenças – Moreira Comércio",
+      "value": 54300,
+      "stage": "proposta",
+      "contactId": "ct_35",
+      "companyId": "cmp_30",
+      "ownerId": "usr_3",
+      "createdAt": "2026-10-21T04:18:05.693Z",
+      "expectedCloseDate": "2026-12-08T04:18:05.693Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_89",
+      "title": "Licenças – Xavier, Albuquerque e Souza",
+      "value": 63600,
+      "stage": "proposta",
+      "contactId": "ct_43",
+      "companyId": "cmp_24",
+      "ownerId": "usr_4",
+      "createdAt": "2026-03-17T03:39:54.442Z",
+      "expectedCloseDate": "2026-05-26T03:39:54.442Z",
+      "closedAt": null
+    },
+    {
+      "id": "deal_90",
+      "title": "Renovação – Braga Comércio",
+      "value": 91800,
+      "stage": "ganho",
+      "contactId": "ct_61",
+      "companyId": "cmp_15",
+      "ownerId": "usr_3",
+      "createdAt": "2026-10-18T05:32:35.301Z",
+      "expectedCloseDate": "2026-12-17T05:32:35.301Z",
+      "closedAt": "2026-10-22T05:32:32.224Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act_1",
+      "type": "meeting",
+      "contactId": "ct_152",
+      "dealId": "deal_54",
+      "ownerId": "usr_5",
+      "date": "2026-09-29T00:54:21.782Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_2",
+      "type": "email",
+      "contactId": "ct_146",
+      "dealId": "deal_7",
+      "ownerId": "usr_3",
+      "date": "2026-09-30T16:59:50.776Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_3",
+      "type": "email",
+      "contactId": "ct_29",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-07-07T07:17:43.985Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_4",
+      "type": "call",
+      "contactId": "ct_92",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-09-08T10:47:31.476Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_5",
+      "type": "email",
+      "contactId": "ct_31",
+      "dealId": "deal_30",
+      "ownerId": "usr_4",
+      "date": "2026-11-09T09:53:39.393Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_6",
+      "type": "meeting",
+      "contactId": "ct_44",
+      "dealId": "deal_55",
+      "ownerId": "usr_3",
+      "date": "2026-05-22T09:54:51.089Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_7",
+      "type": "note",
+      "contactId": "ct_142",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-09-30T04:44:28.542Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_8",
+      "type": "note",
+      "contactId": "ct_10",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-06-28T20:21:14.851Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_9",
+      "type": "call",
+      "contactId": "ct_150",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-04-28T21:38:57.645Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_10",
+      "type": "call",
+      "contactId": "ct_44",
+      "dealId": "deal_55",
+      "ownerId": "usr_3",
+      "date": "2026-10-05T11:19:52.844Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_11",
+      "type": "call",
+      "contactId": "ct_88",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-09-29T16:18:03.594Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_12",
+      "type": "call",
+      "contactId": "ct_161",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-10-10T08:15:37.159Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_13",
+      "type": "note",
+      "contactId": "ct_1",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-07-22T01:03:57.194Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_14",
+      "type": "meeting",
+      "contactId": "ct_99",
+      "dealId": "deal_22",
+      "ownerId": "usr_5",
+      "date": "2026-11-12T23:56:02.030Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_15",
+      "type": "note",
+      "contactId": "ct_139",
+      "dealId": "deal_31",
+      "ownerId": "usr_3",
+      "date": "2026-10-14T14:09:13.985Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_16",
+      "type": "email",
+      "contactId": "ct_17",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-11-06T02:55:09.070Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_17",
+      "type": "call",
+      "contactId": "ct_17",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-10-09T04:32:42.985Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_18",
+      "type": "meeting",
+      "contactId": "ct_55",
+      "dealId": "deal_38",
+      "ownerId": "usr_5",
+      "date": "2026-11-02T02:41:30.576Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_19",
+      "type": "note",
+      "contactId": "ct_26",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-11-06T17:18:43.148Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_20",
+      "type": "email",
+      "contactId": "ct_10",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-07-14T19:52:23.646Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_21",
+      "type": "call",
+      "contactId": "ct_160",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-07-20T12:29:47.649Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_22",
+      "type": "meeting",
+      "contactId": "ct_143",
+      "dealId": "deal_3",
+      "ownerId": "usr_2",
+      "date": "2025-10-29T18:09:31.505Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_23",
+      "type": "note",
+      "contactId": "ct_3",
+      "dealId": "deal_4",
+      "ownerId": "usr_5",
+      "date": "2026-10-29T11:54:56.660Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_24",
+      "type": "call",
+      "contactId": "ct_173",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-11-18T08:34:40.065Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_25",
+      "type": "meeting",
+      "contactId": "ct_180",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-10-16T22:45:42.891Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_26",
+      "type": "meeting",
+      "contactId": "ct_145",
+      "dealId": "deal_36",
+      "ownerId": "usr_2",
+      "date": "2026-10-08T11:39:16.078Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_27",
+      "type": "note",
+      "contactId": "ct_64",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-10-22T17:35:50.576Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_28",
+      "type": "meeting",
+      "contactId": "ct_13",
+      "dealId": "deal_77",
+      "ownerId": "usr_4",
+      "date": "2026-10-07T07:48:32.085Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_29",
+      "type": "meeting",
+      "contactId": "ct_87",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-11-05T04:13:20.795Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_30",
+      "type": "note",
+      "contactId": "ct_18",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-10-20T23:25:21.913Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_31",
+      "type": "meeting",
+      "contactId": "ct_88",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-10-27T07:17:34.591Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_32",
+      "type": "call",
+      "contactId": "ct_70",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-05-11T12:23:08.144Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_33",
+      "type": "meeting",
+      "contactId": "ct_151",
+      "dealId": "deal_60",
+      "ownerId": "usr_5",
+      "date": "2026-02-04T22:23:01.125Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_34",
+      "type": "note",
+      "contactId": "ct_108",
+      "dealId": "deal_43",
+      "ownerId": "usr_2",
+      "date": "2026-07-26T01:37:35.229Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_35",
+      "type": "call",
+      "contactId": "ct_119",
+      "dealId": "deal_6",
+      "ownerId": "usr_5",
+      "date": "2026-08-21T11:37:36.877Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_36",
+      "type": "email",
+      "contactId": "ct_48",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-11-14T10:07:12.850Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_37",
+      "type": "meeting",
+      "contactId": "ct_17",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-10-06T15:18:03.739Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_38",
+      "type": "call",
+      "contactId": "ct_46",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-08-17T00:03:51.799Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_39",
+      "type": "call",
+      "contactId": "ct_34",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-06-11T10:29:39.621Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_40",
+      "type": "note",
+      "contactId": "ct_57",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-09-09T17:04:16.591Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_41",
+      "type": "email",
+      "contactId": "ct_52",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-08-09T18:18:31.331Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_42",
+      "type": "note",
+      "contactId": "ct_159",
+      "dealId": "deal_87",
+      "ownerId": "usr_5",
+      "date": "2026-11-11T02:56:55.994Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_43",
+      "type": "call",
+      "contactId": "ct_59",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-04-30T17:40:55.593Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_44",
+      "type": "call",
+      "contactId": "ct_17",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-10-26T01:23:21.680Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_45",
+      "type": "meeting",
+      "contactId": "ct_74",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-11-08T08:28:05.849Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_46",
+      "type": "call",
+      "contactId": "ct_42",
+      "dealId": "deal_16",
+      "ownerId": "usr_3",
+      "date": "2026-06-08T13:22:48.216Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_47",
+      "type": "meeting",
+      "contactId": "ct_169",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-08-25T12:21:04.923Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_48",
+      "type": "note",
+      "contactId": "ct_38",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-06-23T04:16:26.000Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_49",
+      "type": "meeting",
+      "contactId": "ct_42",
+      "dealId": "deal_16",
+      "ownerId": "usr_3",
+      "date": "2025-08-05T22:06:33.577Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_50",
+      "type": "email",
+      "contactId": "ct_149",
+      "dealId": "deal_67",
+      "ownerId": "usr_3",
+      "date": "2026-10-20T18:56:47.061Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_51",
+      "type": "note",
+      "contactId": "ct_137",
+      "dealId": "deal_83",
+      "ownerId": "usr_3",
+      "date": "2026-09-30T22:56:38.904Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_52",
+      "type": "meeting",
+      "contactId": "ct_32",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-07-08T01:14:32.802Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_53",
+      "type": "email",
+      "contactId": "ct_131",
+      "dealId": "deal_61",
+      "ownerId": "usr_2",
+      "date": "2026-09-14T00:14:22.764Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_54",
+      "type": "call",
+      "contactId": "ct_137",
+      "dealId": "deal_83",
+      "ownerId": "usr_3",
+      "date": "2026-10-22T18:00:57.952Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_55",
+      "type": "call",
+      "contactId": "ct_44",
+      "dealId": "deal_55",
+      "ownerId": "usr_3",
+      "date": "2026-07-22T01:21:07.801Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_56",
+      "type": "call",
+      "contactId": "ct_8",
+      "dealId": "deal_46",
+      "ownerId": "usr_2",
+      "date": "2026-06-25T13:29:52.005Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_57",
+      "type": "note",
+      "contactId": "ct_33",
+      "dealId": "deal_80",
+      "ownerId": "usr_3",
+      "date": "2026-11-21T04:37:15.319Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_58",
+      "type": "call",
+      "contactId": "ct_3",
+      "dealId": "deal_4",
+      "ownerId": "usr_5",
+      "date": "2026-11-10T07:27:58.405Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_59",
+      "type": "note",
+      "contactId": "ct_24",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2025-11-17T09:17:30.745Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_60",
+      "type": "email",
+      "contactId": "ct_175",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-04-09T01:31:44.557Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_61",
+      "type": "call",
+      "contactId": "ct_144",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-06-10T20:21:17.618Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_62",
+      "type": "call",
+      "contactId": "ct_66",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-07-15T19:27:29.447Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_63",
+      "type": "call",
+      "contactId": "ct_150",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-02-02T11:11:19.532Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_64",
+      "type": "note",
+      "contactId": "ct_165",
+      "dealId": "deal_27",
+      "ownerId": "usr_2",
+      "date": "2025-09-03T10:44:17.609Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_65",
+      "type": "meeting",
+      "contactId": "ct_134",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-09-04T18:07:41.642Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_66",
+      "type": "meeting",
+      "contactId": "ct_93",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-09-15T06:52:52.434Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_67",
+      "type": "note",
+      "contactId": "ct_61",
+      "dealId": "deal_90",
+      "ownerId": "usr_3",
+      "date": "2026-09-13T20:07:47.453Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_68",
+      "type": "call",
+      "contactId": "ct_154",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-10-28T14:44:11.899Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_69",
+      "type": "email",
+      "contactId": "ct_116",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-09-11T17:37:03.884Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_70",
+      "type": "meeting",
+      "contactId": "ct_133",
+      "dealId": "deal_73",
+      "ownerId": "usr_2",
+      "date": "2026-10-31T12:41:04.165Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_71",
+      "type": "call",
+      "contactId": "ct_77",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-09-15T08:47:20.998Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_72",
+      "type": "note",
+      "contactId": "ct_24",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-04-24T05:38:23.248Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_73",
+      "type": "email",
+      "contactId": "ct_56",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-06-25T03:35:16.896Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_74",
+      "type": "meeting",
+      "contactId": "ct_13",
+      "dealId": "deal_77",
+      "ownerId": "usr_4",
+      "date": "2026-10-24T14:29:10.810Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_75",
+      "type": "note",
+      "contactId": "ct_147",
+      "dealId": "deal_13",
+      "ownerId": "usr_3",
+      "date": "2026-09-19T04:05:13.217Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_76",
+      "type": "meeting",
+      "contactId": "ct_29",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2025-12-02T01:02:51.098Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_77",
+      "type": "email",
+      "contactId": "ct_152",
+      "dealId": "deal_8",
+      "ownerId": "usr_5",
+      "date": "2026-09-15T04:19:00.677Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_78",
+      "type": "email",
+      "contactId": "ct_29",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-07-12T01:08:58.985Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_79",
+      "type": "call",
+      "contactId": "ct_102",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-07-28T02:06:00.651Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_80",
+      "type": "meeting",
+      "contactId": "ct_104",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-09-23T16:30:11.081Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_81",
+      "type": "call",
+      "contactId": "ct_35",
+      "dealId": "deal_17",
+      "ownerId": "usr_3",
+      "date": "2026-04-18T23:24:15.501Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_82",
+      "type": "email",
+      "contactId": "ct_58",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-05-01T03:37:11.612Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_83",
+      "type": "email",
+      "contactId": "ct_102",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-02-17T05:13:16.524Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_84",
+      "type": "note",
+      "contactId": "ct_165",
+      "dealId": "deal_27",
+      "ownerId": "usr_2",
+      "date": "2025-12-20T09:31:12.040Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_85",
+      "type": "call",
+      "contactId": "ct_143",
+      "dealId": "deal_3",
+      "ownerId": "usr_2",
+      "date": "2025-07-09T02:35:27.224Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_86",
+      "type": "call",
+      "contactId": "ct_130",
+      "dealId": "deal_24",
+      "ownerId": "usr_5",
+      "date": "2026-11-01T00:48:43.365Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_87",
+      "type": "meeting",
+      "contactId": "ct_112",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2025-10-18T03:41:09.108Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_88",
+      "type": "call",
+      "contactId": "ct_13",
+      "dealId": "deal_77",
+      "ownerId": "usr_4",
+      "date": "2026-06-27T20:24:36.639Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_89",
+      "type": "email",
+      "contactId": "ct_63",
+      "dealId": "deal_59",
+      "ownerId": "usr_4",
+      "date": "2025-08-16T05:30:56.161Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_90",
+      "type": "email",
+      "contactId": "ct_119",
+      "dealId": "deal_6",
+      "ownerId": "usr_5",
+      "date": "2026-10-31T19:38:56.536Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_91",
+      "type": "note",
+      "contactId": "ct_80",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-10-28T08:23:31.888Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_92",
+      "type": "note",
+      "contactId": "ct_102",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-05-08T09:00:16.627Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_93",
+      "type": "note",
+      "contactId": "ct_89",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-04-27T01:02:37.876Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_94",
+      "type": "email",
+      "contactId": "ct_113",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-09-12T19:04:49.383Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_95",
+      "type": "meeting",
+      "contactId": "ct_179",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2025-11-30T00:36:16.729Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_96",
+      "type": "meeting",
+      "contactId": "ct_110",
+      "dealId": "deal_64",
+      "ownerId": "usr_3",
+      "date": "2026-10-02T00:51:12.341Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_97",
+      "type": "note",
+      "contactId": "ct_149",
+      "dealId": "deal_67",
+      "ownerId": "usr_3",
+      "date": "2026-10-03T20:26:31.719Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_98",
+      "type": "note",
+      "contactId": "ct_10",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-09-08T16:31:44.201Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_99",
+      "type": "note",
+      "contactId": "ct_132",
+      "dealId": "deal_69",
+      "ownerId": "usr_2",
+      "date": "2025-07-14T09:16:23.168Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_100",
+      "type": "note",
+      "contactId": "ct_114",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-02-23T15:26:58.908Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_101",
+      "type": "call",
+      "contactId": "ct_57",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-07-03T00:32:21.154Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_102",
+      "type": "note",
+      "contactId": "ct_179",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-05-26T00:33:11.629Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_103",
+      "type": "note",
+      "contactId": "ct_41",
+      "dealId": "deal_15",
+      "ownerId": "usr_2",
+      "date": "2026-09-11T15:03:16.857Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_104",
+      "type": "note",
+      "contactId": "ct_121",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-09-11T15:08:23.152Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_105",
+      "type": "note",
+      "contactId": "ct_109",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-07-19T03:10:32.415Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_106",
+      "type": "meeting",
+      "contactId": "ct_89",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2025-10-31T01:25:54.600Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_107",
+      "type": "meeting",
+      "contactId": "ct_40",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-08-30T11:04:24.855Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_108",
+      "type": "call",
+      "contactId": "ct_8",
+      "dealId": "deal_46",
+      "ownerId": "usr_2",
+      "date": "2026-06-03T07:20:07.893Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_109",
+      "type": "call",
+      "contactId": "ct_127",
+      "dealId": "deal_35",
+      "ownerId": "usr_5",
+      "date": "2026-10-25T14:48:18.680Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_110",
+      "type": "email",
+      "contactId": "ct_108",
+      "dealId": "deal_43",
+      "ownerId": "usr_2",
+      "date": "2026-06-29T03:30:05.510Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_111",
+      "type": "meeting",
+      "contactId": "ct_128",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-09-28T00:43:10.787Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_112",
+      "type": "meeting",
+      "contactId": "ct_131",
+      "dealId": "deal_61",
+      "ownerId": "usr_2",
+      "date": "2026-06-17T20:55:55.705Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_113",
+      "type": "note",
+      "contactId": "ct_100",
+      "dealId": "deal_79",
+      "ownerId": "usr_3",
+      "date": "2026-11-01T20:36:00.092Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_114",
+      "type": "email",
+      "contactId": "ct_28",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-11-14T11:38:54.541Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_115",
+      "type": "note",
+      "contactId": "ct_8",
+      "dealId": "deal_46",
+      "ownerId": "usr_2",
+      "date": "2026-09-11T22:32:27.040Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_116",
+      "type": "meeting",
+      "contactId": "ct_97",
+      "dealId": "deal_70",
+      "ownerId": "usr_2",
+      "date": "2026-08-01T03:31:30.667Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_117",
+      "type": "call",
+      "contactId": "ct_158",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-01-16T12:22:34.866Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_118",
+      "type": "meeting",
+      "contactId": "ct_134",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-08-21T09:02:02.178Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_119",
+      "type": "email",
+      "contactId": "ct_26",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-11-20T20:23:55.004Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_120",
+      "type": "call",
+      "contactId": "ct_98",
+      "dealId": "deal_68",
+      "ownerId": "usr_5",
+      "date": "2026-09-26T01:20:39.176Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_121",
+      "type": "meeting",
+      "contactId": "ct_43",
+      "dealId": "deal_89",
+      "ownerId": "usr_4",
+      "date": "2026-05-22T20:59:25.997Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_122",
+      "type": "call",
+      "contactId": "ct_87",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-10-14T00:03:27.182Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_123",
+      "type": "email",
+      "contactId": "ct_118",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-04-06T00:28:23.934Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_124",
+      "type": "meeting",
+      "contactId": "ct_108",
+      "dealId": "deal_43",
+      "ownerId": "usr_2",
+      "date": "2026-03-19T14:20:09.330Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_125",
+      "type": "note",
+      "contactId": "ct_98",
+      "dealId": "deal_68",
+      "ownerId": "usr_5",
+      "date": "2026-07-04T22:17:36.336Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_126",
+      "type": "meeting",
+      "contactId": "ct_131",
+      "dealId": "deal_61",
+      "ownerId": "usr_2",
+      "date": "2026-07-15T02:23:06.947Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_127",
+      "type": "meeting",
+      "contactId": "ct_45",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-01-20T13:19:33.195Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_128",
+      "type": "note",
+      "contactId": "ct_148",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-10-20T21:02:35.346Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_129",
+      "type": "call",
+      "contactId": "ct_98",
+      "dealId": "deal_68",
+      "ownerId": "usr_5",
+      "date": "2026-06-08T04:11:36.650Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_130",
+      "type": "note",
+      "contactId": "ct_43",
+      "dealId": "deal_21",
+      "ownerId": "usr_4",
+      "date": "2026-01-09T08:04:38.706Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_131",
+      "type": "call",
+      "contactId": "ct_148",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-11-14T00:02:46.867Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_132",
+      "type": "email",
+      "contactId": "ct_155",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-10-11T15:15:29.582Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_133",
+      "type": "note",
+      "contactId": "ct_172",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-10-28T02:06:21.506Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_134",
+      "type": "note",
+      "contactId": "ct_31",
+      "dealId": "deal_30",
+      "ownerId": "usr_4",
+      "date": "2026-10-12T18:53:42.778Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_135",
+      "type": "note",
+      "contactId": "ct_153",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-11-20T03:05:17.097Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_136",
+      "type": "meeting",
+      "contactId": "ct_110",
+      "dealId": "deal_74",
+      "ownerId": "usr_3",
+      "date": "2025-12-01T21:50:50.048Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_137",
+      "type": "note",
+      "contactId": "ct_55",
+      "dealId": "deal_38",
+      "ownerId": "usr_5",
+      "date": "2026-11-17T18:07:17.953Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_138",
+      "type": "email",
+      "contactId": "ct_133",
+      "dealId": "deal_73",
+      "ownerId": "usr_2",
+      "date": "2026-04-28T03:13:00.425Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_139",
+      "type": "email",
+      "contactId": "ct_15",
+      "dealId": "deal_2",
+      "ownerId": "usr_3",
+      "date": "2026-10-20T01:39:16.210Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_140",
+      "type": "meeting",
+      "contactId": "ct_122",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-11-18T03:17:58.746Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_141",
+      "type": "call",
+      "contactId": "ct_13",
+      "dealId": "deal_77",
+      "ownerId": "usr_4",
+      "date": "2026-09-08T03:21:13.499Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_142",
+      "type": "call",
+      "contactId": "ct_144",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-04-22T13:59:14.457Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_143",
+      "type": "email",
+      "contactId": "ct_129",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-11-16T14:14:04.483Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_144",
+      "type": "email",
+      "contactId": "ct_159",
+      "dealId": "deal_1",
+      "ownerId": "usr_5",
+      "date": "2026-11-12T09:42:49.867Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_145",
+      "type": "call",
+      "contactId": "ct_43",
+      "dealId": "deal_21",
+      "ownerId": "usr_4",
+      "date": "2026-02-28T06:01:57.139Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_146",
+      "type": "note",
+      "contactId": "ct_15",
+      "dealId": "deal_2",
+      "ownerId": "usr_3",
+      "date": "2026-11-02T21:37:53.070Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_147",
+      "type": "call",
+      "contactId": "ct_156",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-05-07T11:46:22.085Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_148",
+      "type": "email",
+      "contactId": "ct_54",
+      "dealId": "deal_63",
+      "ownerId": "usr_4",
+      "date": "2026-11-17T13:45:34.896Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_149",
+      "type": "meeting",
+      "contactId": "ct_50",
+      "dealId": "deal_11",
+      "ownerId": "usr_3",
+      "date": "2026-10-09T12:04:59.892Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_150",
+      "type": "note",
+      "contactId": "ct_24",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-02-11T08:48:17.168Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_151",
+      "type": "call",
+      "contactId": "ct_113",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-09-10T19:16:34.719Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_152",
+      "type": "email",
+      "contactId": "ct_176",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-09-29T18:41:41.115Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_153",
+      "type": "email",
+      "contactId": "ct_119",
+      "dealId": "deal_6",
+      "ownerId": "usr_5",
+      "date": "2026-11-08T00:11:10.509Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_154",
+      "type": "meeting",
+      "contactId": "ct_158",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-02-02T15:36:43.078Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_155",
+      "type": "meeting",
+      "contactId": "ct_99",
+      "dealId": "deal_22",
+      "ownerId": "usr_5",
+      "date": "2026-11-10T03:55:51.550Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_156",
+      "type": "email",
+      "contactId": "ct_128",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-08-20T17:42:22.252Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_157",
+      "type": "note",
+      "contactId": "ct_127",
+      "dealId": "deal_35",
+      "ownerId": "usr_5",
+      "date": "2026-11-01T13:45:44.487Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_158",
+      "type": "call",
+      "contactId": "ct_21",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-07-29T22:22:45.491Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_159",
+      "type": "meeting",
+      "contactId": "ct_151",
+      "dealId": "deal_60",
+      "ownerId": "usr_5",
+      "date": "2026-03-16T16:20:18.606Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_160",
+      "type": "meeting",
+      "contactId": "ct_47",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-10-08T19:48:37.292Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_161",
+      "type": "call",
+      "contactId": "ct_56",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-04-12T23:31:52.592Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_162",
+      "type": "note",
+      "contactId": "ct_66",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-07-17T20:44:42.814Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_163",
+      "type": "note",
+      "contactId": "ct_6",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-09-03T01:17:36.953Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_164",
+      "type": "meeting",
+      "contactId": "ct_129",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-03-22T06:46:59.641Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_165",
+      "type": "meeting",
+      "contactId": "ct_70",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-01-27T09:40:28.722Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_166",
+      "type": "call",
+      "contactId": "ct_87",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-10-12T16:00:43.905Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_167",
+      "type": "email",
+      "contactId": "ct_142",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-10-27T18:36:44.120Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_168",
+      "type": "meeting",
+      "contactId": "ct_4",
+      "dealId": "deal_56",
+      "ownerId": "usr_4",
+      "date": "2026-02-19T22:35:24.976Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_169",
+      "type": "email",
+      "contactId": "ct_93",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-10-01T21:08:39.624Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_170",
+      "type": "meeting",
+      "contactId": "ct_101",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-10-31T12:14:26.830Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_171",
+      "type": "note",
+      "contactId": "ct_11",
+      "dealId": "deal_10",
+      "ownerId": "usr_4",
+      "date": "2026-10-27T02:18:17.793Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_172",
+      "type": "call",
+      "contactId": "ct_119",
+      "dealId": "deal_6",
+      "ownerId": "usr_5",
+      "date": "2026-11-08T14:10:37.532Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_173",
+      "type": "email",
+      "contactId": "ct_162",
+      "dealId": "deal_33",
+      "ownerId": "usr_4",
+      "date": "2026-06-09T20:03:40.592Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_174",
+      "type": "note",
+      "contactId": "ct_111",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2025-11-17T09:11:11.695Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_175",
+      "type": "call",
+      "contactId": "ct_71",
+      "dealId": "deal_29",
+      "ownerId": "usr_2",
+      "date": "2026-08-18T10:13:42.635Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_176",
+      "type": "meeting",
+      "contactId": "ct_150",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-04-17T07:35:16.470Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_177",
+      "type": "note",
+      "contactId": "ct_14",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-08-23T13:58:17.344Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_178",
+      "type": "email",
+      "contactId": "ct_164",
+      "dealId": "deal_26",
+      "ownerId": "usr_3",
+      "date": "2026-11-11T00:24:58.400Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_179",
+      "type": "call",
+      "contactId": "ct_110",
+      "dealId": "deal_74",
+      "ownerId": "usr_3",
+      "date": "2026-06-17T08:39:12.473Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_180",
+      "type": "email",
+      "contactId": "ct_19",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-09-22T03:38:49.726Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_181",
+      "type": "email",
+      "contactId": "ct_95",
+      "dealId": "deal_41",
+      "ownerId": "usr_3",
+      "date": "2026-11-16T04:20:35.700Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_182",
+      "type": "meeting",
+      "contactId": "ct_144",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-07-09T07:39:39.698Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_183",
+      "type": "email",
+      "contactId": "ct_60",
+      "dealId": "deal_20",
+      "ownerId": "usr_3",
+      "date": "2026-03-31T12:03:08.317Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_184",
+      "type": "call",
+      "contactId": "ct_117",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-09-21T19:18:48.911Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_185",
+      "type": "email",
+      "contactId": "ct_73",
+      "dealId": "deal_18",
+      "ownerId": "usr_2",
+      "date": "2026-07-17T18:33:47.390Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_186",
+      "type": "note",
+      "contactId": "ct_64",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-02-24T20:21:52.260Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_187",
+      "type": "meeting",
+      "contactId": "ct_84",
+      "dealId": "deal_65",
+      "ownerId": "usr_2",
+      "date": "2026-04-28T09:38:06.502Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_188",
+      "type": "note",
+      "contactId": "ct_113",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-09-22T08:23:28.476Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_189",
+      "type": "email",
+      "contactId": "ct_54",
+      "dealId": "deal_63",
+      "ownerId": "usr_4",
+      "date": "2026-04-02T06:43:27.963Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_190",
+      "type": "note",
+      "contactId": "ct_73",
+      "dealId": "deal_18",
+      "ownerId": "usr_2",
+      "date": "2026-03-03T19:08:09.216Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_191",
+      "type": "call",
+      "contactId": "ct_81",
+      "dealId": "deal_82",
+      "ownerId": "usr_2",
+      "date": "2026-05-27T05:58:22.514Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_192",
+      "type": "email",
+      "contactId": "ct_4",
+      "dealId": "deal_56",
+      "ownerId": "usr_4",
+      "date": "2026-01-13T18:27:31.799Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_193",
+      "type": "call",
+      "contactId": "ct_99",
+      "dealId": "deal_22",
+      "ownerId": "usr_5",
+      "date": "2026-11-10T02:47:33.302Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_194",
+      "type": "note",
+      "contactId": "ct_90",
+      "dealId": "deal_14",
+      "ownerId": "usr_2",
+      "date": "2026-10-23T21:10:28.272Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_195",
+      "type": "note",
+      "contactId": "ct_92",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2025-08-19T03:12:10.568Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_196",
+      "type": "call",
+      "contactId": "ct_161",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-09-05T00:01:40.874Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_197",
+      "type": "meeting",
+      "contactId": "ct_95",
+      "dealId": "deal_41",
+      "ownerId": "usr_3",
+      "date": "2026-10-01T11:52:14.072Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_198",
+      "type": "meeting",
+      "contactId": "ct_88",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-08-11T21:47:18.929Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_199",
+      "type": "call",
+      "contactId": "ct_11",
+      "dealId": "deal_10",
+      "ownerId": "usr_4",
+      "date": "2026-04-28T22:39:52.741Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_200",
+      "type": "note",
+      "contactId": "ct_29",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2025-09-15T12:53:18.536Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_201",
+      "type": "email",
+      "contactId": "ct_61",
+      "dealId": "deal_90",
+      "ownerId": "usr_3",
+      "date": "2026-11-16T17:17:20.884Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_202",
+      "type": "email",
+      "contactId": "ct_147",
+      "dealId": "deal_13",
+      "ownerId": "usr_3",
+      "date": "2026-09-22T01:07:44.758Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_203",
+      "type": "note",
+      "contactId": "ct_65",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-10-16T00:57:40.944Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_204",
+      "type": "note",
+      "contactId": "ct_180",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-09-30T20:01:20.431Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_205",
+      "type": "note",
+      "contactId": "ct_74",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-09-25T08:50:58.003Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_206",
+      "type": "email",
+      "contactId": "ct_17",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-11-04T09:28:57.354Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_207",
+      "type": "note",
+      "contactId": "ct_140",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-07-10T19:17:42.658Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_208",
+      "type": "call",
+      "contactId": "ct_63",
+      "dealId": "deal_59",
+      "ownerId": "usr_4",
+      "date": "2026-04-15T05:50:17.948Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_209",
+      "type": "note",
+      "contactId": "ct_10",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-09-29T04:35:58.011Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_210",
+      "type": "note",
+      "contactId": "ct_72",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2025-10-09T01:31:39.852Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_211",
+      "type": "meeting",
+      "contactId": "ct_14",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-04-08T19:05:54.620Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_212",
+      "type": "meeting",
+      "contactId": "ct_160",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-05-05T17:50:19.010Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_213",
+      "type": "meeting",
+      "contactId": "ct_113",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-11-17T06:43:47.855Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_214",
+      "type": "call",
+      "contactId": "ct_101",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-11-06T11:38:04.681Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_215",
+      "type": "email",
+      "contactId": "ct_6",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-10-07T06:09:33.288Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_216",
+      "type": "note",
+      "contactId": "ct_14",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2025-12-22T14:19:21.146Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_217",
+      "type": "note",
+      "contactId": "ct_42",
+      "dealId": "deal_28",
+      "ownerId": "usr_3",
+      "date": "2026-04-10T17:46:48.377Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_218",
+      "type": "call",
+      "contactId": "ct_149",
+      "dealId": "deal_67",
+      "ownerId": "usr_3",
+      "date": "2026-09-21T19:54:48.798Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_219",
+      "type": "meeting",
+      "contactId": "ct_105",
+      "dealId": "deal_78",
+      "ownerId": "usr_3",
+      "date": "2026-11-15T00:12:07.595Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_220",
+      "type": "email",
+      "contactId": "ct_13",
+      "dealId": "deal_77",
+      "ownerId": "usr_4",
+      "date": "2026-09-08T13:49:51.521Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_221",
+      "type": "meeting",
+      "contactId": "ct_89",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-08-26T12:05:30.285Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_222",
+      "type": "note",
+      "contactId": "ct_22",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-11-18T09:37:18.284Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_223",
+      "type": "call",
+      "contactId": "ct_79",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-07-02T09:30:42.789Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_224",
+      "type": "call",
+      "contactId": "ct_3",
+      "dealId": "deal_4",
+      "ownerId": "usr_5",
+      "date": "2026-09-24T02:00:18.471Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_225",
+      "type": "call",
+      "contactId": "ct_106",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-10-08T16:28:29.076Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_226",
+      "type": "meeting",
+      "contactId": "ct_78",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-11-15T08:28:14.814Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_227",
+      "type": "meeting",
+      "contactId": "ct_101",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-10-21T23:10:27.677Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_228",
+      "type": "call",
+      "contactId": "ct_49",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-07-17T12:56:11.611Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_229",
+      "type": "email",
+      "contactId": "ct_103",
+      "dealId": "deal_12",
+      "ownerId": "usr_3",
+      "date": "2026-08-14T21:26:47.896Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_230",
+      "type": "call",
+      "contactId": "ct_44",
+      "dealId": "deal_55",
+      "ownerId": "usr_3",
+      "date": "2026-08-13T15:16:05.677Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_231",
+      "type": "note",
+      "contactId": "ct_120",
+      "dealId": "deal_5",
+      "ownerId": "usr_4",
+      "date": "2026-08-18T04:22:25.784Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_232",
+      "type": "note",
+      "contactId": "ct_111",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-04-25T07:36:14.891Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_233",
+      "type": "note",
+      "contactId": "ct_6",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-09-22T13:54:46.161Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_234",
+      "type": "note",
+      "contactId": "ct_29",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-01-17T00:39:40.927Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_235",
+      "type": "note",
+      "contactId": "ct_122",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-11-19T21:13:44.541Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_236",
+      "type": "call",
+      "contactId": "ct_132",
+      "dealId": "deal_69",
+      "ownerId": "usr_2",
+      "date": "2026-11-02T18:03:28.703Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_237",
+      "type": "note",
+      "contactId": "ct_150",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-01-11T17:56:46.497Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_238",
+      "type": "note",
+      "contactId": "ct_25",
+      "dealId": "deal_42",
+      "ownerId": "usr_4",
+      "date": "2025-07-10T21:15:53.048Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_239",
+      "type": "meeting",
+      "contactId": "ct_21",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-09-01T13:34:05.926Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_240",
+      "type": "email",
+      "contactId": "ct_134",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-11-20T18:31:41.646Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_241",
+      "type": "call",
+      "contactId": "ct_61",
+      "dealId": "deal_90",
+      "ownerId": "usr_3",
+      "date": "2026-10-20T18:02:34.858Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_242",
+      "type": "meeting",
+      "contactId": "ct_89",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-04-29T07:58:56.572Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_243",
+      "type": "note",
+      "contactId": "ct_139",
+      "dealId": "deal_40",
+      "ownerId": "usr_3",
+      "date": "2026-10-04T07:37:16.686Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_244",
+      "type": "call",
+      "contactId": "ct_132",
+      "dealId": "deal_69",
+      "ownerId": "usr_2",
+      "date": "2025-10-03T03:29:36.327Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_245",
+      "type": "note",
+      "contactId": "ct_134",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-05-13T20:12:19.196Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_246",
+      "type": "call",
+      "contactId": "ct_31",
+      "dealId": "deal_30",
+      "ownerId": "usr_4",
+      "date": "2026-10-30T01:03:02.162Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_247",
+      "type": "note",
+      "contactId": "ct_105",
+      "dealId": "deal_78",
+      "ownerId": "usr_3",
+      "date": "2026-10-11T20:20:42.603Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_248",
+      "type": "meeting",
+      "contactId": "ct_170",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-11-06T22:16:50.318Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_249",
+      "type": "note",
+      "contactId": "ct_34",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-02-25T06:20:36.660Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_250",
+      "type": "meeting",
+      "contactId": "ct_21",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-06-24T23:47:46.868Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_251",
+      "type": "email",
+      "contactId": "ct_15",
+      "dealId": "deal_2",
+      "ownerId": "usr_3",
+      "date": "2026-07-25T07:20:19.633Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_252",
+      "type": "email",
+      "contactId": "ct_178",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2025-07-28T16:24:43.108Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_253",
+      "type": "call",
+      "contactId": "ct_70",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-03-18T22:35:51.961Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_254",
+      "type": "call",
+      "contactId": "ct_78",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-10-10T05:56:37.099Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_255",
+      "type": "note",
+      "contactId": "ct_171",
+      "dealId": "deal_9",
+      "ownerId": "usr_5",
+      "date": "2026-11-14T16:56:08.470Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_256",
+      "type": "email",
+      "contactId": "ct_74",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-07-18T09:59:28.130Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_257",
+      "type": "note",
+      "contactId": "ct_35",
+      "dealId": "deal_17",
+      "ownerId": "usr_3",
+      "date": "2026-05-15T14:39:06.494Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_258",
+      "type": "meeting",
+      "contactId": "ct_90",
+      "dealId": "deal_51",
+      "ownerId": "usr_2",
+      "date": "2026-10-21T16:07:03.603Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_259",
+      "type": "note",
+      "contactId": "ct_12",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-01-22T17:48:27.498Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_260",
+      "type": "call",
+      "contactId": "ct_20",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-10-20T05:02:06.227Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_261",
+      "type": "call",
+      "contactId": "ct_119",
+      "dealId": "deal_6",
+      "ownerId": "usr_5",
+      "date": "2026-08-25T18:44:01.403Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_262",
+      "type": "note",
+      "contactId": "ct_128",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-10-08T01:52:21.344Z",
+      "summary": "Compara com outro fornecedor"
+    },
+    {
+      "id": "act_263",
+      "type": "call",
+      "contactId": "ct_49",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-04-18T10:58:49.190Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_264",
+      "type": "note",
+      "contactId": "ct_46",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-05-04T03:11:26.413Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_265",
+      "type": "call",
+      "contactId": "ct_96",
+      "dealId": "deal_39",
+      "ownerId": "usr_3",
+      "date": "2026-09-25T03:58:21.506Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_266",
+      "type": "note",
+      "contactId": "ct_30",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-08-20T11:58:44.412Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_267",
+      "type": "note",
+      "contactId": "ct_87",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-10-26T00:28:06.709Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_268",
+      "type": "email",
+      "contactId": "ct_175",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2025-08-05T20:59:19.087Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_269",
+      "type": "email",
+      "contactId": "ct_116",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-09-18T17:49:33.883Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_270",
+      "type": "email",
+      "contactId": "ct_52",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2025-11-22T20:52:52.491Z",
+      "summary": "Envio de proposta"
+    },
+    {
+      "id": "act_271",
+      "type": "meeting",
+      "contactId": "ct_142",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-10-19T01:16:35.084Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_272",
+      "type": "call",
+      "contactId": "ct_93",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-10-27T10:57:35.419Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_273",
+      "type": "call",
+      "contactId": "ct_27",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-04-18T21:50:25.589Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_274",
+      "type": "call",
+      "contactId": "ct_140",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-04-09T06:33:57.398Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_275",
+      "type": "meeting",
+      "contactId": "ct_180",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-10-30T13:49:09.881Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_276",
+      "type": "meeting",
+      "contactId": "ct_163",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-01-24T18:58:53.498Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_277",
+      "type": "meeting",
+      "contactId": "ct_73",
+      "dealId": "deal_18",
+      "ownerId": "usr_2",
+      "date": "2026-11-18T09:12:05.359Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_278",
+      "type": "meeting",
+      "contactId": "ct_155",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2026-08-21T16:11:09.100Z",
+      "summary": "Demonstração do produto"
+    },
+    {
+      "id": "act_279",
+      "type": "meeting",
+      "contactId": "ct_136",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-11-14T10:39:31.578Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_280",
+      "type": "meeting",
+      "contactId": "ct_94",
+      "dealId": null,
+      "ownerId": "usr_2",
+      "date": "2025-11-10T21:41:44.601Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_281",
+      "type": "call",
+      "contactId": "ct_90",
+      "dealId": "deal_51",
+      "ownerId": "usr_2",
+      "date": "2026-05-16T09:16:00.066Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_282",
+      "type": "call",
+      "contactId": "ct_158",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-08-30T21:06:05.605Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_283",
+      "type": "call",
+      "contactId": "ct_62",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2025-09-17T10:34:14.107Z",
+      "summary": "Ligação para entender a necessidade"
+    },
+    {
+      "id": "act_284",
+      "type": "call",
+      "contactId": "ct_163",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-01-21T23:07:06.273Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_285",
+      "type": "note",
+      "contactId": "ct_85",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2025-07-18T11:36:12.333Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_286",
+      "type": "meeting",
+      "contactId": "ct_153",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-10-09T12:37:58.289Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_287",
+      "type": "meeting",
+      "contactId": "ct_61",
+      "dealId": "deal_90",
+      "ownerId": "usr_3",
+      "date": "2026-08-18T05:26:41.113Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_288",
+      "type": "email",
+      "contactId": "ct_115",
+      "dealId": "deal_34",
+      "ownerId": "usr_3",
+      "date": "2026-11-04T00:07:45.840Z",
+      "summary": "Resposta sobre prazos e valores"
+    },
+    {
+      "id": "act_289",
+      "type": "call",
+      "contactId": "ct_33",
+      "dealId": "deal_80",
+      "ownerId": "usr_3",
+      "date": "2026-11-07T03:56:16.468Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_290",
+      "type": "note",
+      "contactId": "ct_125",
+      "dealId": "deal_72",
+      "ownerId": "usr_5",
+      "date": "2026-05-29T18:51:12.250Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_291",
+      "type": "meeting",
+      "contactId": "ct_106",
+      "dealId": null,
+      "ownerId": "usr_4",
+      "date": "2026-11-05T15:13:36.061Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_292",
+      "type": "note",
+      "contactId": "ct_170",
+      "dealId": null,
+      "ownerId": "usr_5",
+      "date": "2026-08-22T04:26:52.903Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_293",
+      "type": "call",
+      "contactId": "ct_61",
+      "dealId": "deal_90",
+      "ownerId": "usr_3",
+      "date": "2026-11-02T02:58:25.189Z",
+      "summary": "Ligação de acompanhamento"
+    },
+    {
+      "id": "act_294",
+      "type": "meeting",
+      "contactId": "ct_140",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-06-01T19:35:27.216Z",
+      "summary": "Reunião de descoberta"
+    },
+    {
+      "id": "act_295",
+      "type": "meeting",
+      "contactId": "ct_135",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-06-05T18:18:24.272Z",
+      "summary": "Reunião de alinhamento com a diretoria"
+    },
+    {
+      "id": "act_296",
+      "type": "call",
+      "contactId": "ct_70",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-02-13T12:58:30.791Z",
+      "summary": "Retorno sobre a proposta"
+    },
+    {
+      "id": "act_297",
+      "type": "note",
+      "contactId": "ct_60",
+      "dealId": "deal_20",
+      "ownerId": "usr_3",
+      "date": "2026-05-18T07:48:26.462Z",
+      "summary": "Cliente pediu desconto para fechar neste mês"
+    },
+    {
+      "id": "act_298",
+      "type": "note",
+      "contactId": "ct_55",
+      "dealId": "deal_38",
+      "ownerId": "usr_5",
+      "date": "2026-11-10T17:49:05.521Z",
+      "summary": "Decisor está de férias até a próxima semana"
+    },
+    {
+      "id": "act_299",
+      "type": "email",
+      "contactId": "ct_60",
+      "dealId": "deal_20",
+      "ownerId": "usr_3",
+      "date": "2025-08-18T06:33:46.582Z",
+      "summary": "Envio de apresentação comercial"
+    },
+    {
+      "id": "act_300",
+      "type": "email",
+      "contactId": "ct_158",
+      "dealId": null,
+      "ownerId": "usr_3",
+      "date": "2026-02-14T12:22:31.552Z",
+      "summary": "Resposta sobre prazos e valores"
+    }
+  ]
+}
