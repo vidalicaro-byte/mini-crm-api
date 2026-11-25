@@ -3,7 +3,7 @@
 from collections.abc import Iterator
 from typing import Any
 
-from sqlalchemy import Engine, MetaData, create_engine, event
+from sqlalchemy import Connection, Engine, MetaData, create_engine, event
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 
 from crm_api.config import get_settings
@@ -28,15 +28,23 @@ def create_db_engine(url: str, **kwargs: Any) -> Engine:
         kwargs.setdefault("connect_args", {"check_same_thread": False})
     engine = create_engine(url, **kwargs)
     if engine.dialect.name == "sqlite":
-        event.listen(engine, "connect", _enable_sqlite_foreign_keys)
+        event.listen(engine, "connect", _configure_sqlite_connection)
+        event.listen(engine, "begin", _begin_sqlite_transaction)
     return engine
 
 
-def _enable_sqlite_foreign_keys(dbapi_connection: Any, _record: Any) -> None:
-    # SQLite ignores foreign keys unless asked, per connection; PostgreSQL always enforces them.
+def _configure_sqlite_connection(dbapi_connection: Any, _record: Any) -> None:
+    # Python's sqlite3 driver starts transactions on its own terms, which breaks SAVEPOINTs (and
+    # so the per-test rollback). Turn that off and let SQLAlchemy emit BEGIN itself (below).
+    dbapi_connection.isolation_level = None
     cursor = dbapi_connection.cursor()
+    # SQLite ignores foreign keys unless asked, per connection; PostgreSQL always enforces them.
     cursor.execute("PRAGMA foreign_keys=ON")
     cursor.close()
+
+
+def _begin_sqlite_transaction(connection: Connection) -> None:
+    connection.exec_driver_sql("BEGIN")
 
 
 engine = create_db_engine(get_settings().database_url)
