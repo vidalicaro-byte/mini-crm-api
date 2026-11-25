@@ -20,6 +20,13 @@ Demo users share the password `demo1234`: `marina@minicrm.demo` (admin) and
 
 Set `DATABASE_URL` (see `.env.example`) to use PostgreSQL instead of SQLite.
 
+## Authentication
+
+`POST /api/auth/login` with `{"email", "password"}` returns a JWT (valid for 8 hours). Send it as
+`Authorization: Bearer <token>`. In the interactive docs, click **Authorize** and use the e-mail as
+the username. `GET /api/users` is admin-only (403 for sellers). Errors always answer with
+`{"message": "..."}`; validation errors (422) add an `errors` list with the fields.
+
 Interactive docs: http://127.0.0.1:8000/docs
 
 ## Checks

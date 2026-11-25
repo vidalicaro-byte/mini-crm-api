@@ -15,3 +15,10 @@ def test_openapi_schema_is_published(client: TestClient) -> None:
     schema = response.json()
     assert schema["info"]["title"] == "Mini-CRM API"
     assert "/health" in schema["paths"]
+
+
+def test_docs_offer_the_authorize_button(client: TestClient) -> None:
+    schema = client.get("/openapi.json").json()
+
+    scheme = schema["components"]["securitySchemes"]["OAuth2PasswordBearer"]
+    assert scheme["flows"]["password"]["tokenUrl"] == "/api/auth/token"
