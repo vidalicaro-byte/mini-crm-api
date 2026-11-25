@@ -38,3 +38,48 @@ jobs:
 
       - name: Pytest
         run: uv run pytest --cov --cov-report=term-missing
+
+  postgres:
+    name: Migrations and tests (PostgreSQL)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_USER: crm
+          POSTGRES_PASSWORD: crm
+          POSTGRES_DB: crm
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U crm"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgresql://crm:crm@localhost:5432/crm
+      TEST_DATABASE_URL: postgresql://crm:crm@localhost:5432/crm
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Migrate up
+        run: uv run alembic upgrade head
+
+      - name: Models match migrations
+        run: uv run alembic check
+
+      - name: Seed loads
+        run: uv run python -m crm_api.seed
+
+      - name: Migrate down
+        run: uv run alembic downgrade base
+
+      - name: Pytest
+        run: uv run pytest
