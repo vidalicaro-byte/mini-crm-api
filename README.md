@@ -51,6 +51,16 @@ Portuguese rules on both databases (`Ágata` next to `Agnes`).
 
 Interactive docs: http://127.0.0.1:8000/docs
 
+## Docker and deployment
+
+The `Dockerfile` builds a small image (multi-stage, with uv; runs as a non-root user). On start
+it applies migrations, loads the demo data if the database is empty, and serves on `$PORT`.
+CI builds the image and smoke-tests it against PostgreSQL.
+
+Production runs on [Render](https://render.com) (free plan, defined in `render.yaml`) with the
+database on [Neon](https://neon.com) (serverless PostgreSQL). On the free plan the service sleeps
+after 15 minutes without traffic, so the first request after a pause takes about a minute.
+
 ## Checks
 
 ```bash

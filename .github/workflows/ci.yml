@@ -83,3 +83,50 @@ jobs:
 
       - name: Pytest
         run: uv run pytest
+
+  docker:
+    name: Docker image
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_USER: crm
+          POSTGRES_PASSWORD: crm
+          POSTGRES_DB: crm
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U crm"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Build
+        run: docker build -t mini-crm-api .
+
+      - name: Start (migrate, seed, serve) like in production
+        run: |
+          docker run -d --name api --network host \
+            -e PORT=8000 \
+            -e JWT_SECRET="$(openssl rand -base64 48)" \
+            -e DATABASE_URL=postgresql://crm:crm@localhost:5432/crm \
+            mini-crm-api
+
+      - name: Smoke test
+        run: |
+          for attempt in $(seq 1 30); do
+            curl -fs http://localhost:8000/health && break
+            sleep 1
+          done
+          curl -fs http://localhost:8000/health
+          curl -fs http://localhost:8000/api/auth/login \
+            -H 'Content-Type: application/json' \
+            -d '{"email": "marina@minicrm.demo", "password": "demo1234"}' | grep -q '"token"'
+          echo "API is up and the demo login works."
+
+      - name: Container logs
+        if: always()
+        run: docker logs api
