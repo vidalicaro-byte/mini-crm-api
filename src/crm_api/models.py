@@ -131,6 +131,13 @@ class Deal(Base):
     expected_close_date: Mapped[datetime] = mapped_column(UTCDateTime())
     closed_at: Mapped[datetime | None] = mapped_column(UTCDateTime())
 
+    contact: Mapped[Contact] = relationship(lazy="raise")
+    company: Mapped[Company] = relationship(lazy="raise")
+
+    @property
+    def is_closed(self) -> bool:
+        return self.stage in (DealStage.GANHO, DealStage.PERDIDO)
+
 
 class Activity(Base):
     __tablename__ = "activities"

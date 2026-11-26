@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Annotated
+from typing import Annotated, Any
 
 from fastapi import Depends, Query
 
@@ -22,3 +22,20 @@ def _pagination(
 
 
 PaginationDep = Annotated[Pagination, Depends(_pagination)]
+
+
+def _full_list(max_size: int) -> Any:
+    """Pagination for lists the front end loads whole (the board's deals, a contact's activities):
+    without parameters, one page holds everything up to `max_size`."""
+
+    def dependency(
+        page: Annotated[int, Query(ge=1)] = 1,
+        page_size: Annotated[int, Query(alias="pageSize", ge=1, le=max_size)] = max_size,
+    ) -> Pagination:
+        return Pagination(page=page, page_size=page_size)
+
+    return dependency
+
+
+DealsPaginationDep = Annotated[Pagination, Depends(_full_list(200))]
+ActivitiesPaginationDep = Annotated[Pagination, Depends(_full_list(100))]

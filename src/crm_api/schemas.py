@@ -17,7 +17,7 @@ from pydantic import (
 from pydantic.alias_generators import to_camel
 from pydantic_core import PydanticCustomError
 
-from crm_api.models import CompanySize, UserRole
+from crm_api.models import ActivityType, CompanySize, DealStage, UserRole
 
 
 class ApiModel(BaseModel):
@@ -187,3 +187,43 @@ class CompanyOut(ApiModel):
     website: str
     contacts_count: int
     open_deals: OpenDeals
+
+
+class ContactRef(ApiModel):
+    id: str = Field(examples=["ct_1"])
+    name: str = Field(examples=["Ana Souza"])
+
+
+class DealOut(ApiModel):
+    id: str = Field(examples=["deal_1"])
+    title: str
+    value: int = Field(description="Whole reais.", examples=[45000])
+    stage: DealStage
+    contact_id: str
+    company_id: str
+    owner_id: str
+    created_at: datetime
+    expected_close_date: datetime
+    closed_at: datetime | None
+    contact: ContactRef
+    company: CompanyRef
+
+
+def _check_stage(value: Any) -> Any:
+    if value not in {stage.value for stage in DealStage}:
+        raise _fail("Etapa inválida.")
+    return value
+
+
+class DealStageUpdate(ApiModel):
+    stage: Annotated[DealStage, BeforeValidator(_check_stage)]
+
+
+class ActivityOut(ApiModel):
+    id: str = Field(examples=["act_1"])
+    type: ActivityType
+    contact_id: str
+    deal_id: str | None
+    owner_id: str
+    date: datetime
+    summary: str

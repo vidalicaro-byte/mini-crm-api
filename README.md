@@ -40,6 +40,9 @@ the username. `GET /api/users` is admin-only (403 for sellers). Errors always an
 | `PATCH` | `/api/contacts/{id}` | Partial update: only the fields sent change; the owner never does |
 | `GET` | `/api/companies` | `q`, `size`, `sort` (`name`, `industry`, `size`, `city`, `contactsCount`, `openDealsValue`), `order`, pagination |
 | `GET` | `/api/companies/{id}` | With `contactsCount` and `openDeals {count, value}` |
+| `GET` | `/api/deals` | Newest first; all visible deals in one page by default (the funnel board). `contactId`, `companyId` |
+| `PATCH` | `/api/deals/{id}` | `{"stage": ...}`; closing stamps `closedAt`, reopening clears it |
+| `GET` | `/api/activities?contactId=` | A contact's activities, newest first |
 
 Sellers only see the contacts they own; admins see everything. Companies are visible to everyone,
 but their figures only count what the viewer may see. Text sorts follow Brazilian

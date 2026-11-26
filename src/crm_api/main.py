@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from crm_api import __version__
 from crm_api.config import get_settings
 from crm_api.errors import register_error_handlers
-from crm_api.routers import auth, companies, contacts, health, users
+from crm_api.routers import activities, auth, companies, contacts, deals, health, users
 
 DESCRIPTION = """
 REST API behind the [Mini-CRM](https://github.com/vidalicaro-byte/mini-crm) front end.
@@ -28,6 +28,8 @@ def create_app() -> FastAPI:
     app.include_router(users.router)
     app.include_router(contacts.router)
     app.include_router(companies.router)
+    app.include_router(deals.router)
+    app.include_router(activities.router)
     return app
 
 
