@@ -1,5 +1,6 @@
 """Request and response bodies. JSON uses camelCase, as in the front end's contract."""
 
+from datetime import datetime
 from typing import Annotated, Any, Literal
 
 from pydantic import AfterValidator, BaseModel, BeforeValidator, ConfigDict, EmailStr, Field
@@ -54,3 +55,23 @@ class TokenResponse(BaseModel):
 
     access_token: str
     token_type: Literal["bearer"] = "bearer"  # noqa: S105  (OAuth2 token type, not a secret)
+
+
+class CompanyRef(ApiModel):
+    id: str = Field(examples=["cmp_1"])
+    name: str = Field(examples=["Aurora Tecnologia"])
+
+
+class ContactOut(ApiModel):
+    id: str = Field(examples=["ct_1"])
+    name: str
+    email: str
+    phone: str
+    job_title: str
+    company_id: str
+    owner_id: str
+    created_at: datetime
+    company: CompanyRef
+
+
+type SortOrder = Literal["asc", "desc"]
