@@ -54,7 +54,9 @@ def test_datetimes_come_back_timezone_aware_in_utc(session: Session) -> None:
     make_contact(session, created_at=datetime(2026, 11, 25, 9, 0, tzinfo=BRASILIA))
     session.expire_all()  # force a real read from the database
 
-    stored = session.scalars(select(Contact.created_at)).one()
+    stored = session.scalars(
+        select(Contact.created_at).where(Contact.id == "ct_c@example.com")
+    ).one()
 
     assert stored == datetime(2026, 11, 25, 12, 0, tzinfo=UTC)
     assert stored.utcoffset() == timedelta(0)

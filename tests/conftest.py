@@ -1,8 +1,8 @@
 """Shared fixtures.
 
 Tests run against in-memory SQLite by default. Set TEST_DATABASE_URL to run the same suite against
-PostgreSQL (CI does both). Each test runs inside a transaction that is rolled back at the end, so
-tests never see each other's data and the schema is created only once per run.
+PostgreSQL (CI does both). The schema and the demo data are created once per run; each test runs
+inside a transaction that is rolled back at the end, so tests never see each other's changes.
 """
 
 import os
@@ -35,6 +35,8 @@ def engine() -> Iterator[Engine]:
         engine = create_db_engine("sqlite://", poolclass=StaticPool)
     Base.metadata.drop_all(engine)
     Base.metadata.create_all(engine)
+    with Session(engine) as session:
+        load_seed(session, now=NOW)
     yield engine
     Base.metadata.drop_all(engine)
     engine.dispose()
@@ -57,7 +59,7 @@ def session(engine: Engine) -> Iterator[Session]:
 
 @pytest.fixture
 def seeded(session: Session) -> Session:
-    load_seed(session, now=NOW)
+    """A session on the demo data (loaded once per run). Named for readability in tests."""
     return session
 
 

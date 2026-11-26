@@ -27,6 +27,19 @@ Set `DATABASE_URL` (see `.env.example`) to use PostgreSQL instead of SQLite.
 the username. `GET /api/users` is admin-only (403 for sellers). Errors always answer with
 `{"message": "..."}`; validation errors (422) add an `errors` list with the fields.
 
+## Endpoints so far
+
+| Method | Path | Notes |
+| --- | --- | --- |
+| `POST` | `/api/auth/login` | E-mail and password → `{token, user}` |
+| `GET` | `/api/auth/me` | The signed-in user |
+| `GET` | `/api/users` | Admins only |
+| `GET` | `/api/contacts` | `page`, `pageSize` (max 100), `sort` (`name`, `email`, `company`, `createdAt`), `order`, `q`, `companyId` |
+| `GET` | `/api/contacts/{id}` | 404 for a contact the user may not see |
+
+Sellers only see the contacts they own; admins see everything. Text sorts follow Brazilian
+Portuguese rules on both databases (`Ágata` next to `Agnes`).
+
 Interactive docs: http://127.0.0.1:8000/docs
 
 ## Checks

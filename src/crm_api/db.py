@@ -7,6 +7,7 @@ from sqlalchemy import Connection, Engine, MetaData, create_engine, event
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 
 from crm_api.config import get_settings
+from crm_api.text import SQLITE_COLLATION, sqlite_collation
 
 # Predictable constraint names, so Alembic can find (and drop) them in later migrations.
 NAMING_CONVENTION = {
@@ -37,10 +38,17 @@ def _configure_sqlite_connection(dbapi_connection: Any, _record: Any) -> None:
     # Python's sqlite3 driver starts transactions on its own terms, which breaks SAVEPOINTs (and
     # so the per-test rollback). Turn that off and let SQLAlchemy emit BEGIN itself (below).
     dbapi_connection.isolation_level = None
+    # SQLite's built-in lower() only knows ASCII ("Á" stays "Á"); use Python's, like PostgreSQL.
+    dbapi_connection.create_function("lower", 1, _lower, deterministic=True)
+    dbapi_connection.create_collation(SQLITE_COLLATION, sqlite_collation)
     cursor = dbapi_connection.cursor()
     # SQLite ignores foreign keys unless asked, per connection; PostgreSQL always enforces them.
     cursor.execute("PRAGMA foreign_keys=ON")
     cursor.close()
+
+
+def _lower(value: str | None) -> str | None:
+    return value.lower() if value is not None else None
 
 
 def _begin_sqlite_transaction(connection: Connection) -> None:

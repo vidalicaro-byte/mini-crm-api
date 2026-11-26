@@ -5,7 +5,7 @@ from enum import StrEnum
 
 from sqlalchemy import DateTime, Enum, ForeignKey, Integer, String, TypeDecorator
 from sqlalchemy.engine import Dialect
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from crm_api.db import Base
 
@@ -110,6 +110,10 @@ class Contact(Base):
     company_id: Mapped[str] = mapped_column(ForeignKey("companies.id"), index=True)
     owner_id: Mapped[str] = mapped_column(ForeignKey("users.id"), index=True)
     created_at: Mapped[datetime] = mapped_column(UTCDateTime(), index=True)
+
+    # lazy="raise": loading the company must be explicit in the query (joinedload), so a list of
+    # 100 contacts can never silently fire 100 extra queries (the N+1 problem).
+    company: Mapped[Company] = relationship(lazy="raise")
 
 
 class Deal(Base):
