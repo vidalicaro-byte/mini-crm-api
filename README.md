@@ -43,6 +43,7 @@ the username. `GET /api/users` is admin-only (403 for sellers). Errors always an
 | `GET` | `/api/deals` | Newest first; all visible deals in one page by default (the funnel board). `contactId`, `companyId` |
 | `PATCH` | `/api/deals/{id}` | `{"stage": ...}`; closing stamps `closedAt`, reopening clears it |
 | `GET` | `/api/activities?contactId=` | A contact's activities, newest first |
+| `GET` | `/api/overview?period=` | `7d`, `30d` (default), `90d`, `12m`: KPIs with the previous period, funnel and revenue, aggregated in SQL |
 
 Sellers only see the contacts they own; admins see everything. Companies are visible to everyone,
 but their figures only count what the viewer may see. Text sorts follow Brazilian

@@ -227,3 +227,52 @@ class ActivityOut(ApiModel):
     owner_id: str
     date: datetime
     summary: str
+
+
+# --- Overview (dashboard) ---
+
+type Period = Literal["7d", "30d", "90d", "12m"]
+
+
+class Trend(ApiModel):
+    current: int
+    previous: int
+
+
+class RateTrend(ApiModel):
+    """Won / (won + lost) among deals closed in the period; null when none was closed."""
+
+    current: float | None
+    previous: float | None
+
+
+class Totals(ApiModel):
+    contacts: int
+    companies: int
+
+
+class FunnelStage(ApiModel):
+    stage: DealStage
+    count: int
+    value: int
+
+
+class RevenueBucket(ApiModel):
+    start: datetime
+    value: int
+
+
+class Revenue(ApiModel):
+    granularity: Literal["day", "week", "month"]
+    buckets: list[RevenueBucket]
+
+
+class OverviewOut(ApiModel):
+    period: Period
+    totals: Totals
+    new_contacts: Trend
+    won_revenue: Trend
+    conversion_rate: RateTrend
+    open_deals: OpenDeals = Field(description="A snapshot of now: deals not won or lost yet.")
+    funnel: list[FunnelStage] = Field(description="Deals created in the period, by current stage.")
+    revenue: Revenue
