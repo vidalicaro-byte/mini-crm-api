@@ -1,0 +1,22 @@
+# Render Blueprint: the API as a Docker web service on the free plan.
+# The database lives on Neon (Render's free PostgreSQL expires after 30 days).
+services:
+  - type: web
+    name: mini-crm-api
+    runtime: docker
+    plan: free
+    region: virginia
+    healthCheckPath: /health
+    # Deploy main only after GitHub's checks (CI) pass.
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DATABASE_URL # Neon pooled connection string (host with "-pooler")
+        sync: false
+      - key: DATABASE_URL_UNPOOLED # Neon direct connection string, used by migrations
+        sync: false
+      - key: CORS_ORIGINS
+        value: https://mini-crm-ten-coral.vercel.app,http://localhost:5173

@@ -7,13 +7,15 @@ license = "MIT"
 requires-python = ">=3.14"
 dependencies = [
     "alembic>=1.20.1",
-    "fastapi[standard]>=0.165.0",
+    "fastapi>=0.165.0",
     "psycopg[binary]>=3.3.9",
     "pwdlib[argon2]>=0.4.2",
     "pydantic-settings>=2.16.3",
     "pydantic[email]>=2.14.4",
     "pyjwt>=2.15.1",
+    "python-multipart>=0.0.34",
     "sqlalchemy>=2.1.9",
+    "uvicorn[standard]>=0.54.0",
 ]
 
 [build-system]
@@ -25,6 +27,8 @@ module-name = "crm_api"
 
 [dependency-groups]
 dev = [
+    "fastapi-cli>=0.0.34",
+    "httpx2>=2.16.2",
     "mypy>=2.4.1",
     "pre-commit>=4.7.0",
     "pytest>=9.2.0",

@@ -27,6 +27,13 @@ def create_db_engine(url: str, **kwargs: Any) -> Engine:
     if url.startswith("sqlite"):
         # FastAPI may use a session in a different thread from the one that opened it.
         kwargs.setdefault("connect_args", {"check_same_thread": False})
+    else:
+        # Serverless Postgres (Neon) closes idle connections when it scales to zero; test each
+        # pooled connection before use instead of failing the first request after a pause.
+        kwargs.setdefault("pool_pre_ping", True)
+        if "-pooler." in url:
+            # PgBouncer in transaction mode: don't rely on server-side prepared statements.
+            kwargs.setdefault("connect_args", {"prepare_threshold": None})
     engine = create_engine(url, **kwargs)
     if engine.dialect.name == "sqlite":
         event.listen(engine, "connect", _configure_sqlite_connection)

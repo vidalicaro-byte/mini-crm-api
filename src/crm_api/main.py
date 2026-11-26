@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import RedirectResponse
 
 from crm_api import __version__
 from crm_api.config import get_settings
@@ -23,6 +25,19 @@ def create_app() -> FastAPI:
         swagger_ui_parameters={"persistAuthorization": True},
     )
     register_error_handlers(app)
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=settings.cors_origins,
+        allow_methods=["GET", "POST", "PATCH"],
+        allow_headers=["Authorization", "Content-Type"],
+        expose_headers=["Location"],
+        max_age=600,
+    )
+
+    @app.get("/", include_in_schema=False)
+    def root() -> RedirectResponse:
+        return RedirectResponse("/docs")
+
     app.include_router(health.router)
     app.include_router(auth.router)
     app.include_router(users.router)

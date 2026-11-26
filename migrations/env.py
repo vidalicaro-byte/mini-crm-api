@@ -20,7 +20,7 @@ target_metadata = Base.metadata
 
 def database_url() -> str:
     # Tests pass a URL through the Alembic config; everything else uses the app's settings.
-    return config.get_main_option("sqlalchemy.url") or get_settings().database_url
+    return config.get_main_option("sqlalchemy.url") or get_settings().migrations_database_url
 
 
 def render_item(type_: str, obj: Any, autogen_context: AutogenContext) -> str | bool:
