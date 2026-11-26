@@ -17,7 +17,7 @@ from pydantic import (
 from pydantic.alias_generators import to_camel
 from pydantic_core import PydanticCustomError
 
-from crm_api.models import UserRole
+from crm_api.models import CompanySize, UserRole
 
 
 class ApiModel(BaseModel):
@@ -168,3 +168,22 @@ class ContactUpdate(ApiModel):
 
     def changes(self) -> dict[str, Any]:
         return self.model_dump(exclude_unset=True)
+
+
+class OpenDeals(ApiModel):
+    count: int
+    value: int
+
+
+class CompanyOut(ApiModel):
+    """A company plus figures about what the viewer may see (a seller only counts their own)."""
+
+    id: str = Field(examples=["cmp_1"])
+    name: str
+    industry: str
+    size: CompanySize
+    city: str
+    state: str
+    website: str
+    contacts_count: int
+    open_deals: OpenDeals

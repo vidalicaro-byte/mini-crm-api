@@ -38,8 +38,11 @@ the username. `GET /api/users` is admin-only (403 for sellers). Errors always an
 | `GET` | `/api/contacts/{id}` | 404 for a contact the user may not see |
 | `POST` | `/api/contacts` | 201; the creator owns it. 422 (validation, unknown company), 409 (e-mail taken) |
 | `PATCH` | `/api/contacts/{id}` | Partial update: only the fields sent change; the owner never does |
+| `GET` | `/api/companies` | `q`, `size`, `sort` (`name`, `industry`, `size`, `city`, `contactsCount`, `openDealsValue`), `order`, pagination |
+| `GET` | `/api/companies/{id}` | With `contactsCount` and `openDeals {count, value}` |
 
-Sellers only see the contacts they own; admins see everything. Text sorts follow Brazilian
+Sellers only see the contacts they own; admins see everything. Companies are visible to everyone,
+but their figures only count what the viewer may see. Text sorts follow Brazilian
 Portuguese rules on both databases (`Ágata` next to `Agnes`).
 
 Interactive docs: http://127.0.0.1:8000/docs
