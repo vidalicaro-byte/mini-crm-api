@@ -7,7 +7,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from crm_api.schemas import ErrorResponse
+from crm_api.schemas import USER_MESSAGE, ErrorResponse
 
 
 class ApiError(StarletteHTTPException):
@@ -23,6 +23,14 @@ def unauthorized() -> ApiError:
 
 def forbidden() -> ApiError:
     return ApiError(403, "Você não tem permissão para acessar este recurso.")
+
+
+def invalid(message: str) -> ApiError:
+    return ApiError(422, message)
+
+
+def conflict(message: str) -> ApiError:
+    return ApiError(409, message)
 
 
 def not_found(message: str) -> ApiError:
@@ -46,8 +54,11 @@ async def _validation_error(_request: Request, exc: Exception) -> JSONResponse:
         {"field": ".".join(str(part) for part in error["loc"][1:]), "message": error["msg"]}
         for error in exc.errors()
     ]
-    # `message` for people (the front end shows it); `errors` for programs and debugging.
-    return JSONResponse({"message": "Dados inválidos.", "errors": errors}, status_code=422)
+    # `message` for people (the front end shows it); `errors` for programs and debugging. Rules
+    # written for people (e.g. "Informe um e-mail válido.") surface their own message.
+    first = exc.errors()[0] if exc.errors() else None
+    message = first["msg"] if first and first["type"] == USER_MESSAGE else "Dados inválidos."
+    return JSONResponse({"message": message, "errors": errors}, status_code=422)
 
 
 def register_error_handlers(app: FastAPI) -> None:

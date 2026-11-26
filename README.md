@@ -36,6 +36,8 @@ the username. `GET /api/users` is admin-only (403 for sellers). Errors always an
 | `GET` | `/api/users` | Admins only |
 | `GET` | `/api/contacts` | `page`, `pageSize` (max 100), `sort` (`name`, `email`, `company`, `createdAt`), `order`, `q`, `companyId` |
 | `GET` | `/api/contacts/{id}` | 404 for a contact the user may not see |
+| `POST` | `/api/contacts` | 201; the creator owns it. 422 (validation, unknown company), 409 (e-mail taken) |
+| `PATCH` | `/api/contacts/{id}` | Partial update: only the fields sent change; the owner never does |
 
 Sellers only see the contacts they own; admins see everything. Text sorts follow Brazilian
 Portuguese rules on both databases (`Ágata` next to `Agnes`).
