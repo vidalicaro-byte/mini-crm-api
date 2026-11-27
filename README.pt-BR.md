@@ -1,129 +1,269 @@
-# Mini-CRM
+# Mini-CRM API
 
-[![CI](https://github.com/vidalicaro-byte/mini-crm/actions/workflows/ci.yml/badge.svg)](https://github.com/vidalicaro-byte/mini-crm/actions/workflows/ci.yml)
-[![Licença: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/vidalicaro-byte/mini-crm-api/actions/workflows/ci.yml/badge.svg)](https://github.com/vidalicaro-byte/mini-crm-api/actions/workflows/ci.yml)
+![Python 3.14](https://img.shields.io/badge/python-3.14-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+[![Licença: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-green.svg)](LICENSE)
 
-[🇺🇸 English](README.md) · 🇧🇷 Português
+[English](README.md) · **Português**
 
-Front end de um CRM de vendas: painel com indicadores e gráficos, listas de contatos e de empresas com busca, e um funil kanban onde se arrastam negócios entre etapas — com perfis de acesso, temas claro e escuro e layout para celular. A demonstração ao vivo roda sobre uma **API REST real** ([mini-crm-api](https://github.com/vidalicaro-byte/mini-crm-api): FastAPI + PostgreSQL); localmente ele também roda sobre uma **API simulada dentro do navegador**, sem servidor nenhum.
+API REST do front-end [Mini-CRM](https://github.com/vidalicaro-byte/mini-crm): contatos, empresas,
+funil de negócios e métricas do painel, com autenticação JWT e acesso aos dados por usuário.
+Ela implementa o contrato usado na construção do front-end
+([`src/api/schemas.ts`](https://github.com/vidalicaro-byte/mini-crm/blob/main/src/api/schemas.ts)),
+então as mesmas telas funcionam com dados simulados ou com este servidor.
 
-**[▶ Demonstração online](https://mini-crm-ten-coral.vercel.app/)** — na tela de login, clique em "Entrar como administradora" ou "Entrar como vendedor". A API de demonstração dorme quando fica sem uso (hospedagem gratuita), então a primeira visita pode mostrar por alguns instantes a tela "Acordando o servidor"; os dados de demonstração são reiniciados toda noite.
+**Documentação ao vivo:** https://mini-crm-api-7qw0.onrender.com/docs
+(plano gratuito: a primeira requisição depois de uma pausa leva cerca de um minuto, enquanto o serviço acorda)
 
-|                                                    |                                                   |
-| -------------------------------------------------- | ------------------------------------------------- |
-| ![Visão geral](docs/screenshots/overview-dark.png) | ![Funil](docs/screenshots/pipeline-dark.png)      |
-| ![Contatos](docs/screenshots/contacts-light.png)   | ![Empresas](docs/screenshots/companies-light.png) |
+**Experimente:** clique em **Authorize** e entre com um dos usuários de demonstração. A senha de
+todos é `demo1234`.
 
-<p>
-  <img src="docs/screenshots/mobile-overview-dark.png" alt="Visão geral no celular" width="260">
-  <img src="docs/screenshots/mobile-pipeline-dark.png" alt="Funil no celular" width="260">
-  <img src="docs/screenshots/company-light.png" alt="Página de uma empresa" width="420">
-</p>
+| Usuário | Papel | Vê |
+| --- | --- | --- |
+| `marina@minicrm.demo` | admin | tudo, inclusive a lista de usuários |
+| `rafael@minicrm.demo` | vendedor | só os próprios contatos, negócios e atividades |
 
-## O que ele faz
+![Swagger UI com os endpoints agrupados por recurso](docs/images/docs-overview.png)
 
-- **Login com perfis.** A _administradora_ vê tudo; o _vendedor_ vê só os próprios contatos e negócios (quem garante isso é a API, não só as telas). Só a administradora acessa a página da equipe.
-- **Visão geral.** Cinco indicadores (contatos, novos contatos, negócios em aberto, receita ganha e taxa de conversão) comparados com o período anterior, um gráfico de negócios por etapa e outro de receita ao longo do tempo. O filtro de período (7 dias, 30 dias, 90 dias, 12 meses) fica na URL. Cada gráfico tem um resumo em texto e seus dados em tabela.
-- **Contatos.** Busca, filtro por empresa, ordenação e paginação feitas no servidor, tudo guardado na URL (links compartilháveis e botão Voltar que funciona). Página de detalhe com negócios e histórico de atividades; criação e edição com validação em português.
-- **Empresas.** As mesmas ferramentas de lista, mais um filtro de porte; o detalhe mostra contatos, negócios em aberto e um resumo. Os números contam só o que o usuário logado pode ver.
-- **Funil.** Um quadro kanban: arraste um negócio entre as etapas com o mouse, com toque ou com o teclado, ou use o menu "Mover" de cada cartão. O cartão muda de coluna na hora e volta, com uma explicação, se o servidor recusar.
-- **Em todo o app:** temas claro e escuro, layout responsivo, esqueletos de carregamento e estados de erro e de lista vazia, com nova tentativa.
+## Destaques
 
-## Notas de engenharia
+- **Contrato primeiro.** Rotas, nomes de campos (camelCase), mensagens de erro e casos de borda
+  seguem o contrato do front-end. Os testes conferem os números do painel com uma versão em Python
+  do mock do front-end.
+- **Regras de acesso num lugar só.** Vendedores só veem o que é deles; admins veem tudo. Registros
+  fora do alcance do usuário respondem **404, e não 403**, para que não dê para sondar IDs.
+- **Agregação no SQL.** O painel (KPIs comparados ao período anterior, funil e receita mensal) é
+  calculado com `COUNT(...) FILTER (WHERE ...)` e faixas com `CASE` em poucas consultas, sem
+  carregar linhas no Python. As listas evitam consultas N+1: os relacionamentos são `lazy="raise"`,
+  então um `joinedload` esquecido quebra os testes em vez de deixar a produção lenta.
+- **Ordenação em português nos dois bancos.** `Ágata` fica ao lado de `Agnes`: collation ICU no
+  PostgreSQL e uma collation equivalente feita sob medida no SQLite, as duas cobertas pelos mesmos testes.
+- **Testada em dois bancos.** 169 testes e 99% de cobertura, rodando no SQLite (rápido, local) e no
+  PostgreSQL 18 (CI), cada teste isolado numa transação desfeita no final.
+- **Pronta para produção.** Migrações Alembic conferidas com os modelos no CI, imagem Docker
+  multi-stage sem root, Blueprint do Render (infraestrutura como código) e Postgres serverless no
+  Neon. Cada deploy só roda depois que o CI passa.
 
-- **Um contrato, dois backends.** Toda resposta é validada por schemas [Zod](https://zod.dev/) (`src/api/schemas.ts`). No desenvolvimento e nos testes, o [MSW](https://mswjs.io/) serve esse contrato com latência realista, validação (`422`), conflitos (`409`), `401` e `403`. Em produção, as mesmas telas falam com [uma API real](https://github.com/vidalicaro-byte/mini-crm-api) que o implementa: a troca foi feita com variáveis de ambiente, sem mudar as telas.
-- **Servidor dormindo, tratado.** A hospedagem gratuita põe a API para dormir; uma tela de espera consulta o health check e, se a espera for perceptível, explica o que está acontecendo em vez de encher a página de spinners, com a opção de tentar de novo se o servidor não responder.
-- **Estado do servidor com TanStack Query**: chaves de consulta por lista, `keepPreviousData` ao paginar, invalidação depois das escritas (um novo contato atualiza a visão geral e os números das empresas) e atualização otimista com desfazer por cartão no funil.
-- **A URL é o estado da lista.** Funções puras leem e escrevem os filtros (com testes, inclusive para URLs inválidas ou editadas à mão); um mesmo hook atende as listas de contatos e de empresas.
-- **Acessibilidade é testada, não suposta.** O [axe](https://github.com/dequelabs/axe-core) roda em todas as páginas, nos temas claro e escuro, no desktop e no celular, no CI. Ele achou problemas reais pelo caminho (marcação de lista, um controle cujo nome diferia do texto visível, rótulos de baixo contraste), já corrigidos. O funil funciona pelo teclado, com anúncios em português, e o app tem link "pular para o conteúdo" e move o foco ao navegar.
-- **Desempenho.** As rotas carregam sob demanda, os gráficos carregam depois dos números, e o pacote da camada simulada caiu de 521 kB para 251 kB ao trocar, nas builds de produção, uma dependência que não é usada.
+## Stack
 
-### Qualidade
+| Área | Escolha | Por quê |
+| --- | --- | --- |
+| Framework web | **FastAPI** | Requisições tipadas, injeção de dependências e documentação OpenAPI gerada pelo código |
+| Validação | **Pydantic v2** | Os mesmos modelos validam a entrada, formatam a saída e documentam o schema |
+| Banco de dados | **PostgreSQL** (Neon) · SQLite no desenvolvimento | Postgres em produção; com SQLite não há nada para instalar localmente (sem Docker) |
+| ORM e migrações | **SQLAlchemy 2.1** + **Alembic** | Modelos tipados com `Mapped[...]`; mudanças de schema versionadas e revisáveis |
+| Autenticação | **JWT** (PyJWT) + **Argon2** (pwdlib) | Tokens sem estado; o hash de senha recomendado hoje |
+| Testes | **pytest** + httpx | Fixtures, isolamento por transação, cobertura |
+| Qualidade | **Ruff**, **mypy** (strict), pre-commit | Lint e formatação numa ferramenta rápida; tipagem estrita em `src` e `tests` |
+| Pacotes | **uv** | Lockfile, instalações reproduzíveis, CI rápido |
+| Entrega | **Docker**, **GitHub Actions**, **Render** | A mesma imagem no CI e em produção; o deploy espera os checks passarem |
 
-| O quê                                       | Como                                                                                                                                                           |
-| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 255 testes unitários e de integração        | [Vitest](https://vitest.dev/) + Testing Library, com a API simulada rodando por baixo                                                                          |
-| 75 testes ponta a ponta e de acessibilidade | [Playwright](https://playwright.dev/) + axe contra a build de produção, perfis desktop e celular                                                               |
-| Verificações estáticas                      | TypeScript (strict, `noUncheckedIndexedAccess`), [oxlint](https://oxc.rs/docs/guide/usage/linter) (com regras jsx-a11y), Prettier                              |
-| Higiene de Git                              | Husky + lint-staged, [Conventional Commits](https://www.conventionalcommits.org/pt-br/) com commitlint, squash merge                                           |
-| CI                                          | O GitHub Actions roda as verificações e os testes ponta a ponta em todo pull request, e a `main` é protegida; o Dependabot propõe atualizações de dependências |
+## Modelo de dados
 
-### Lighthouse
+```mermaid
+erDiagram
+    USER ||--o{ CONTACT : "é dono de"
+    USER ||--o{ DEAL : "é dono de"
+    USER ||--o{ ACTIVITY : registra
+    COMPANY ||--o{ CONTACT : emprega
+    COMPANY ||--o{ DEAL : "é cliente em"
+    CONTACT ||--o{ DEAL : "participa de"
+    CONTACT ||--o{ ACTIVITY : "é assunto de"
+    DEAL |o--o{ ACTIVITY : "pode se referir a"
 
-Mediana de 3 execuções por página com `npm run lighthouse` (Chrome sem interface, build de produção; o perfil de celular usa a simulação de 4G lenta do Lighthouse e CPU 4× mais lenta).
+    USER {
+        string id PK
+        string name
+        string email UK
+        enum role "admin | vendedor"
+        string password_hash
+    }
+    COMPANY {
+        string id PK
+        string name
+        string industry
+        enum size "pequena | media | grande"
+        string city
+        string state
+        string website
+    }
+    CONTACT {
+        string id PK
+        string name
+        string email UK
+        string phone
+        string job_title
+        string company_id FK
+        string owner_id FK
+        datetime created_at
+    }
+    DEAL {
+        string id PK
+        string title
+        int value "reais inteiros"
+        enum stage "novo | contato | proposta | negociacao | ganho | perdido"
+        string contact_id FK
+        string company_id FK
+        string owner_id FK
+        datetime created_at
+        datetime expected_close_date
+        datetime closed_at "preenchido ao ganhar ou perder"
+    }
+    ACTIVITY {
+        string id PK
+        enum type "call | email | meeting | note"
+        string contact_id FK
+        string deal_id FK "opcional"
+        string owner_id FK
+        datetime date
+        string summary
+    }
+```
 
-| Perfil  | Página      | Desempenho | Acessibilidade | Boas práticas | SEO | LCP   | TBT    | CLS   |
-| ------- | ----------- | ---------- | -------------- | ------------- | --- | ----- | ------ | ----- |
-| celular | Login       | 92         | 100            | 100           | 100 | 0.8 s | 339 ms | 0.000 |
-| celular | Visão geral | 90         | 100            | 100           | 100 | 1.8 s | 400 ms | 0.000 |
-| celular | Contatos    | 86         | 100            | 100           | 100 | 1.9 s | 524 ms | 0.000 |
-| celular | Funil       | 83         | 100            | 100           | 100 | 1.7 s | 675 ms | 0.000 |
-| desktop | Login       | 100        | 100            | 100           | 100 | 0.3 s | 13 ms  | 0.000 |
-| desktop | Visão geral | 100        | 100            | 100           | 100 | 0.6 s | 16 ms  | 0.000 |
-| desktop | Contatos    | 100        | 100            | 100           | 100 | 0.6 s | 14 ms  | 0.000 |
-| desktop | Funil       | 100        | 100            | 100           | 100 | 0.6 s | 72 ms  | 0.000 |
+## Endpoints
 
-Os números variam de máquina para máquina; rode o comando para medir na sua.
+Todas as rotas, exceto `/health` e as de login, exigem `Authorization: Bearer <token>`.
 
-## Tecnologias
+| Método | Caminho | Observações |
+| --- | --- | --- |
+| `POST` | `/api/auth/login` | `{email, password}` → `{token, user}`. O token vale por 8 horas |
+| `POST` | `/api/auth/token` | O mesmo, como formulário OAuth2 (usado pelo botão **Authorize** da documentação) |
+| `GET` | `/api/auth/me` | O usuário logado |
+| `GET` | `/api/users` | Só admins (403 para vendedores) |
+| `GET` | `/api/contacts` | Busca `q`, filtro `companyId`, `sort` por `name`/`email`/`company`/`createdAt`, `order`, `page`, `pageSize` (máx. 100) |
+| `GET` | `/api/contacts/{id}` | Com a empresa |
+| `POST` | `/api/contacts` | 201 + `Location`. Quem cria vira o dono. 409 se o e-mail já existe |
+| `PATCH` | `/api/contacts/{id}` | Atualização parcial: só mudam os campos enviados |
+| `GET` | `/api/companies` | Busca, filtro por `size`, ordenação por qualquer coluna, inclusive `contactsCount` e `openDealsValue` |
+| `GET` | `/api/companies/{id}` | Com `contactsCount` e `openDeals {count, value}` |
+| `GET` | `/api/deals` | Mais recentes primeiro. Por padrão o funil visível inteiro vem numa página só, para o quadro. Filtros `contactId`/`companyId` |
+| `PATCH` | `/api/deals/{id}` | `{stage}`. Mover para ganho/perdido preenche `closedAt`; reabrir limpa |
+| `GET` | `/api/activities?contactId=` | A linha do tempo de um contato, mais recentes primeiro |
+| `GET` | `/api/overview?period=` | `7d`, `30d`, `90d` ou `12m`: KPIs com o período anterior, funil e receita |
+| `GET` | `/health` | Verificação de disponibilidade (também responde a `HEAD`) |
 
-React 19 · TypeScript · Vite · Material UI (com MUI X Data Grid e Charts) · React Router · TanStack Query · React Hook Form + Zod · dnd-kit · MSW · Vitest · Playwright · Publicado na Vercel, com a [API](https://github.com/vidalicaro-byte/mini-crm-api) no Render.
+Empresas são visíveis para todos, mas os números delas só contam o que o usuário pode ver.
+
+![Executando GET /api/overview pela documentação](docs/images/docs-request.png)
+
+### Erros
+
+Todo erro tem o mesmo formato, com uma mensagem que o front-end pode mostrar direto. Erros de
+validação também listam os campos:
+
+```json
+{
+  "message": "Informe um e-mail válido.",
+  "errors": [{ "field": "email", "message": "Informe um e-mail válido." }]
+}
+```
+
+| Status | Quando |
+| --- | --- |
+| 401 | Token ausente, inválido ou expirado |
+| 403 | Um vendedor chama uma rota só de admin |
+| 404 | O registro não existe **ou** é de outro vendedor |
+| 409 | Conflito de unicidade (e-mail do contato) |
+| 422 | Entrada inválida, com as mesmas mensagens do formulário do front-end |
 
 ## Rodando localmente
 
-Requer Node.js 24 ou mais novo.
+Requer o [uv](https://docs.astral.sh/uv/), que instala o Python certo sozinho. Não precisa de
+servidor de banco: o desenvolvimento usa um arquivo SQLite.
 
-```bash
-git clone https://github.com/vidalicaro-byte/mini-crm.git
-cd mini-crm
-npm install
-npm run dev
+```powershell
+git clone https://github.com/vidalicaro-byte/mini-crm-api.git
+cd mini-crm-api
+uv sync
+uv run alembic upgrade head      # cria as tabelas (crm.db)
+uv run python -m crm_api.seed    # carrega os dados de demonstração (rodar de novo reinicia os dados)
+uv run fastapi dev src/crm_api/main.py
 ```
 
-Abra http://localhost:5173. Contas de demonstração (também com um clique na tela de login):
+Abra http://127.0.0.1:8000/docs. Para usar PostgreSQL, defina `DATABASE_URL` (veja `.env.example`).
 
-| Perfil         | E-mail                | Senha      |
-| -------------- | --------------------- | ---------- |
-| Administradora | `marina@minicrm.demo` | `demo1234` |
-| Vendedor       | `rafael@minicrm.demo` | `demo1234` |
+### Testes e verificações
 
-| Comando                                          | O que faz                                                                 |
-| ------------------------------------------------ | ------------------------------------------------------------------------- |
-| `npm run dev`                                    | Servidor de desenvolvimento                                               |
-| `npm run build` / `npm run preview`              | Build de produção / servi-la localmente                                   |
-| `npm test`                                       | Testes unitários e de integração                                          |
-| `npx playwright install chromium`, `npm run e2e` | Baixa o navegador de teste uma vez e roda os testes ponta a ponta e o axe |
-| `npm run lighthouse`                             | Faz a build, serve e mede com o Lighthouse                                |
-| `npm run lint` · `typecheck` · `format:check`    | Verificações estáticas                                                    |
-| `npm run seed`                                   | Gera de novo os dados fictícios (`src/mocks/seed.json`)                   |
-
-Por padrão tudo roda sobre a API simulada no navegador. Para usar a API real (rodando localmente, veja o README dela), crie um `.env.local`:
-
-```bash
-VITE_ENABLE_MOCKS=false
-VITE_API_URL=http://localhost:8000/api
-VITE_DEMO_ACCOUNTS=true   # mantém os botões de login de demonstração
+```powershell
+uv run pytest                 # 169 testes no SQLite, poucos segundos
+uv run ruff check .
+uv run ruff format --check .
+uv run mypy
+uv run alembic check          # modelos e migrações batem
 ```
 
-## Estrutura
+Para rodar os mesmos testes no PostgreSQL, aponte `TEST_DATABASE_URL` para um banco vazio. O CI faz
+isso a cada push, com um contêiner de serviço PostgreSQL 18. `uv run pre-commit install` roda as
+verificações a cada commit e exige mensagens no padrão
+[Conventional Commits](https://www.conventionalcommits.org/pt-br/).
 
+## Deploy
+
+```mermaid
+flowchart LR
+    PR[Pull request] --> CI{GitHub Actions}
+    CI -->|lint · tipos · testes| SQ[(SQLite)]
+    CI -->|migrações · testes| PG[(PostgreSQL 18)]
+    CI -->|build + teste de fumaça| IMG[Imagem Docker]
+    CI -->|checks verdes na main| R[Render]
+    R -->|migra · seed se vazio · serve| NEON[(Neon Postgres)]
 ```
-src/
-  api/          cliente HTTP e schemas Zod (o contrato)
-  app/          rotas, layout, navegação
-  components/   peças compartilhadas (cabeçalho de página, busca, seções de detalhe)
-  features/     uma pasta por área: auth, dashboard, contacts, companies, pipeline, deals, team
-  hooks/        useUrlFilters
-  mocks/        a API no navegador: handlers, dados, autorização, cálculo da visão geral
-  theme/        temas claro e escuro
-e2e/            testes do Playwright
+
+- **Docker:** build multi-stage com uv; a imagem final não tem ferramentas de build e roda sem root.
+  Ao iniciar, aplica as migrações, carrega os dados de demonstração se o banco estiver vazio e
+  serve na porta `$PORT`.
+- **Render** (plano gratuito) monta a imagem a partir do [`render.yaml`](render.yaml). O Render gera
+  o segredo do JWT, as URLs do banco ficam no painel dele, e o deploy automático espera o CI.
+- **Neon** hospeda o PostgreSQL. A aplicação conecta pelo pooler; as migrações usam a conexão
+  direta, porque mudanças de schema não funcionam bem através de um pooler de transações.
+- Em produção a aplicação se recusa a iniciar com o segredo JWT de desenvolvimento ou com um de
+  menos de 32 caracteres.
+
+## Estrutura do projeto
+
+```text
+src/crm_api/
+├── main.py         # fábrica da app: routers, CORS, tratamento de erros, docs
+├── config.py       # configurações via variáveis de ambiente (pydantic-settings)
+├── db.py           # engine, sessões, particularidades de SQLite/Postgres
+├── models.py       # modelos SQLAlchemy
+├── schemas.py      # modelos Pydantic de requisição/resposta (JSON em camelCase)
+├── security.py     # hash de senha e JWT
+├── deps.py         # dependências: sessão, usuário atual, guarda de admin
+├── access.py       # quem pode ver o quê
+├── errors.py       # formato de erro {"message"} e documentação dos erros no OpenAPI
+├── overview.py     # agregação do painel
+├── text.py         # collation pt-BR compartilhada pelos dois bancos
+├── routers/        # um módulo por recurso
+└── seed/           # dados de demonstração (compartilhados com o front-end) e carregador
+migrations/         # Alembic
+tests/              # pytest, um arquivo por área
 ```
 
-## Limitações
+## Decisões de projeto
 
-- Os dados são fictícios. Na demonstração ao vivo, eles são compartilhados por todos os visitantes e reiniciados toda noite; na API simulada, ficam na memória do navegador e **recarregar a página os reinicia**.
-- A interface está só em português do Brasil; não há camada de tradução.
-- Empresas e negócios são somente leitura na interface (contatos podem ser criados e editados; os negócios mudam de etapa).
+- **SQLAlchemy síncrono, não async.** Cada requisição faz poucas consultas curtas, então um pool de
+  threads basta. Código síncrono é mais simples de escrever, testar e depurar, e o FastAPI roda
+  rotas síncronas em threads.
+- **404 em vez de 403 para registros de outros vendedores.** Um 403 confirma que o registro existe;
+  um 404, não.
+- **SQLite no desenvolvimento, PostgreSQL em produção, testes nos dois.** Não é preciso instalar
+  nada localmente, e o CI pega diferenças entre os bancos. Os comportamentos específicos de cada
+  banco (ordenação, `lower()` com acentos, savepoints) são tratados explicitamente em `db.py` e `text.py`.
+- **Dados de demonstração relativos a hoje.** O seed guarda as datas em relação a um dia de
+  referência e as desloca ao carregar, então o painel sempre mostra atividade recente.
+- **OpenAPI caprichado.** Os IDs das operações são os nomes das funções (`list_contacts`) e cada
+  status de erro tem seu próprio exemplo, então clientes gerados a partir do `/openapi.json` ficam legíveis.
+
+## Limitações e próximos passos
+
+- Sem refresh token nem logout: um token vale por 8 horas. Revogar exigiria uma lista de bloqueio ou
+  tokens de vida curta.
+- Ainda sem limite de tentativas no login.
+- Contatos e negócios não podem ser excluídos (o front-end não oferece isso).
+- Próximo: ligar o front-end do Mini-CRM a esta API e reiniciar os dados de demonstração toda noite.
 
 ## Licença
 
