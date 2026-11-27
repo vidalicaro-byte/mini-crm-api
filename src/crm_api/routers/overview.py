@@ -24,7 +24,7 @@ def _check_period(value: Any) -> Any:
     return value
 
 
-@router.get("", responses=responses(401, 422))
+@router.get("", summary="Dashboard metrics", responses=responses(401, 422))
 def get_overview(
     user: CurrentUser,
     session: SessionDep,

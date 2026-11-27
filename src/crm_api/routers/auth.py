@@ -23,7 +23,7 @@ def authenticate(session: Session, email: str, password: str) -> User:
     return user
 
 
-@router.post("/login", responses=responses(401, 422))
+@router.post("/login", summary="Sign in (JSON)", responses=responses(401, 422))
 def login(body: LoginRequest, session: SessionDep, settings: SettingsDep) -> LoginResponse:
     """Exchange e-mail and password for an access token (JWT, valid for 8 hours)."""
     user = authenticate(session, body.email, body.password)
@@ -32,7 +32,7 @@ def login(body: LoginRequest, session: SessionDep, settings: SettingsDep) -> Log
     )
 
 
-@router.post("/token", responses=responses(401))
+@router.post("/token", summary="Sign in (OAuth2 form, used by Authorize)", responses=responses(401))
 def token(
     form: Annotated[OAuth2PasswordRequestForm, Depends()],
     session: SessionDep,
@@ -43,7 +43,7 @@ def token(
     return TokenResponse(access_token=create_access_token(user, settings))
 
 
-@router.get("/me", responses=responses(401))
+@router.get("/me", summary="Current user", responses=responses(401))
 def me(user: CurrentUser) -> UserOut:
     """The signed-in user."""
     return UserOut.model_validate(user)

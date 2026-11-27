@@ -1,3 +1,6 @@
 """Mini-CRM API."""
 
-__version__ = "0.1.0"
+from importlib.metadata import version
+
+# Single source of truth: the version in pyproject.toml.
+__version__ = version("mini-crm-api")
