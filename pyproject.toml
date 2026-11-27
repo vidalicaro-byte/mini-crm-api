@@ -1,6 +1,6 @@
 [project]
 name = "mini-crm-api"
-version = "0.1.0"
+version = "1.0.0"
 description = "REST API for the Mini-CRM: FastAPI, SQLAlchemy 2, JWT auth and role-based access."
 readme = "README.md"
 license = "MIT"
@@ -65,6 +65,8 @@ files = ["src", "tests"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-ra --strict-markers"
+# Warnings fail the run, so deprecations and OpenAPI problems surface in CI.
+filterwarnings = ["error"]
 
 [tool.coverage.run]
 source = ["crm_api"]

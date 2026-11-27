@@ -25,7 +25,16 @@ class ApiModel(BaseModel):
 
 
 class ErrorResponse(BaseModel):
-    message: str = Field(examples=["Sessão expirada. Entre novamente."])
+    message: str
+
+
+class FieldError(BaseModel):
+    field: str
+    message: str
+
+
+class ValidationErrorResponse(ErrorResponse):
+    errors: list[FieldError]
 
 
 class Page[T](ApiModel):

@@ -20,9 +20,12 @@ def create_app() -> FastAPI:
     app = FastAPI(
         title=settings.app_name,
         version=__version__,
-        summary="REST API for the Mini-CRM front end.",
+        summary="Contacts, companies, deal pipeline and dashboard metrics, with JWT auth.",
         description=DESCRIPTION,
         swagger_ui_parameters={"persistAuthorization": True},
+        # Clean operation ids (`list_contacts`, not `list_contacts_api_contacts_get`) for
+        # anyone generating a client from /openapi.json.
+        generate_unique_id_function=lambda route: route.name,
     )
     register_error_handlers(app)
     app.add_middleware(
@@ -34,7 +37,8 @@ def create_app() -> FastAPI:
         max_age=600,
     )
 
-    @app.get("/", include_in_schema=False)
+    # HEAD too: hosts and uptime monitors probe with it.
+    @app.api_route("/", methods=["GET", "HEAD"], include_in_schema=False)
     def root() -> RedirectResponse:
         return RedirectResponse("/docs")
 
