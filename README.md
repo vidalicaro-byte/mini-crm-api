@@ -14,6 +14,8 @@ It implements the contract the front end was built against
 ([`src/api/schemas.ts`](https://github.com/vidalicaro-byte/mini-crm/blob/main/src/api/schemas.ts)),
 so the same screens can run on mock data or on this server.
 
+**Live app:** https://mini-crm-ten-coral.vercel.app (the Mini-CRM front end, running on this API)
+
 **Live docs:** https://mini-crm-api-7qw0.onrender.com/docs
 (free plan: the first request after a pause takes about a minute while the service wakes up)
 
@@ -42,7 +44,7 @@ so the same screens can run on mock data or on this server.
   PostgreSQL 18 (CI), each test isolated in a rolled-back transaction.
 - **Production-shaped.** Alembic migrations checked against the models in CI, a non-root multi-stage
   Docker image, a Render Blueprint (infrastructure as code) and serverless Postgres on Neon.
-  Each deploy runs only after CI passes.
+  Each deploy runs only after CI passes, and a scheduled workflow resets the public demo data every night.
 
 ## Stack
 
@@ -215,6 +217,9 @@ flowchart LR
   JWT secret, the database URLs are set in its dashboard, and auto-deploy waits for CI.
 - **Neon** hosts PostgreSQL. The app connects through the pooler; migrations use the direct
   connection, because schema changes don't work well through a transaction pooler.
+- **Nightly reset:** the demo is public and writable, so a scheduled GitHub Actions workflow
+  ([`reset-demo.yml`](.github/workflows/reset-demo.yml)) reloads the demo data every night at 03:00
+  (São Paulo), moving the dates forward. It can also be run by hand from the Actions tab.
 - In production the app refuses to start with the development JWT secret or with one shorter than
   32 characters.
 
@@ -258,7 +263,7 @@ tests/              # pytest, one file per area
   short-lived tokens.
 - No rate limiting on sign-in yet.
 - Contacts and deals can't be deleted (the front end doesn't offer it).
-- Next: connect the Mini-CRM front end to this API and reset the demo data nightly.
+- Everything a visitor changes on the live demo is visible to other visitors until the nightly reset.
 
 ## License
 
