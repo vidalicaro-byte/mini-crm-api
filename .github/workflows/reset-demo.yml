@@ -1,0 +1,41 @@
+name: Reset demo data
+
+# The live demo is public and writable: every night the database goes back to the demo data,
+# with the dates moved forward so the dashboard keeps showing recent activity.
+on:
+  schedule:
+    - cron: "0 6 * * *" # 06:00 UTC = 03:00 in São Paulo
+  workflow_dispatch: # "Run workflow" button, for a reset on demand
+
+permissions:
+  contents: read
+
+concurrency:
+  group: reset-demo
+  cancel-in-progress: false
+
+jobs:
+  reset:
+    name: Reload the demo data
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --locked --no-dev
+
+      - name: Reload the demo data
+        env:
+          # Neon's direct (unpooled) connection string, stored as a repository secret.
+          DATABASE_URL: ${{ secrets.DEMO_DATABASE_URL }}
+        run: |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "::error::Add the DEMO_DATABASE_URL secret (Settings → Secrets and variables → Actions)."
+            exit 1
+          fi
+          uv run --no-sync python -m crm_api.seed

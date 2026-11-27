@@ -14,6 +14,8 @@ Ela implementa o contrato usado na construção do front-end
 ([`src/api/schemas.ts`](https://github.com/vidalicaro-byte/mini-crm/blob/main/src/api/schemas.ts)),
 então as mesmas telas funcionam com dados simulados ou com este servidor.
 
+**Aplicação ao vivo:** https://mini-crm-ten-coral.vercel.app (o front-end do Mini-CRM, rodando sobre esta API)
+
 **Documentação ao vivo:** https://mini-crm-api-7qw0.onrender.com/docs
 (plano gratuito: a primeira requisição depois de uma pausa leva cerca de um minuto, enquanto o serviço acorda)
 
@@ -44,7 +46,8 @@ todos é `demo1234`.
   PostgreSQL 18 (CI), cada teste isolado numa transação desfeita no final.
 - **Pronta para produção.** Migrações Alembic conferidas com os modelos no CI, imagem Docker
   multi-stage sem root, Blueprint do Render (infraestrutura como código) e Postgres serverless no
-  Neon. Cada deploy só roda depois que o CI passa.
+  Neon. Cada deploy só roda depois que o CI passa, e um workflow agendado reinicia os dados públicos
+  de demonstração toda noite.
 
 ## Stack
 
@@ -218,6 +221,10 @@ flowchart LR
   o segredo do JWT, as URLs do banco ficam no painel dele, e o deploy automático espera o CI.
 - **Neon** hospeda o PostgreSQL. A aplicação conecta pelo pooler; as migrações usam a conexão
   direta, porque mudanças de schema não funcionam bem através de um pooler de transações.
+- **Reset noturno:** a demonstração é pública e aceita alterações, então um workflow agendado do
+  GitHub Actions ([`reset-demo.yml`](.github/workflows/reset-demo.yml)) recarrega os dados de
+  demonstração toda noite às 03:00 (horário de São Paulo), com as datas atualizadas. Também dá para
+  rodá-lo manualmente pela aba Actions.
 - Em produção a aplicação se recusa a iniciar com o segredo JWT de desenvolvimento ou com um de
   menos de 32 caracteres.
 
@@ -263,7 +270,7 @@ tests/              # pytest, um arquivo por área
   tokens de vida curta.
 - Ainda sem limite de tentativas no login.
 - Contatos e negócios não podem ser excluídos (o front-end não oferece isso).
-- Próximo: ligar o front-end do Mini-CRM a esta API e reiniciar os dados de demonstração toda noite.
+- O que um visitante altera na demonstração ao vivo fica visível para os outros até o reset noturno.
 
 ## Licença
 
